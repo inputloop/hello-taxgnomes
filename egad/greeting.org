@@ -1,0 +1,10 @@
+* taxgnomes
+:PROPERTIES:
+:component: hello-taxgnomes
+:page: build/hello-taxgnomes.html
+:category: read
+:start: baseline
+:directions+: north south east west
+:grain: 4
+:sources: 3
+:END:

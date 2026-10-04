@@ -1,0 +1,23 @@
+#+TITLE: hello-taxgnomes: the Gnemonic Word Mines
+#+AUTHOR: Corwin Brust and Contributors
+
+A reading component built from a taxonomy at build time.  Pick a word from the word game's four
+tables; move a four-way slider: north simpler, south denser, east moodier, west drier; the centre
+is the plain gloss.  Every sentence says who wrote it: a dictionary, the game's pooled sentences, a
+template, or a local model.  A worked example for egad: its egad and egadjit hooks are suggestions,
+and the page works alone.
+
+#+begin_example
+make            # unfold the recipe, build the readings, write build/hello-taxgnomes.html
+make check      # both unfolders agree; the build is honest; the second reader agrees; prove-red
+python3 tools/tg1dr.py ingest MODEL ANSWER.json   # take in sentences a local model drafted
+#+end_example
+
+The builder reads the word game (=../mini-c4-game=, or =TG_GAME=) and its caches of WordNet 3.1 and
+GCIDE 0.53, and SCOWL's word list as hunspell ships it.  Everything is unfolded from
+=hello-taxgnomes.org=; edit that file.  Built under build-loop: the design, the QA plan and the
+notes of each pass are in =.house/h/=.
+
+Licences: code GPL-3.0-or-later; prose CC BY-SA 4.0.  The readings quote WordNet 3.1 (the WordNet
+licence, =WORDNET-LICENSE=, travels with them), GCIDE 0.53 (GPL-3.0-or-later) and SCOWL (permissive;
+Kevin Atkinson and contributors).

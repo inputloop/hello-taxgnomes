@@ -1,0 +1,57 @@
+#!/bin/sh
+# tg1rd -- TAXGNOMES 1 READ: the second reader.  Checks data/readings.txt against each direction's
+# rule, apart from the builder: five readings per word with a meaning; every reading cites allowed
+# sources; west carries no exclamation or question; south has a dense line and its unpacking; every
+# draft citation has a draft behind it; and, over the whole table, north's words are shorter on
+# average than south's and at least as often common (in SCOWL).
+# usage: tg1rd [DATA_DIR] [SCOWL_DIC]     prints FAULT lines and a summary; exit 1 on any fault
+# TG1RD_AWK chooses the awk.  Unfolded from hello-taxgnomes.org; edit that, not this.
+# Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
+# Mentat (for Corwin; claude-opus-5-5)
+set -u
+LC_ALL=C; export LC_ALL
+here=$(cd "$(dirname "$0")/.." && pwd)
+d=${1:-$here/data}; sc=${2:-${TG_SCOWL:-/usr/share/hunspell/en_US.dic}}
+[ -f "$d/readings.txt" ] || { echo "tg1rd: no readings in $d" >&2; exit 2; }
+[ -f "$sc" ] || sc=/dev/null
+exec ${TG1RD_AWK:-awk} -F'\t' '
+FILENAME == ARGV[1] { if (FNR > 1) { w = $0; sub(/\/.*/, "", w); common[tolower(w)] = 1; nsc++ } next }
+FILENAME == ARGV[2] { status[$1] = $2; nw++; next }
+FILENAME == ARGV[3] { drafted[$1, $2] = 1; next }
+{
+  w = $1; dir = $2; src = $3; text = $4; got[w, dir]++; seen[w] = 1
+  if (src == "") { fault("no source", w, dir) }
+  ns = split(src, S, ",")
+  for (i = 1; i <= ns; i++) {
+    s = S[i]
+    if (s !~ /^(wordnet-3\.1:[0-9]+|gcide-0\.53|scowl|pool:.+|draft:.+|template:E[1-4]|table:[gort])$/) fault("a source not allowed: " s, w, dir)
+    if (s ~ /^draft:/) { m = s; sub(/^draft:/, "", m); if (!((w, m) in drafted)) fault("a draft cited with no draft behind it: " s, w, dir) }
+  }
+  if (dir == "W" && text ~ /[!?]/) fault("west asks or exclaims", w, dir)
+  if (dir == "S" && index(text, " Unpacked: ") == 0) fault("south has no unpacking line", w, dir)
+  if (dir == "N" || dir == "S") {
+    t = tolower(text); gsub(/[^a-z]+/, " ", t); n = split(t, T, " ")
+    for (i = 1; i <= n; i++) { L[dir] += length(T[i]); C[dir]++; if (T[i] in common) K[dir]++ }
+  }
+}
+function fault(why, w, dir) { print "FAULT   " w " " dir ": " why; faults++ }
+END {
+  complete = 0
+  for (w in status) {
+    if (status[w] != "meaning") continue
+    ok = 1
+    split("baseline N S E W", D, " ")
+    for (i = 1; i <= 5; i++) if (got[w, D[i]] != 1) { fault("readings for " D[i] ": " (got[w, D[i]] + 0), w, D[i]); ok = 0 }
+    complete += ok
+  }
+  for (w in seen) if (status[w] != "meaning") fault("readings for a word with no meaning", w, "-")
+  mn = C["N"] ? L["N"] / C["N"] : 0; ms = C["S"] ? L["S"] / C["S"] : 0
+  if (!(mn < ms)) fault(sprintf("north words are not shorter than south words (%.2f vs %.2f)", mn, ms), "ALL", "N")
+  if (nsc > 0) {
+    kn = C["N"] ? K["N"] / C["N"] : 0; ks = C["S"] ? K["S"] / C["S"] : 0
+    if (kn < ks) fault(sprintf("north is less common than south (%.3f vs %.3f)", kn, ks), "ALL", "N")
+    shares = sprintf("; common words north %.3f, south %.3f", kn, ks)
+  } else shares = "; SCOWL not read: commonness NOT CHECKED"
+  printf "tg1rd: %d words; %d complete; mean word length north %.2f, south %.2f%s; %d fault(s)\n", nw, complete, mn, ms, shares, faults + 0
+  exit (faults > 0)
+}' "$sc" "$d/words.txt" "$d/drafts.txt" "$d/readings.txt"

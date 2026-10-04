@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gnemonic Word Mines</title>
+<!-- hello-taxgnomes: built by tools/tg1pg.py from data/readings.json.  @licstart  The code on this
+page is free software: GPL-3.0-or-later.  The readings come from WordNet 3.1 (WordNet licence),
+GCIDE 0.53 (GPL-3.0-or-later) and SCOWL (permissive); see the project's NOTICE.  @licend -->
+<style>
+:root{--tg-bg:var(--egad-color-bg,#fbf8f1);--tg-ink:var(--egad-color-ink,#1f1d1a);--tg-muted:var(--egad-color-muted,#5c564c);
+--tg-line:var(--egad-color-line,#d8d0c0);--tg-card:var(--egad-color-card,#fffdf7);--tg-accent:var(--egad-color-accent,#2c6e5c);--tg-focus:#b3570f}
+@media (prefers-color-scheme:dark){:root{--tg-bg:var(--egad-color-bg,#17160f);--tg-ink:var(--egad-color-ink,#ece6da);--tg-muted:var(--egad-color-muted,#b0a796);
+--tg-line:var(--egad-color-line,#3b372e);--tg-card:var(--egad-color-card,#201e17);--tg-accent:var(--egad-color-accent,#83c9b4);--tg-focus:#f0a35a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--tg-bg);color:var(--tg-ink);font:17px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:980px;margin:0 auto;padding:28px 16px 48px}
+h1{font-size:clamp(26px,4.5vw,38px);margin:0 0 4px}
+.sub{color:var(--tg-muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px}
+@media (max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--tg-card);border:1px solid var(--tg-line);border-radius:6px;padding:14px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+button{font:inherit;color:inherit;background:transparent;border:1px solid var(--tg-line);border-radius:4px;padding:4px 9px;cursor:pointer}
+button[aria-pressed="true"],button[aria-selected="true"]{border-color:var(--tg-accent);box-shadow:inset 0 0 0 1px var(--tg-accent)}
+button:focus-visible,#pad:focus-visible{outline:3px solid var(--tg-focus);outline-offset:2px}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0}
+.row .reg{width:1.4em;color:var(--tg-muted);font-family:ui-monospace,monospace}
+.words button{font-size:14px;padding:2px 6px}
+#pad{position:relative;width:220px;height:220px;margin:6px auto 10px;border:1px solid var(--tg-line);border-radius:50%;
+background:radial-gradient(circle,var(--tg-card) 55%,var(--tg-bg))}
+#knob{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--tg-accent);left:50%;top:50%;transition:left .25s,top .25s}
+.lbl{position:absolute;font:600 12px/1.2 system-ui,sans-serif;color:var(--tg-muted)}
+.lbl.n{top:6px;left:50%;transform:translateX(-50%)}.lbl.s{bottom:6px;left:50%;transform:translateX(-50%)}
+.lbl.e{right:8px;top:50%;transform:translateY(-50%)}.lbl.w{left:8px;top:50%;transform:translateY(-50%)}
+.dirs{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:6px;margin-bottom:10px}
+#reading{font-size:20px;min-height:4.5em}
+#reading.east{display:inline-block;animation:wob 2.4s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(0)}25%{transform:rotate(-.4deg)}75%{transform:rotate(.4deg)}}
+.reduce-motion #knob,.reduce-motion #reading{transition:none!important;animation:none!important}
+@media (prefers-reduced-motion:reduce){#knob,#reading{transition:none!important;animation:none!important}}
+#who{color:var(--tg-muted);font-size:14px;margin-top:8px}
+.note{color:var(--tg-muted);font-size:14px;border-left:3px solid var(--tg-line);padding-left:10px}
+footer{margin-top:28px;color:var(--tg-muted);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<h1>The Gnemonic Word Mines</h1>
+<p class="sub">Pick a word.  Move the slider: north simpler, south denser, east moodier, west drier.
+The centre is the plain gloss.  Every sentence says who wrote it.</p>
+<div class="grid">
+  <section class="card" aria-label="Words">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="words" id="words"></div>
+  </section>
+  <section class="card" aria-label="Reading">
+    <div id="pad" tabindex="0" role="group" aria-label="Reading direction. Arrow keys move north (simpler), south (denser), east (moodier), west (drier); Home returns to the centre.">
+      <span class="lbl n">N simpler</span><span class="lbl s">S denser</span><span class="lbl e">E moodier</span><span class="lbl w">W drier</span>
+      <span id="knob" aria-hidden="true"></span>
+    </div>
+    <div class="dirs" role="group" aria-label="Directions">
+      <span></span><button data-dir="N" aria-pressed="false">North: simpler</button><span></span>
+      <button data-dir="W" aria-pressed="false">West: drier</button><button data-dir="baseline" aria-pressed="true">Centre: plain</button><button data-dir="E" aria-pressed="false">East: moodier</button>
+      <span></span><button data-dir="S" aria-pressed="false">South: denser</button><span></span>
+    </div>
+    <h2 id="word" style="margin:0 0 6px;font-size:22px"></h2>
+    <div aria-live="polite" id="live"><span id="reading"></span></div>
+    <p id="who"></p>
+    <p class="note" id="sign" hidden></p>
+  </section>
+</div>
+<footer>hello-taxgnomes · readings from WordNet 3.1, GCIDE 0.53 and SCOWL, and the word game's pooled
+sentences; east sentences may be drafted by a local model and say so.  Code GPL-3.0-or-later; text CC
+BY-SA 4.0.  Corwin Brust and Contributors; Mentat (for Corwin; claude-opus-5-5).</footer>
+</main>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-3.0-or-later
+"use strict";
+const DATA = /*__READINGS__*/null;
+const POS = {baseline:[50,50], N:[50,14], S:[50,86], E:[86,50], W:[14,50]};
+const NAMES = {baseline:"the centre (plain)", N:"north (simpler)", S:"south (denser)", E:"east (moodier)", W:"west (drier)"};
+const st = {table: null, word: null, dir: "baseline"};
+const $ = s => document.querySelector(s);
+function who(src) {
+  return src.map(s => s.startsWith("wordnet") ? "WordNet 3.1" : s.startsWith("gcide") ? "GCIDE 0.53 (Webster 1913)"
+    : s === "scowl" ? "SCOWL (common words)" : s.startsWith("pool:") ? "the word game's sentences (" + s.slice(5) + ")"
+    : s.startsWith("draft:") ? "a local model (" + s.slice(6) + "), drafted" : s.startsWith("template:") ? "a template (" + s.slice(9) + ")"
+    : s.startsWith("table:") ? "the game's table" : s).filter((v, i, a) => a.indexOf(v) === i).join(" · ");
+}
+function show() {
+  const w = DATA.words[st.word], el = $("#reading");
+  $("#word").textContent = st.word ? st.word.toLowerCase() : "";
+  el.className = "";
+  if (!w || w.none) {
+    el.textContent = "No meaning found for this word in the sources; nothing is invented for it.";
+    $("#who").textContent = "Sources read: WordNet 3.1, GCIDE 0.53.";
+  } else {
+    const r = w.readings[st.dir];
+    el.textContent = r.text;
+    if (st.dir === "E") el.className = "east";
+    $("#who").textContent = "Written by: " + who(r.sources) + " — " + NAMES[st.dir] + ".";
+  }
+  const p = POS[st.dir]; $("#knob").style.left = p[0] + "%"; $("#knob").style.top = p[1] + "%";
+  document.querySelectorAll(".dirs button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.dir === st.dir)));
+  const t = DATA.meta.counts["E-template"] || 0;
+  $("#sign").hidden = !t;
+  if (t) $("#sign").textContent = t + " of the east readings come from a template: the local model had not drafted those words when this page was built.";
+}
+function setDir(d) { if (!(d in POS)) return; st.dir = d; show(); }
+function setWord(w) { st.word = w; document.querySelectorAll(".words button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.word === w))); show(); }
+function setTable(k) {
+  st.table = k; const t = DATA.tables.find(x => x.key === k), box = $("#words"); box.textContent = "";
+  document.querySelectorAll("#tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.key === k)));
+  t.rows.forEach(r => { const row = document.createElement("div"); row.className = "row";
+    const g = document.createElement("span"); g.className = "reg"; g.textContent = r[0]; row.appendChild(g);
+    r[1].forEach(w => { const b = document.createElement("button"); b.textContent = w.toLowerCase(); b.dataset.word = w;
+      b.setAttribute("aria-pressed", "false"); b.addEventListener("click", () => setWord(w)); row.appendChild(b); });
+    box.appendChild(row); });
+}
+const MOVE = {ArrowUp: {baseline:"N", S:"baseline"}, ArrowDown: {baseline:"S", N:"baseline"}, ArrowRight: {baseline:"E", W:"baseline"}, ArrowLeft: {baseline:"W", E:"baseline"}};
+function key(e) {
+  if (e.key === "Home") { setDir("baseline"); e.preventDefault(); return; }
+  const m = MOVE[e.key]; if (!m) return; e.preventDefault();
+  if (m[st.dir]) setDir(m[st.dir]); else if (st.dir !== "baseline") setDir("baseline");
+}
+function init() {
+  if (!DATA) { $("#reading").textContent = "The readings did not load; the page was built without data."; return; }
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("reduce-motion");
+  const tabs = $("#tabs"); tabs.textContent = "";
+  DATA.tables.forEach(t => { const b = document.createElement("button"); b.setAttribute("role", "tab"); b.dataset.key = t.key; b.textContent = t.name.toLowerCase();
+    b.addEventListener("click", () => setTable(t.key)); tabs.appendChild(b); });
+  document.querySelectorAll(".dirs button").forEach(b => b.addEventListener("click", () => setDir(b.dataset.dir)));
+  $("#pad").addEventListener("keydown", key);
+  $("#pad").addEventListener("click", e => { const r = $("#pad").getBoundingClientRect(), x = e.clientX - r.left - r.width / 2, y = e.clientY - r.top - r.height / 2;
+    if (Math.hypot(x, y) < r.width * 0.16) return setDir("baseline");
+    setDir(Math.abs(x) > Math.abs(y) ? (x > 0 ? "E" : "W") : (y > 0 ? "S" : "N")); });
+  const start = {north:"N", south:"S", east:"E", west:"W"}[document.documentElement.dataset.egadRead || ""] || "baseline";
+  setTable(DATA.tables[0].key); setWord(DATA.tables[0].rows[0][1][0]); setDir(start);
+}
+init();
+
+// ---- inline tests: window.__runAllTests() -> [{id, pass, msg}] ----
+function lum(c) { const m = c.match(/\d+(\.\d+)?/g).map(Number).slice(0, 3).map(v => { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); }); return .2126 * m[0] + .7152 * m[1] + .0722 * m[2]; }
+function ratio(a, b) { const x = lum(a), y = lum(b); return (Math.max(x, y) + .05) / (Math.min(x, y) + .05); }
+const TESTS = [
+  {id: "T-SLIDE", fn() { const w = Object.keys(DATA.words).find(k => !DATA.words[k].none); setWord(w);
+      for (const d of ["N", "S", "E", "W", "baseline"]) { setDir(d); if ($("#reading").textContent !== DATA.words[w].readings[d].text) throw "reading for " + d + " does not match its data"; }
+      return "five readings, each the data's own"; }},
+  {id: "T-KEYS", fn() { setDir("baseline"); const k = n => $("#pad").dispatchEvent(new KeyboardEvent("keydown", {key: n, bubbles: true}));
+      k("ArrowUp"); if (st.dir !== "N") throw "up did not go north"; k("ArrowDown"); if (st.dir !== "baseline") throw "down from north did not return to the centre";
+      k("ArrowDown"); if (st.dir !== "S") throw "down from the centre did not go south"; k("Home"); if (st.dir !== "baseline") throw "Home did not return to the centre";
+      k("ArrowRight"); if (st.dir !== "E") throw "right did not go east"; k("Home"); return "arrows and Home move the knob"; }},
+  {id: "T-SOURCES", fn() { const w = Object.keys(DATA.words).find(k => !DATA.words[k].none); setWord(w); setDir("W");
+      if (!/WordNet|GCIDE/.test($("#who").textContent)) throw "the west reading does not say which dictionary wrote it";
+      setDir("S"); if (!/table/.test($("#who").textContent)) throw "the south reading does not name the game's table";
+      return "who wrote it is said beside each reading"; }},
+  {id: "T-A11Y", fn() { const pad = $("#pad"); if (pad.tabIndex !== 0 || !pad.getAttribute("aria-label")) throw "the pad is not reachable or not named";
+      if ($("#live").getAttribute("aria-live") !== "polite") throw "the reading is not in a live region";
+      const bs = [...document.querySelectorAll(".dirs button")]; if (bs.length !== 5 || bs.some(b => !b.textContent.trim())) throw "the five buttons are not all named";
+      return "pad, live region, and a no-picture path of five named buttons"; }},
+  {id: "T-MOTION", fn() { document.documentElement.classList.add("reduce-motion"); setDir("E");
+      const an = getComputedStyle($("#reading")).animationName, tr = getComputedStyle($("#knob")).transitionDuration;
+      document.documentElement.classList.remove("reduce-motion");
+      if (an !== "none" || !/^0s/.test(tr)) throw "reduced motion did not stop the wobble or the knob's glide (" + an + ", " + tr + ")";
+      return "reduced motion stops the wobble and the glide"; }},
+  {id: "T-CONTRAST", fn() { const cs = getComputedStyle(document.body), ink = cs.color, bg = cs.backgroundColor;
+      const r1 = ratio(ink, bg); if (r1 < 4.5) throw "text contrast " + r1.toFixed(2);
+      const ac = getComputedStyle($("#knob")).backgroundColor, r2 = ratio(ac, bg); if (r2 < 3) throw "knob contrast " + r2.toFixed(2);
+      return "text " + r1.toFixed(1) + ":1, knob " + r2.toFixed(1) + ":1"; }},
+  {id: "T-SIGN", fn() { const t = DATA.meta.counts["E-template"] || 0;
+      if (Boolean(t) === $("#sign").hidden) throw "the note on templated readings is " + ($("#sign").hidden ? "missing" : "shown with none templated");
+      const w = Object.keys(DATA.words).find(k => !DATA.words[k].none && DATA.words[k].readings.E.sources.some(s => s.startsWith("template:")));
+      if (w) { setWord(w); setDir("E"); if (!/template/.test($("#who").textContent)) throw "a templated east reading does not say so"; }
+      return t + " templated east reading(s), each said"; }},
+  {id: "T-EMPTY", fn() { const w = Object.keys(DATA.words).find(k => DATA.words[k].none); if (!w) return "no word without a meaning (nothing to show)";
+      setWord(w); if (!/No meaning found/.test($("#reading").textContent)) throw "a word with no meaning did not say so"; return "a word with no meaning says so"; }},
+  {id: "T-EGAD", fn() { document.documentElement.dataset.egadRead = "west"; init();
+      const ok = st.dir === "W"; delete document.documentElement.dataset.egadRead; init();
+      if (!ok) throw "data-egad-read=west did not start the knob west"; if (st.dir !== "baseline") throw "without the hint the knob did not start at the centre";
+      return "a host's hint chooses the start; without it, the centre"; }},
+];
+window.__runAllTests = () => TESTS.map(t => { try { return {id: t.id, pass: true, msg: t.fn()}; } catch (e) { return {id: t.id, pass: false, msg: String(e)}; } });
+// @license-end
+</script>
+</body>
+</html>

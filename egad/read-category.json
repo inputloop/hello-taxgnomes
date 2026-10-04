@@ -1,0 +1,8 @@
+{"category": "read", "baseline": "baseline",
+ "order": ["baseline", "north", "west", "south", "east"],
+ "treatments": {
+  "baseline": {"motion": false, "announces": true, "forms": ["hello-taxgnomes.html#baseline"], "summary": "the plain gloss"},
+  "north": {"motion": false, "announces": true, "forms": ["hello-taxgnomes.html#north"], "summary": "simpler: short sentences, common words"},
+  "south": {"motion": false, "announces": true, "forms": ["hello-taxgnomes.html#south"], "summary": "denser: a dense line, then its unpacking"},
+  "east": {"motion": true, "announces": true, "forms": ["hello-taxgnomes.html#east"], "summary": "moodier: voice and intonation; the words wobble"},
+  "west": {"motion": false, "announces": true, "forms": ["hello-taxgnomes.html#west"], "summary": "drier: direct, with synonyms"}}}

@@ -1,0 +1,11 @@
+2026-10-04  Claude (Cowork, hello-taxgnomes)  for Corwin  <corwin@bru.st>
+
+	* hello-taxgnomes.org: new.  The builder (tg1bd), its honesty check (tg1ck), the second
+	reader in sh and awk (tg1rd), the drafts intake (tg1dr), the page writer (tg1pg) and its
+	template with nine inline tests, the egadjit category and egad declaration, and the checks
+	(--reader, --cold, --offline, --egad, --prove-red).  Built under build-loop: three passes
+	in cycle 1, notes in .house/h/.
+	* data/, build/hello-taxgnomes.html: the first build: 272 words, 261 complete, 11 with no
+	meaning found; east: 69 pooled, 192 templated (the local model's drafts pending).
+	* Makefile, README.org, unfold.awk, tests/unfold-check.sh, COPYING, LICENSE,
+	WORDNET-LICENSE: new.

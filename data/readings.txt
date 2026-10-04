@@ -1,0 +1,1305 @@
+ACCENT	baseline	wordnet-3.1:07146219	Accent: distinctive manner of oral expression.
+ACCENT	N	wordnet-3.1:07146219,scowl,pool:gcide-0.53	An accent is a distinctive manner of oral expression. For example: The tender accent of a woman's cry.
+ACCENT	S	gcide-0.53,wordnet-3.1:07146219,table:o	ACCENT: A superior force of voice or of articulative effort upon some particular syllable of a word or a phrase, distinguishing it from the others. Unpacked: distinctive manner of oral expression; in the OPTIMIZER table it stands in row A under ACCENT, beside ARM, ASSY, ALIGN.
+ACCENT	E	pool:gcide-0.53	Winds! on your wings to Heaven her accents bear, / Such words as Heaven alone is fit to hear.
+ACCENT	W	wordnet-3.1:07146219	ACCENT (noun): distinctive manner of oral expression.
+ACCORD	baseline	wordnet-3.1:13994512	Accord: harmony of people's opinions or actions or characters.
+ACCORD	N	wordnet-3.1:13994512,scowl,pool:gcide-0.53	An accord is a harmony of people's opinions or actions or characters. For example: That which groweth of its own accord of thy harvest thou shalt not reap.
+ACCORD	S	gcide-0.53,wordnet-3.1:13994512,table:g	ACCORD: Agreement or concurrence of opinion, will, or action. Unpacked: harmony of people's opinions or actions or characters; in the GROWTH table it stands in row A under FAMILY, beside ATOM, APPEND, ALPHA.
+ACCORD	E	template:E2,wordnet-3.1:13994512	Oh, accord! Harmony of people's opinions or actions or characters, of all things.
+ACCORD	W	wordnet-3.1:13994512	ACCORD (noun): harmony of people's opinions or actions or characters.
+ADD	baseline	wordnet-3.1:14079762	Add: a condition (mostly in boys) characterized by behavioral and learning disorders.
+ADD	N	wordnet-3.1:14079762,scowl	An add is a condition (mostly in boys) characterized by behavioral and learning disorders.
+ADD	S	wordnet-3.1:14079762,table:t	ADD: a condition (mostly in boys) characterized by behavioral and learning disorders. Unpacked: In the TAG table it stands in row A under COMMAND, beside ASSET, ARRAY, ARCHIVE.
+ADD	E	template:E1,wordnet-3.1:14079762	Listen: add. A condition (mostly in boys) characterized by behavioral and learning disorders -- and that is not nothing.
+ADD	W	gcide-0.53,wordnet-3.1:14079762	ADD (noun): a condition (mostly in boys) characterized by behavioral and learning disorders. Synonyms: To Add, Join, Annex, Unite.
+AGAINST	baseline	gcide-0.53	Against: Abreast.
+AGAINST	N	gcide-0.53,scowl,pool:gcide-0.53	Against means abreast. For example: Jacob saw the angels of God come against him.
+AGAINST	S	gcide-0.53,table:r	AGAINST: Abreast. Unpacked: In the RECEIPT table it stands in row A under AGAINST, beside AGENT, ARGS, AETHERNET.
+AGAINST	E	template:E3,gcide-0.53	Against? Yes, against: Abreast, and it hums quietly.
+AGAINST	W	gcide-0.53	AGAINST (prep.): Abreast.
+AGENT	baseline	wordnet-3.1:09213796	Agent: an active and efficient cause.
+AGENT	N	wordnet-3.1:09213796,scowl,pool:wordnet-3.1:09213796	An agent is an active and efficient cause. For example: their research uncovered new disease agents.
+AGENT	S	wordnet-3.1:09213796,table:r	AGENT: an active and efficient cause. Unpacked: In the RECEIPT table it stands in row A under ISOTOPE, beside ARGS, AGAINST, AETHERNET.
+AGENT	E	template:E2,wordnet-3.1:09213796	Oh, agent! An active and efficient cause, of all things.
+AGENT	W	wordnet-3.1:09213796	AGENT (noun): an active and efficient cause.
+ALIGN	baseline	wordnet-3.1:00465234	Align: place in a line or arrange so as to be parallel or straight.
+ALIGN	N	wordnet-3.1:00465234,scowl,pool:wordnet-3.1:00465234	To align means to place in a line or arrange so as to be parallel or straight. For example: align the car with the curb.
+ALIGN	S	gcide-0.53,wordnet-3.1:00465234,table:o	ALIGN: To adjust or form to a line. Unpacked: place in a line or arrange so as to be parallel or straight; in the OPTIMIZER table it stands in row A under HOVER, beside ARM, ASSY, ACCENT.
+ALIGN	E	template:E4,wordnet-3.1:00465234	Say it slowly, align... Place in a line or arrange so as to be parallel or straight.
+ALIGN	W	wordnet-3.1:00465234	ALIGN (verb): place in a line or arrange so as to be parallel or straight.
+ALPHA	baseline	wordnet-3.1:06847188	Alpha: the 1st letter of the Greek alphabet.
+ALPHA	N	wordnet-3.1:06847188,scowl	An alpha is the 1st letter of the Greek alphabet.
+ALPHA	S	gcide-0.53,wordnet-3.1:06847188,table:g	ALPHA: The first letter in the Greek alphabet, answering to A, and hence used to denote the beginning. Unpacked: the 1st letter of the Greek alphabet; in the GROWTH table it stands in row A under TEMPERATURE, beside ATOM, ACCORD, APPEND.
+ALPHA	E	template:E2,wordnet-3.1:06847188	Oh, alpha! The 1st letter of the Greek alphabet, of all things.
+ALPHA	W	wordnet-3.1:06847188	ALPHA (noun): the 1st letter of the Greek alphabet.
+APPEND	baseline	wordnet-3.1:01331387	Append: add to the very end.
+APPEND	N	wordnet-3.1:01331387,scowl,pool:wordnet-3.1:01331387	To append means to add to the very end. For example: He appended a glossary to his novel where he used an invented language.
+APPEND	S	gcide-0.53,wordnet-3.1:01331387,table:g	APPEND: To hang or attach to, as by a string, so that the thing is suspended. Unpacked: add to the very end; in the GROWTH table it stands in row A under APPEND, beside ATOM, ACCORD, ALPHA.
+APPEND	E	template:E3,wordnet-3.1:01331387	Append? Yes, append: add to the very end, and it hums quietly.
+APPEND	W	wordnet-3.1:01331387	APPEND (verb): add to the very end.
+ARCHIVE	baseline	wordnet-3.1:02738091	Archive: a depository containing historical records and documents.
+ARCHIVE	N	wordnet-3.1:02738091,scowl,pool:gcide-0.53	An archive is a depository containing historical records and documents. For example: Some rotten archive, rummaged out of some seldom explored press.
+ARCHIVE	S	gcide-0.53,wordnet-3.1:02738091,table:t	ARCHIVE: The place in which public records or historic documents are kept. Unpacked: a depository containing historical records and documents; in the TAG table it stands in row A under TAG, beside ASSET, ARRAY, ADD.
+ARCHIVE	E	template:E1,wordnet-3.1:02738091	Listen: archive. A depository containing historical records and documents -- and that is not nothing.
+ARCHIVE	W	gcide-0.53,wordnet-3.1:02738091	ARCHIVE (noun): a depository containing historical records and documents. Synonyms: Registers, records.
+ARM	baseline	wordnet-3.1:05571403	Arm: a human limb.
+ARM	N	wordnet-3.1:05571403,scowl,pool:gcide-0.53	An arm is a human limb. For example: Arm your prize; / I know you will not lose him.
+ARM	S	gcide-0.53,wordnet-3.1:05571403,table:o	ARM: The limb of the human body which extends from the shoulder to the hand. Unpacked: a human limb; in the OPTIMIZER table it stands in row A under ELEMENT, beside ASSY, ALIGN, ACCENT.
+ARM	E	pool:gcide-0.53	To whom is the arm of the Lord revealed?
+ARM	W	wordnet-3.1:05571403	ARM (noun): a human limb.
+ARRAY	baseline	wordnet-3.1:07955622	Array: an orderly arrangement.
+ARRAY	N	wordnet-3.1:07955622,scowl,pool:wordnet-3.1:07955622	An array is an orderly arrangement. For example: an array of troops in battle order.
+ARRAY	S	wordnet-3.1:07955622,table:t	ARRAY: an orderly arrangement. Unpacked: In the TAG table it stands in row A under GROUP, beside ASSET, ADD, ARCHIVE.
+ARRAY	E	template:E3,wordnet-3.1:07955622	Array? Yes, array: an orderly arrangement, and it hums quietly.
+ARRAY	W	gcide-0.53,wordnet-3.1:07955622	ARRAY (noun): an orderly arrangement. Synonyms: To draw up, arrange, dispose.
+ASSET	baseline	wordnet-3.1:05161764	Asset: a useful or valuable quality.
+ASSET	N	wordnet-3.1:05161764,scowl	An asset is a useful or valuable quality.
+ASSET	S	gcide-0.53,wordnet-3.1:05161764,table:t	ASSET: Any article or separable part of one's assets. Unpacked: a useful or valuable quality; in the TAG table it stands in row A under SCALAR, beside ARRAY, ADD, ARCHIVE.
+ASSET	E	template:E1,wordnet-3.1:05161764	Listen: asset. A useful or valuable quality -- and that is not nothing.
+ASSET	W	wordnet-3.1:05161764	ASSET (noun): a useful or valuable quality.
+ATOM	baseline	wordnet-3.1:14643403	Atom: (physics and chemistry) the smallest component of an element having the chemical properties of the element.
+ATOM	N	wordnet-3.1:14643403,scowl,pool:gcide-0.53	An atom is a (physics and chemistry) the smallest component of an element having the chemical properties of the element. For example: There was not an atom of water.
+ATOM	S	gcide-0.53,wordnet-3.1:14643403,table:g	ATOM: An ultimate indivisible particle of matter. Unpacked: (physics and chemistry) the smallest component of an element having the chemical properties of the element; in the GROWTH table it stands in row A under ATOM, beside ACCORD, APPEND, ALPHA.
+ATOM	E	template:E2,wordnet-3.1:14643403	Oh, atom! (physics and chemistry) the smallest component of an element having the chemical properties of the element, of all things.
+ATOM	W	wordnet-3.1:14643403	ATOM (noun): (physics and chemistry) the smallest component of an element having the chemical properties of the element.
+CAPABILITY	baseline	wordnet-3.1:05209765	Capability: the quality of being capable -- physically or intellectually or legally.
+CAPABILITY	N	wordnet-3.1:05209765,scowl,pool:gcide-0.53	A capability is the quality of being capable -- physically or intellectually or legally. For example: A capability to take a thousand views of a subject.
+CAPABILITY	S	gcide-0.53,wordnet-3.1:05209765,table:t	CAPABILITY: The quality of being capable. Unpacked: the quality of being capable -- physically or intellectually or legally; in the TAG table it stands in row C under GROUP, beside COMPILE, COMMAND, COLLECTION.
+CAPABILITY	E	template:E1,wordnet-3.1:05209765	Listen: capability. The quality of being capable -- physically or intellectually or legally -- and that is not nothing.
+CAPABILITY	W	wordnet-3.1:05209765	CAPABILITY (noun): the quality of being capable -- physically or intellectually or legally.
+CAPSULE	baseline	wordnet-3.1:02961191	Capsule: a small container.
+CAPSULE	N	wordnet-3.1:02961191,scowl	A capsule is a small container.
+CAPSULE	S	gcide-0.53,wordnet-3.1:02961191,table:r	CAPSULE: a dry fruit or pod which is made up of several parts or carpels, and opens to discharge the seeds, as, the capsule of the poppy, the flax, the lily. Unpacked: a small container; in the RECEIPT table it stands in row C under ISOTOPE, beside CLASS, COPY, CHAMBERED.
+CAPSULE	E	template:E4,wordnet-3.1:02961191	Say it slowly, capsule... A small container.
+CAPSULE	W	wordnet-3.1:02961191	CAPSULE (noun): a small container.
+CARD	baseline	wordnet-3.1:02965981	Card: one of a set of small pieces of stiff paper marked in various ways and used for playing games or for telling fortunes.
+CARD	N	wordnet-3.1:02965981,scowl,pool:gcide-0.53	A card is one of a set of small pieces of stiff paper marked in various ways and used for playing. For example: This book must be carded and purged.
+CARD	S	gcide-0.53,wordnet-3.1:02965981,table:g	CARD: A piece of pasteboard, or thick paper, blank or prepared for various uses. Unpacked: one of a set of small pieces of stiff paper marked in various ways and used for playing games or for telling fortunes; in the GROWTH table it stands in row C under ATOM, beside CHAIN, CHARGE, COVALENT.
+CARD	E	template:E3,wordnet-3.1:02965981	Card? Yes, card: one of a set of small pieces of stiff paper marked in various ways and used for playing games or for telling fortunes, and it hums quietly.
+CARD	W	wordnet-3.1:02965981	CARD (noun): one of a set of small pieces of stiff paper marked in various ways and used for playing games or for telling fortunes.
+CATCH	baseline	wordnet-3.1:05172200	Catch: a drawback or difficulty that is not readily evident.
+CATCH	N	wordnet-3.1:05172200,scowl,pool:wordnet-3.1:05172200	A catch is a drawback or difficulty that is not readily evident. For example: it sounds good but what's the catch?.
+CATCH	S	wordnet-3.1:05172200,table:o	CATCH: a drawback or difficulty that is not readily evident. Unpacked: In the OPTIMIZER table it stands in row C under HOVER, beside CLUE, CELL, COMPOSSIBLE.
+CATCH	E	pool:wordnet-3.1:05172200	it sounds good but what's the catch?
+CATCH	W	wordnet-3.1:05172200	CATCH (noun): a drawback or difficulty that is not readily evident.
+CELL	baseline	wordnet-3.1:02995166	Cell: any small compartment.
+CELL	N	wordnet-3.1:02995166,scowl,pool:wordnet-3.1:02995166	A cell is any small compartment. For example: the cells of a honeycomb.
+CELL	S	gcide-0.53,wordnet-3.1:02995166,table:o	CELL: A very small and close apartment, as in a prison or in a monastery or convent. Unpacked: any small compartment; in the OPTIMIZER table it stands in row C under ASSY, beside CLUE, CATCH, COMPOSSIBLE.
+CELL	E	template:E4,wordnet-3.1:02995166	Say it slowly, cell... Any small compartment.
+CELL	W	wordnet-3.1:02995166	CELL (noun): any small compartment.
+CHAIN	baseline	wordnet-3.1:08392981	Chain: a series of things depending on each other as if linked together.
+CHAIN	N	wordnet-3.1:08392981,scowl,pool:gcide-0.53	A chain is a series of things depending on each other as if linked together. For example: They put a chain of gold about his neck.
+CHAIN	S	gcide-0.53,wordnet-3.1:08392981,table:g	CHAIN: A series of links or rings, usually of metal, connected, or fitted into one another, used for various purposes, as of support, of restraint, of ornament. Unpacked: a series of things depending on each other as if linked together; in the GROWTH table it stands in row C under FAMILY, beside CARD, CHARGE, COVALENT.
+CHAIN	E	pool:gcide-0.53	And which more blest? who chained his country, say / Or he whose virtue sighed to lose a day?
+CHAIN	W	wordnet-3.1:08392981	CHAIN (noun): a series of things depending on each other as if linked together.
+CHAMBERED	baseline	wordnet-3.1:02490124	Chambered: having compartmental chambers.
+CHAMBERED	N	wordnet-3.1:02490124,scowl,pool:wordnet-3.1:02490124	Chambered means having compartmental chambers. For example: a spiral chambered seashell.
+CHAMBERED	S	gcide-0.53,wordnet-3.1:02490124,table:r	CHAMBERED: Having a chamber or chambers. Unpacked: having compartmental chambers; in the RECEIPT table it stands in row C under LABEL, beside CAPSULE, CLASS, COPY.
+CHAMBERED	E	template:E2,wordnet-3.1:02490124	Oh, chambered! Having compartmental chambers, of all things.
+CHAMBERED	W	wordnet-3.1:02490124	CHAMBERED (adj): having compartmental chambers.
+CHARGE	baseline	wordnet-3.1:00976848	Charge: an impetuous rush toward someone or something.
+CHARGE	N	wordnet-3.1:00976848,scowl,pool:wordnet-3.1:00976848	A charge is an impetuous rush toward someone or something. For example: the battle began with a cavalry charge.
+CHARGE	S	wordnet-3.1:00976848,table:g	CHARGE: an impetuous rush toward someone or something. Unpacked: In the GROWTH table it stands in row C under APPEND, beside CARD, CHAIN, COVALENT.
+CHARGE	E	template:E4,wordnet-3.1:00976848	Say it slowly, charge... An impetuous rush toward someone or something.
+CHARGE	W	gcide-0.53,wordnet-3.1:00976848	CHARGE (noun): an impetuous rush toward someone or something. Synonyms: To intrust, command, exhort, instruct.
+CLASS	baseline	wordnet-3.1:08014145	Class: a collection of things sharing a common attribute.
+CLASS	N	wordnet-3.1:08014145,scowl,pool:gcide-0.53	A class is a collection of things sharing a common attribute. For example: She had lost one class energies.
+CLASS	S	gcide-0.53,wordnet-3.1:08014145,table:r	CLASS: A group of individuals ranked together as possessing common characteristics. Unpacked: a collection of things sharing a common attribute; in the RECEIPT table it stands in row C under CLASS, beside CAPSULE, COPY, CHAMBERED.
+CLASS	E	template:E4,wordnet-3.1:08014145	Say it slowly, class... A collection of things sharing a common attribute.
+CLASS	W	gcide-0.53,wordnet-3.1:08014145	CLASS (noun): a collection of things sharing a common attribute. Synonyms: high-class.
+CLUE	baseline	wordnet-3.1:06815643	Clue: a slight indication.
+CLUE	N	wordnet-3.1:06815643,scowl,pool:gcide-0.53	A clue is a slight indication. For example: You have wound a goodly clue.
+CLUE	S	gcide-0.53,wordnet-3.1:06815643,table:o	CLUE: A ball of thread. Unpacked: a slight indication; in the OPTIMIZER table it stands in row C under ELEMENT, beside CELL, CATCH, COMPOSSIBLE.
+CLUE	E	pool:gcide-0.53	You have wound a goodly clue.
+CLUE	W	wordnet-3.1:06815643	CLUE (noun): a slight indication.
+COLLECTION	baseline	wordnet-3.1:07968050	Collection: several things grouped together or considered as a whole.
+COLLECTION	N	wordnet-3.1:07968050,scowl	A collection is a several things grouped together or considered as a whole.
+COLLECTION	S	gcide-0.53,wordnet-3.1:07968050,table:t	COLLECTION: The act or process of collecting or of gathering. Unpacked: several things grouped together or considered as a whole; in the TAG table it stands in row C under TAG, beside COMPILE, CAPABILITY, COMMAND.
+COLLECTION	E	pool:gcide-0.53	We may safely say thus, that wrong collections have been hitherto made out of those words by modern divines.
+COLLECTION	W	gcide-0.53,wordnet-3.1:07968050	COLLECTION (noun): several things grouped together or considered as a whole. Synonyms: Gathering, assembly, assemblage, group.
+COMMAND	baseline	wordnet-3.1:07182782	Command: an authoritative direction or instruction to do something.
+COMMAND	N	wordnet-3.1:07182782,scowl	A command is an authoritative direction or instruction to do something.
+COMMAND	S	wordnet-3.1:07182782,table:t	COMMAND: an authoritative direction or instruction to do something. Unpacked: In the TAG table it stands in row C under COMMAND, beside COMPILE, CAPABILITY, COLLECTION.
+COMMAND	E	template:E1,wordnet-3.1:07182782	Listen: command. An authoritative direction or instruction to do something -- and that is not nothing.
+COMMAND	W	gcide-0.53,wordnet-3.1:07182782	COMMAND (noun): an authoritative direction or instruction to do something. Synonyms: To bid, order, direct, dictate.
+COMPILE	baseline	wordnet-3.1:02309962	Compile: get or gather together.
+COMPILE	N	wordnet-3.1:02309962,scowl,pool:gcide-0.53	To compile means to get or gather together. For example: He Goldsmith compiled for the use of schools a History of Rome.
+COMPILE	S	wordnet-3.1:02309962,table:t	COMPILE: get or gather together. Unpacked: In the TAG table it stands in row C under SCALAR, beside CAPABILITY, COMMAND, COLLECTION.
+COMPILE	E	template:E4,wordnet-3.1:02309962	Say it slowly, compile... Get or gather together.
+COMPILE	W	wordnet-3.1:02309962	COMPILE (verb): get or gather together.
+COMPOSSIBLE	baseline	gcide-0.53	Compossible: Able to exist with another thing.
+COMPOSSIBLE	N	gcide-0.53,scowl	Compossible means able to exist with another thing.
+COMPOSSIBLE	S	gcide-0.53,table:o	COMPOSSIBLE: Able to exist with another thing. Unpacked: In the OPTIMIZER table it stands in row C under ACCENT, beside CLUE, CELL, CATCH.
+COMPOSSIBLE	E	template:E1,gcide-0.53	Listen: compossible. Able to exist with another thing -- and that is not nothing.
+COMPOSSIBLE	W	gcide-0.53	COMPOSSIBLE (adj): Able to exist with another thing.
+COPY	baseline	wordnet-3.1:06517508	Copy: a reproduction of a written record (e.g.
+COPY	N	wordnet-3.1:06517508,scowl,pool:gcide-0.53	A copy is a reproduction of a written record (e.g. For example: I have not the vanity to think my copy equal to the original.
+COPY	S	gcide-0.53,wordnet-3.1:06517508,table:r	COPY: An abundance or plenty of anything. Unpacked: a reproduction of a written record (e.g; in the RECEIPT table it stands in row C under AGAINST, beside CAPSULE, CLASS, CHAMBERED.
+COPY	E	pool:gcide-0.53	I have not the vanity to think my copy equal to the original.
+COPY	W	gcide-0.53,wordnet-3.1:06517508	COPY (noun): a reproduction of a written record (e.g. Synonyms: Imitation, transcript, duplicate.
+COVALENT	baseline	wordnet-3.1:02715990	Covalent: of or relating to or characterized by covalence.
+COVALENT	N	wordnet-3.1:02715990,scowl,pool:wordnet-3.1:02715990	Covalent means of or relating to or characterized by covalence. For example: covalent bond.
+COVALENT	S	wordnet-3.1:02715990,table:g	COVALENT: of or relating to or characterized by covalence. Unpacked: In the GROWTH table it stands in row C under TEMPERATURE, beside CARD, CHAIN, CHARGE.
+COVALENT	E	template:E1,wordnet-3.1:02715990	Listen: covalent. Of or relating to or characterized by covalence -- and that is not nothing.
+COVALENT	W	wordnet-3.1:02715990	COVALENT (adj): of or relating to or characterized by covalence.
+DEAL	baseline	wordnet-3.1:01112179	Deal: a particular instance of buying or selling.
+DEAL	N	wordnet-3.1:01112179,scowl,pool:wordnet-3.1:01112179	A deal is a particular instance of buying or selling. For example: it was a package deal.
+DEAL	S	gcide-0.53,wordnet-3.1:01112179,table:g	DEAL: A part or portion. Unpacked: a particular instance of buying or selling; in the GROWTH table it stands in row D under APPEND, beside DROP, DECK, DIATOMIC.
+DEAL	E	template:E3,wordnet-3.1:01112179	Deal? Yes, deal: a particular instance of buying or selling, and it hums quietly.
+DEAL	W	wordnet-3.1:01112179	DEAL (noun): a particular instance of buying or selling.
+DECAY	baseline	wordnet-3.1:13477888	Decay: the process of gradually becoming inferior.
+DECAY	N	wordnet-3.1:13477888,scowl	A decay is the process of gradually becoming inferior.
+DECAY	S	wordnet-3.1:13477888,table:o	DECAY: the process of gradually becoming inferior. Unpacked: In the OPTIMIZER table it stands in row D under HOVER, beside DOOR, DRAWER, DIGIT.
+DECAY	E	template:E4,wordnet-3.1:13477888	Say it slowly, decay... The process of gradually becoming inferior.
+DECAY	W	gcide-0.53,wordnet-3.1:13477888	DECAY (noun): the process of gradually becoming inferior. Synonyms: Decline.
+DECK	baseline	wordnet-3.1:03172332	Deck: any of various platforms built into a vessel.
+DECK	N	wordnet-3.1:03172332,scowl	A deck is any of various platforms built into a vessel.
+DECK	S	wordnet-3.1:03172332,table:g	DECK: any of various platforms built into a vessel. Unpacked: In the GROWTH table it stands in row D under FAMILY, beside DROP, DEAL, DIATOMIC.
+DECK	E	template:E1,wordnet-3.1:03172332	Listen: deck. Any of various platforms built into a vessel -- and that is not nothing.
+DECK	W	gcide-0.53,wordnet-3.1:03172332	DECK (noun): any of various platforms built into a vessel. Synonyms: adorn, decorate, grace, embellish.
+DEFAULT	baseline	wordnet-3.1:00068217	Default: loss due to not showing up.
+DEFAULT	N	wordnet-3.1:00068217,scowl,pool:wordnet-3.1:00068217	A default is a loss due to not showing up. For example: he lost the game by default.
+DEFAULT	S	gcide-0.53,wordnet-3.1:00068217,table:r	DEFAULT: A failing or failure. Unpacked: loss due to not showing up; in the RECEIPT table it stands in row D under ISOTOPE, beside DOCTRINE, DOUBLE, DIFFRACTION.
+DEFAULT	E	template:E2,wordnet-3.1:00068217	Oh, default! Loss due to not showing up, of all things.
+DEFAULT	W	wordnet-3.1:00068217	DEFAULT (noun): loss due to not showing up.
+DERIVE	baseline	wordnet-3.1:00638236	Derive: reason by deduction.
+DERIVE	N	wordnet-3.1:00638236,scowl,pool:gcide-0.53	To derive means to reason by deduction. For example: Derived to us by tradition from Adam to Noah.
+DERIVE	S	gcide-0.53,wordnet-3.1:00638236,table:t	DERIVE: To turn the course of, as water. Unpacked: reason by deduction; in the TAG table it stands in row D under COMMAND, beside DOCUMENT, DATASET, DOMAIN.
+DERIVE	E	pool:gcide-0.53	Derived to us by tradition from Adam to Noah.
+DERIVE	W	gcide-0.53,wordnet-3.1:00638236	DERIVE (verb): reason by deduction. Synonyms: To trace, deduce.
+DIATOMIC	baseline	wordnet-3.1:02896253	Diatomic: of or relating to a molecule made up of two atoms.
+DIATOMIC	N	wordnet-3.1:02896253,scowl,pool:wordnet-3.1:02896253	Diatomic means of or relating to a molecule made up of two atoms. For example: a diatomic molecule.
+DIATOMIC	S	wordnet-3.1:02896253,table:g	DIATOMIC: of or relating to a molecule made up of two atoms. Unpacked: In the GROWTH table it stands in row D under TEMPERATURE, beside DROP, DECK, DEAL.
+DIATOMIC	E	template:E2,wordnet-3.1:02896253	Oh, diatomic! Of or relating to a molecule made up of two atoms, of all things.
+DIATOMIC	W	wordnet-3.1:02896253	DIATOMIC (adj): of or relating to a molecule made up of two atoms.
+DIFFRACTION	baseline	wordnet-3.1:11467030	Diffraction: when light passes sharp edges or goes through narrow slits the rays are deflected and produce fringes of light and dark bands.
+DIFFRACTION	N	wordnet-3.1:11467030,scowl	A diffraction is a when light passes sharp edges or goes through narrow slits the rays are deflected and produce fringes.
+DIFFRACTION	S	gcide-0.53,wordnet-3.1:11467030,table:r	DIFFRACTION: The deflection and decomposition of light in passing by the edges of opaque bodies or through narrow slits, causing the appearance of parallel bands or fringes of prismatic colors. Unpacked: when light passes sharp edges or goes through narrow slits the rays are deflected and produce fringes of light and dark bands; in the RECEIPT table it stands in row D under LABEL, beside DEFAULT, DOCTRINE, DOUBLE.
+DIFFRACTION	E	template:E1,wordnet-3.1:11467030	Listen: diffraction. When light passes sharp edges or goes through narrow slits the rays are deflected and produce fringes of light and dark bands -- and that is not nothing.
+DIFFRACTION	W	wordnet-3.1:11467030	DIFFRACTION (noun): when light passes sharp edges or goes through narrow slits the rays are deflected and produce fringes of light and dark bands.
+DIGIT	baseline	wordnet-3.1:13763162	Digit: one of the elements that collectively form a system of numeration.
+DIGIT	N	wordnet-3.1:13763162,scowl,pool:gcide-0.53	A digit is one of the elements that collectively form a system of numeration. For example: The ruminants have the i. e., two hoofed digits on each foot.
+DIGIT	S	gcide-0.53,wordnet-3.1:13763162,table:o	DIGIT: One of the terminal divisions of a limb appendage. Unpacked: one of the elements that collectively form a system of numeration; in the OPTIMIZER table it stands in row D under ACCENT, beside DOOR, DRAWER, DECAY.
+DIGIT	E	pool:gcide-0.53	The ruminants have the i. e., two hoofed digits on each foot.
+DIGIT	W	wordnet-3.1:13763162	DIGIT (noun): one of the elements that collectively form a system of numeration.
+DOCTRINE	baseline	wordnet-3.1:05952149	Doctrine: a belief (or system of beliefs) accepted as authoritative by some group or school.
+DOCTRINE	N	wordnet-3.1:05952149,scowl,pool:gcide-0.53	A doctrine is a belief (or system of beliefs) accepted as authoritative by some group or school. For example: Articles of faith and doctrine.
+DOCTRINE	S	wordnet-3.1:05952149,table:r	DOCTRINE: a belief (or system of beliefs) accepted as authoritative by some group or school. Unpacked: In the RECEIPT table it stands in row D under CLASS, beside DEFAULT, DOUBLE, DIFFRACTION.
+DOCTRINE	E	template:E1,wordnet-3.1:05952149	Listen: doctrine. A belief (or system of beliefs) accepted as authoritative by some group or school -- and that is not nothing.
+DOCTRINE	W	gcide-0.53,wordnet-3.1:05952149	DOCTRINE (noun): a belief (or system of beliefs) accepted as authoritative by some group or school. Synonyms: Precept, tenet, principle, maxim.
+DOCUMENT	baseline	wordnet-3.1:06481744	Document: writing that provides information (especially information of an official nature).
+DOCUMENT	N	wordnet-3.1:06481744,scowl,pool:gcide-0.53	A document is a writing that provides information (especially information of an official nature). For example: They were forth with stoned to death, as a document to others.
+DOCUMENT	S	gcide-0.53,wordnet-3.1:06481744,table:t	DOCUMENT: That which is taught or authoritatively set forth. Unpacked: writing that provides information (especially information of an official nature); in the TAG table it stands in row D under SCALAR, beside DATASET, DERIVE, DOMAIN.
+DOCUMENT	E	pool:gcide-0.53	I am finely documented by my own daughter.
+DOCUMENT	W	wordnet-3.1:06481744	DOCUMENT (noun): writing that provides information (especially information of an official nature).
+DOMAIN	baseline	wordnet-3.1:14537641	Domain: a particular environment or walk of life.
+DOMAIN	N	wordnet-3.1:14537641,scowl,pool:gcide-0.53	A domain is a particular environment or walk of life. For example: The domain over which the poetic spirit ranges.
+DOMAIN	S	wordnet-3.1:14537641,table:t	DOMAIN: a particular environment or walk of life. Unpacked: In the TAG table it stands in row D under TAG, beside DOCUMENT, DATASET, DERIVE.
+DOMAIN	E	template:E3,wordnet-3.1:14537641	Domain? Yes, domain: a particular environment or walk of life, and it hums quietly.
+DOMAIN	W	gcide-0.53,wordnet-3.1:14537641	DOMAIN (noun): a particular environment or walk of life. Synonyms: domain, realm, field, area.
+DOOR	baseline	wordnet-3.1:03226423	Door: a swinging or sliding barrier that will close the entrance to a room or building or vehicle.
+DOOR	N	wordnet-3.1:03226423,scowl,pool:wordnet-3.1:03226423	A door is a swinging or sliding barrier that will close the entrance to a room or building or vehicle. For example: he slammed the door as he left.
+DOOR	S	gcide-0.53,wordnet-3.1:03226423,table:o	DOOR: An opening in the wall of a house or of an apartment, by which to go in and out. Unpacked: a swinging or sliding barrier that will close the entrance to a room or building or vehicle; in the OPTIMIZER table it stands in row D under ELEMENT, beside DRAWER, DECAY, DIGIT.
+DOOR	E	pool:gcide-0.53	I am the door; by me if any man enter in, he shall be saved.
+DOOR	W	wordnet-3.1:03226423	DOOR (noun): a swinging or sliding barrier that will close the entrance to a room or building or vehicle.
+DOUBLE	baseline	wordnet-3.1:00133576	Double: a base hit on which the batter stops safely at second base.
+DOUBLE	N	wordnet-3.1:00133576,scowl,pool:wordnet-3.1:00133576	A double is a base hit on which the batter stops safely at second base. For example: he hit a double to deep centerfield.
+DOUBLE	S	wordnet-3.1:00133576,table:r	DOUBLE: a base hit on which the batter stops safely at second base. Unpacked: In the RECEIPT table it stands in row D under AGAINST, beside DEFAULT, DOCTRINE, DIFFRACTION.
+DOUBLE	E	template:E1,wordnet-3.1:00133576	Listen: double. A base hit on which the batter stops safely at second base -- and that is not nothing.
+DOUBLE	W	wordnet-3.1:00133576	DOUBLE (noun): a base hit on which the batter stops safely at second base.
+DRAWER	baseline	wordnet-3.1:03238608	Drawer: a boxlike container in a piece of furniture.
+DRAWER	N	wordnet-3.1:03238608,scowl	A drawer is a boxlike container in a piece of furniture.
+DRAWER	S	gcide-0.53,wordnet-3.1:03238608,table:o	DRAWER: One who, or that which, draws. Unpacked: a boxlike container in a piece of furniture; in the OPTIMIZER table it stands in row D under ASSY, beside DOOR, DECAY, DIGIT.
+DRAWER	E	template:E2,wordnet-3.1:03238608	Oh, drawer! A boxlike container in a piece of furniture, of all things.
+DRAWER	W	wordnet-3.1:03238608	DRAWER (noun): a boxlike container in a piece of furniture.
+DROP	baseline	wordnet-3.1:13924278	Drop: a shape that is spherical and small.
+DROP	N	wordnet-3.1:13924278,scowl,pool:gcide-0.53	A drop is a shape that is spherical and small. For example: That drop of peace divine.
+DROP	S	gcide-0.53,wordnet-3.1:13924278,table:g	DROP: The quantity of fluid which falls in one small spherical mass. Unpacked: a shape that is spherical and small; in the GROWTH table it stands in row D under ATOM, beside DECK, DEAL, DIATOMIC.
+DROP	E	pool:gcide-0.53	As dear to me as are the ruddy drops / That visit my sad heart.
+DROP	W	wordnet-3.1:13924278	DROP (noun): a shape that is spherical and small.
+ECLIPSE	baseline	wordnet-3.1:07383246	Eclipse: one celestial body obscures another.
+ECLIPSE	N	wordnet-3.1:07383246,scowl,pool:gcide-0.53	An eclipse is one celestial body obscures another. For example: My joy of liberty is half eclipsed.
+ECLIPSE	S	gcide-0.53,wordnet-3.1:07383246,table:o	ECLIPSE: An interception or obscuration of the light of the sun, moon, or other luminous body, by the intervention of some other body, either between it and the eye. Unpacked: one celestial body obscures another; in the OPTIMIZER table it stands in row E under HOVER, beside ELEMENT, EDITION, ESSENCE.
+ECLIPSE	E	pool:gcide-0.53	My joy of liberty is half eclipsed.
+ECLIPSE	W	wordnet-3.1:07383246	ECLIPSE (noun): one celestial body obscures another.
+EDITION	baseline	wordnet-3.1:06602727	Edition: the form in which a text (especially a printed book) is published.
+EDITION	N	wordnet-3.1:06602727,scowl	An edition is the form in which a text (especially a printed book) is published.
+EDITION	S	gcide-0.53,wordnet-3.1:06602727,table:o	EDITION: A literary work edited and published, as by a certain editor or in a certain manner. Unpacked: the form in which a text (especially a printed book) is published; in the OPTIMIZER table it stands in row E under ASSY, beside ELEMENT, ECLIPSE, ESSENCE.
+EDITION	E	template:E2,wordnet-3.1:06602727	Oh, edition! The form in which a text (especially a printed book) is published, of all things.
+EDITION	W	wordnet-3.1:06602727	EDITION (noun): the form in which a text (especially a printed book) is published.
+ELECTRON	baseline	wordnet-3.1:09294810	Electron: an elementary particle with negative charge.
+ELECTRON	N	wordnet-3.1:09294810,scowl	An electron is an elementary particle with negative charge.
+ELECTRON	S	wordnet-3.1:09294810,table:r	ELECTRON: an elementary particle with negative charge. Unpacked: In the RECEIPT table it stands in row E under LABEL, beside EVENT, EXAMPLE, EXTRA.
+ELECTRON	E	template:E1,wordnet-3.1:09294810	Listen: electron. An elementary particle with negative charge -- and that is not nothing.
+ELECTRON	W	wordnet-3.1:09294810	ELECTRON (noun): an elementary particle with negative charge.
+ELEMENT	baseline	wordnet-3.1:05877576	Element: an abstract part of something.
+ELEMENT	N	wordnet-3.1:05877576,scowl,pool:gcide-0.53	An element is an abstract part of something. For example: Does not our life consist of the four elements?.
+ELEMENT	S	gcide-0.53,wordnet-3.1:05877576,table:o	ELEMENT: One of the simplest or essential parts or principles of which anything consists, or upon which the constitution or fundamental powers of anything are based. Unpacked: an abstract part of something; in the OPTIMIZER table it stands in row E under ELEMENT, beside EDITION, ECLIPSE, ESSENCE.
+ELEMENT	E	pool:gcide-0.53	Does not our life consist of the four elements?
+ELEMENT	W	wordnet-3.1:05877576	ELEMENT (noun): an abstract part of something.
+EMIT	baseline	wordnet-3.1:00105087	Emit: expel (gases or odors).
+EMIT	N	wordnet-3.1:00105087,scowl,pool:gcide-0.53	To emit means to expel (gases or odors). For example: No State shall . . . emit bills of credit.
+EMIT	S	wordnet-3.1:00105087,table:g	EMIT: expel (gases or odors). Unpacked: In the GROWTH table it stands in row E under APPEND, beside ENTRY, EVIDENCE, ETYMOLOGY.
+EMIT	E	template:E1,wordnet-3.1:00105087	Listen: emit. Expel (gases or odors) -- and that is not nothing.
+EMIT	W	wordnet-3.1:00105087	EMIT (verb): expel (gases or odors).
+ENTITY	baseline	wordnet-3.1:00001740	Entity: that which is perceived or known or inferred to have its own distinct existence (living or nonliving).
+ENTITY	N	wordnet-3.1:00001740,scowl,pool:gcide-0.53	An entity is a that which is perceived or known or inferred to have its own distinct existence (living or nonliving). For example: Fortune is no real entity, . . . but a mere relative signification.
+ENTITY	S	gcide-0.53,wordnet-3.1:00001740,table:t	ENTITY: A real being, whether in thought (as an ideal conception) or in fact. Unpacked: that which is perceived or known or inferred to have its own distinct existence (living or nonliving); in the TAG table it stands in row E under GROUP, beside EXPRESSION, EVALUATE, ENVIRONMENT.
+ENTITY	E	template:E3,wordnet-3.1:00001740	Entity? Yes, entity: that which is perceived or known or inferred to have its own distinct existence (living or nonliving), and it hums quietly.
+ENTITY	W	wordnet-3.1:00001740	ENTITY (noun): that which is perceived or known or inferred to have its own distinct existence (living or nonliving).
+ENTRY	baseline	wordnet-3.1:06515715	Entry: an item inserted in a written record.
+ENTRY	N	wordnet-3.1:06515715,scowl,pool:gcide-0.53	An entry is an item inserted in a written record. For example: A notary made an entry of this act.
+ENTRY	S	gcide-0.53,wordnet-3.1:06515715,table:g	ENTRY: The act of entering or passing into or upon. Unpacked: an item inserted in a written record; in the GROWTH table it stands in row E under ATOM, beside EVIDENCE, EMIT, ETYMOLOGY.
+ENTRY	E	template:E4,wordnet-3.1:06515715	Say it slowly, entry... An item inserted in a written record.
+ENTRY	W	wordnet-3.1:06515715	ENTRY (noun): an item inserted in a written record.
+ENVIRONMENT	baseline	wordnet-3.1:13957629	Environment: the totality of surrounding conditions.
+ENVIRONMENT	N	wordnet-3.1:13957629,scowl,pool:gcide-0.53	An environment is the totality of surrounding conditions. For example: It is no friendly environment, this of thine.
+ENVIRONMENT	S	wordnet-3.1:13957629,table:t	ENVIRONMENT: the totality of surrounding conditions. Unpacked: In the TAG table it stands in row E under TAG, beside EXPRESSION, ENTITY, EVALUATE.
+ENVIRONMENT	E	template:E2,wordnet-3.1:13957629	Oh, environment! The totality of surrounding conditions, of all things.
+ENVIRONMENT	W	wordnet-3.1:13957629	ENVIRONMENT (noun): the totality of surrounding conditions.
+ESSENCE	baseline	wordnet-3.1:05929717	Essence: the choicest or most essential or most vital part of some idea or experience.
+ESSENCE	N	wordnet-3.1:05929717,scowl,pool:gcide-0.53	An essence is the choicest or most essential or most vital part of some idea or experience. For example: Gifts and alms are the expressions, not the essence of this virtue charity.
+ESSENCE	S	gcide-0.53,wordnet-3.1:05929717,table:o	ESSENCE: The constituent elementary notions which constitute a complex notion, and must be enumerated to define it. Unpacked: the choicest or most essential or most vital part of some idea or experience; in the OPTIMIZER table it stands in row E under ACCENT, beside ELEMENT, EDITION, ECLIPSE.
+ESSENCE	E	template:E2,wordnet-3.1:05929717	Oh, essence! The choicest or most essential or most vital part of some idea or experience, of all things.
+ESSENCE	W	wordnet-3.1:05929717	ESSENCE (noun): the choicest or most essential or most vital part of some idea or experience.
+ETYMOLOGY	baseline	wordnet-3.1:06526612	Etymology: a history of a word.
+ETYMOLOGY	N	wordnet-3.1:06526612,scowl	An etymology is a history of a word.
+ETYMOLOGY	S	gcide-0.53,wordnet-3.1:06526612,table:g	ETYMOLOGY: That branch of philological science which treats of the history of words, tracing out their origin, primitive significance, and changes of form and meaning. Unpacked: a history of a word; in the GROWTH table it stands in row E under TEMPERATURE, beside ENTRY, EVIDENCE, EMIT.
+ETYMOLOGY	E	template:E4,wordnet-3.1:06526612	Say it slowly, etymology... A history of a word.
+ETYMOLOGY	W	wordnet-3.1:06526612	ETYMOLOGY (noun): a history of a word.
+EVALUATE	baseline	wordnet-3.1:00683348	Evaluate: evaluate or estimate the nature, quality, ability, extent, or significance.
+EVALUATE	N	wordnet-3.1:00683348,scowl	To evaluate means to evaluate or estimate the nature, quality, ability, extent, or significance.
+EVALUATE	S	gcide-0.53,wordnet-3.1:00683348,table:t	EVALUATE: To fix the value. Unpacked: evaluate or estimate the nature, quality, ability, extent, or significance; in the TAG table it stands in row E under COMMAND, beside EXPRESSION, ENTITY, ENVIRONMENT.
+EVALUATE	E	template:E3,wordnet-3.1:00683348	Evaluate? Yes, evaluate: evaluate or estimate the nature, quality, ability, extent, or significance, and it hums quietly.
+EVALUATE	W	wordnet-3.1:00683348	EVALUATE (verb): evaluate or estimate the nature, quality, ability, extent, or significance.
+EVENT	baseline	wordnet-3.1:00029677	Event: something that happens at a given place and time.
+EVENT	N	wordnet-3.1:00029677,scowl,pool:gcide-0.53	An event is something that happens at a given place and time. For example: There is one event to the righteous, and to the wicked.
+EVENT	S	gcide-0.53,wordnet-3.1:00029677,table:r	EVENT: That which comes, arrives, or happens. Unpacked: something that happens at a given place and time; in the RECEIPT table it stands in row E under ISOTOPE, beside EXAMPLE, EXTRA, ELECTRON.
+EVENT	E	template:E2,wordnet-3.1:00029677	Oh, event! Something that happens at a given place and time, of all things.
+EVENT	W	gcide-0.53,wordnet-3.1:00029677	EVENT (noun): something that happens at a given place and time. Synonyms: Incident, occurrence, adventure, issue.
+EVIDENCE	baseline	wordnet-3.1:05832256	Evidence: your basis for belief or disbelief.
+EVIDENCE	N	wordnet-3.1:05832256,scowl,pool:gcide-0.53	An evidence is a your basis for belief or disbelief. For example: Faith is . . . the evidence of things not seen.
+EVIDENCE	S	gcide-0.53,wordnet-3.1:05832256,table:g	EVIDENCE: That which makes evident or manifest. Unpacked: your basis for belief or disbelief; in the GROWTH table it stands in row E under FAMILY, beside ENTRY, EMIT, ETYMOLOGY.
+EVIDENCE	E	template:E1,wordnet-3.1:05832256	Listen: evidence. Your basis for belief or disbelief -- and that is not nothing.
+EVIDENCE	W	gcide-0.53,wordnet-3.1:05832256	EVIDENCE (noun): your basis for belief or disbelief. Synonyms: Testimony.
+EXAMPLE	baseline	wordnet-3.1:05828980	Example: an item of information that is typical of a class or group.
+EXAMPLE	N	wordnet-3.1:05828980,scowl,pool:gcide-0.53	An example is an item of information that is typical of a class or group. For example: I gave, thou sayest, the example; I led the way.
+EXAMPLE	S	gcide-0.53,wordnet-3.1:05828980,table:r	EXAMPLE: One or a portion taken to show the character or quality of the whole. Unpacked: an item of information that is typical of a class or group; in the RECEIPT table it stands in row E under CLASS, beside EVENT, EXTRA, ELECTRON.
+EXAMPLE	E	pool:gcide-0.53	I gave, thou sayest, the example; I led the way.
+EXAMPLE	W	gcide-0.53,wordnet-3.1:05828980	EXAMPLE (noun): an item of information that is typical of a class or group. Synonyms: Precedent, case.
+EXPRESSION	baseline	wordnet-3.1:04687095	Expression: the feelings expressed on a person's face.
+EXPRESSION	N	wordnet-3.1:04687095,scowl,pool:wordnet-3.1:04687095	An expression is the feelings expressed on a person's face. For example: a sad expression.
+EXPRESSION	S	gcide-0.53,wordnet-3.1:04687095,table:t	EXPRESSION: The act of expressing. Unpacked: the feelings expressed on a person's face; in the TAG table it stands in row E under SCALAR, beside ENTITY, EVALUATE, ENVIRONMENT.
+EXPRESSION	E	template:E3,wordnet-3.1:04687095	Expression? Yes, expression: the feelings expressed on a person's face, and it hums quietly.
+EXPRESSION	W	wordnet-3.1:04687095	EXPRESSION (noun): the feelings expressed on a person's face.
+EXTRA	baseline	wordnet-3.1:10696008	Extra: a minor actor in crowd scenes.
+EXTRA	N	wordnet-3.1:10696008,scowl	An extra is a minor actor in crowd scenes.
+EXTRA	S	wordnet-3.1:10696008,table:r	EXTRA: a minor actor in crowd scenes. Unpacked: In the RECEIPT table it stands in row E under AGAINST, beside EVENT, EXAMPLE, ELECTRON.
+EXTRA	E	template:E2,wordnet-3.1:10696008	Oh, extra! A minor actor in crowd scenes, of all things.
+EXTRA	W	wordnet-3.1:10696008	EXTRA (noun): a minor actor in crowd scenes.
+FACT	baseline	wordnet-3.1:05825522	Fact: a piece of information about circumstances that exist or events that have occurred.
+FACT	N	wordnet-3.1:05825522,scowl,pool:gcide-0.53	A fact is a piece of information about circumstances that exist or events that have occurred. For example: I do not grant the fact.
+FACT	S	gcide-0.53,wordnet-3.1:05825522,table:g	FACT: A doing, making, or preparing. Unpacked: a piece of information about circumstances that exist or events that have occurred; in the GROWTH table it stands in row F under ATOM, beside FAMILY, FILL, FORMULA.
+FACT	E	pool:gcide-0.53	I do not grant the fact.
+FACT	W	gcide-0.53,wordnet-3.1:05825522	FACT (noun): a piece of information about circumstances that exist or events that have occurred. Synonyms: Act, deed, performance, event.
+FAMILY	baseline	wordnet-3.1:08094856	Family: a social unit living together.
+FAMILY	N	wordnet-3.1:08094856,scowl,pool:gcide-0.53	A family is a social unit living together. For example: Go ! and pretend your family is young.
+FAMILY	S	gcide-0.53,wordnet-3.1:08094856,table:g	FAMILY: The collective body of persons who live in one house, and under one head or manager. Unpacked: a social unit living together; in the GROWTH table it stands in row F under FAMILY, beside FACT, FILL, FORMULA.
+FAMILY	E	pool:gcide-0.53	Go ! and pretend your family is young.
+FAMILY	W	wordnet-3.1:08094856	FAMILY (noun): a social unit living together.
+FEATURE	baseline	wordnet-3.1:05858316	Feature: a prominent attribute or aspect of something.
+FEATURE	N	wordnet-3.1:05858316,scowl,pool:gcide-0.53	A feature is a prominent attribute or aspect of something. For example: It is for homely features to keep home.
+FEATURE	S	gcide-0.53,wordnet-3.1:05858316,table:t	FEATURE: The make, form, or outward appearance of a person. Unpacked: a prominent attribute or aspect of something; in the TAG table it stands in row F under SCALAR, beside FRAMEWORK, FORMAT, FUNCTION.
+FEATURE	E	pool:gcide-0.53	What needeth it his feature to descrive?
+FEATURE	W	wordnet-3.1:05858316	FEATURE (noun): a prominent attribute or aspect of something.
+FENCE	baseline	wordnet-3.1:03332179	Fence: a barrier that serves to enclose an area.
+FENCE	N	wordnet-3.1:03332179,scowl,pool:gcide-0.53	A fence is a barrier that serves to enclose an area. For example: Leaps o'er the fence with ease into the fold.
+FENCE	S	gcide-0.53,wordnet-3.1:03332179,table:o	FENCE: That which fends off attack or danger. Unpacked: a barrier that serves to enclose an area; in the OPTIMIZER table it stands in row F under ELEMENT, beside FOAF, FREE, FLOOR.
+FENCE	E	pool:gcide-0.53	A fence betwixt us and the victor's wrath.
+FENCE	W	wordnet-3.1:03332179	FENCE (noun): a barrier that serves to enclose an area.
+FIELD	baseline	wordnet-3.1:08587527	Field: a piece of land cleared of trees and usually enclosed.
+FIELD	N	wordnet-3.1:08587527,scowl,pool:wordnet-3.1:08587527	A field is a piece of land cleared of trees and usually enclosed. For example: he planted a field of wheat.
+FIELD	S	wordnet-3.1:08587527,table:r	FIELD: a piece of land cleared of trees and usually enclosed. Unpacked: In the RECEIPT table it stands in row F under ISOTOPE, beside FUSION, FAILBACK, FORCE.
+FIELD	E	pool:gcide-0.53	What though the field be lost?
+FIELD	W	gcide-0.53,wordnet-3.1:08587527	FIELD (noun): a piece of land cleared of trees and usually enclosed. Synonyms: playing field, athletic field.
+FILL	baseline	wordnet-3.1:13601926	Fill: a quantity sufficient to satisfy.
+FILL	N	wordnet-3.1:13601926,scowl,pool:wordnet-3.1:13601926	A fill is a quantity sufficient to satisfy. For example: he ate his fill of potatoes.
+FILL	S	gcide-0.53,wordnet-3.1:13601926,table:g	FILL: One of the thills or shafts of a carriage. Unpacked: a quantity sufficient to satisfy; in the GROWTH table it stands in row F under APPEND, beside FACT, FAMILY, FORMULA.
+FILL	E	template:E2,wordnet-3.1:13601926	Oh, fill! A quantity sufficient to satisfy, of all things.
+FILL	W	wordnet-3.1:13601926	FILL (noun): a quantity sufficient to satisfy.
+FLOOR	baseline	wordnet-3.1:03370438	Floor: the inside lower horizontal surface (as of a room, hallway, tent, or other structure).
+FLOOR	N	wordnet-3.1:03370438,scowl,pool:wordnet-3.1:03370438	A floor is the inside lower horizontal surface (as of a room, hallway, tent, or other structure). For example: we spread our sleeping bags on the dry floor of the tent.
+FLOOR	S	gcide-0.53,wordnet-3.1:03370438,table:o	FLOOR: The bottom or lower part of any room. Unpacked: the inside lower horizontal surface (as of a room, hallway, tent, or other structure); in the OPTIMIZER table it stands in row F under ACCENT, beside FENCE, FOAF, FREE.
+FLOOR	E	pool:gcide-0.53	I've floored my little-go work.
+FLOOR	W	wordnet-3.1:03370438	FLOOR (noun): the inside lower horizontal surface (as of a room, hallway, tent, or other structure).
+FORCE	baseline	wordnet-3.1:05201846	Force: a powerful effect or influence.
+FORCE	N	wordnet-3.1:05201846,scowl,pool:wordnet-3.1:05201846	A force is a powerful effect or influence. For example: the force of his eloquence easily persuaded them.
+FORCE	S	wordnet-3.1:05201846,table:r	FORCE: a powerful effect or influence. Unpacked: In the RECEIPT table it stands in row F under LABEL, beside FIELD, FUSION, FAILBACK.
+FORCE	E	template:E4,wordnet-3.1:05201846	Say it slowly, force... A powerful effect or influence.
+FORCE	W	gcide-0.53,wordnet-3.1:05201846	FORCE (noun): a powerful effect or influence. Synonyms: Strength, vigor, might, energy.
+FORMAT	baseline	wordnet-3.1:06649331	Format: the organization of information according to preset specifications (usually for computer processing).
+FORMAT	N	wordnet-3.1:06649331,scowl,pool:gcide-0.53	A format is the organization of information according to preset specifications (usually for computer processing). For example: One might, indeed, protest that the format is a little too luxurious.
+FORMAT	S	gcide-0.53,wordnet-3.1:06649331,table:t	FORMAT: The shape and size of a book or other printed publication. Unpacked: the organization of information according to preset specifications (usually for computer processing); in the TAG table it stands in row F under COMMAND, beside FEATURE, FRAMEWORK, FUNCTION.
+FORMAT	E	template:E1,wordnet-3.1:06649331	Listen: format. The organization of information according to preset specifications (usually for computer processing) -- and that is not nothing.
+FORMAT	W	wordnet-3.1:06649331	FORMAT (noun): the organization of information according to preset specifications (usually for computer processing).
+FORMULA	baseline	wordnet-3.1:06744551	Formula: a group of symbols that make a mathematical statement.
+FORMULA	N	wordnet-3.1:06744551,scowl	A formula is a group of symbols that make a mathematical statement.
+FORMULA	S	gcide-0.53,wordnet-3.1:06744551,table:g	FORMULA: A prescribed or set form. Unpacked: a group of symbols that make a mathematical statement; in the GROWTH table it stands in row F under TEMPERATURE, beside FACT, FAMILY, FILL.
+FORMULA	E	template:E2,wordnet-3.1:06744551	Oh, formula! A group of symbols that make a mathematical statement, of all things.
+FORMULA	W	wordnet-3.1:06744551	FORMULA (noun): a group of symbols that make a mathematical statement.
+FRAMEWORK	baseline	wordnet-3.1:05898856	Framework: a hypothetical description of a complex entity or process.
+FRAMEWORK	N	wordnet-3.1:05898856,scowl,pool:gcide-0.53	A framework is a hypothetical description of a complex entity or process. For example: A staunch and solid piece of framework.
+FRAMEWORK	S	gcide-0.53,wordnet-3.1:05898856,table:t	FRAMEWORK: The work of framing, or the completed work. Unpacked: a hypothetical description of a complex entity or process; in the TAG table it stands in row F under GROUP, beside FEATURE, FORMAT, FUNCTION.
+FRAMEWORK	E	template:E2,wordnet-3.1:05898856	Oh, framework! A hypothetical description of a complex entity or process, of all things.
+FRAMEWORK	W	wordnet-3.1:05898856	FRAMEWORK (noun): a hypothetical description of a complex entity or process.
+FREE	baseline	wordnet-3.1:07964544	Free: people who are free.
+FREE	N	wordnet-3.1:07964544,scowl,pool:wordnet-3.1:07964544	A free is a people who are free. For example: the home of the free and the brave.
+FREE	S	wordnet-3.1:07964544,table:o	FREE: people who are free. Unpacked: In the OPTIMIZER table it stands in row F under HOVER, beside FENCE, FOAF, FLOOR.
+FREE	E	template:E4,wordnet-3.1:07964544	Say it slowly, free... People who are free.
+FREE	W	wordnet-3.1:07964544	FREE (noun): people who are free.
+FUNCTION	baseline	wordnet-3.1:13806028	Function: (mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function).
+FUNCTION	N	wordnet-3.1:13806028,scowl,pool:gcide-0.53	A function is a (mathematics) a mathematical relation such that each element of a given set (the domain of the function) is. For example: As the mind opens, and its functions spread.
+FUNCTION	S	gcide-0.53,wordnet-3.1:13806028,table:t	FUNCTION: The act of executing or performing any duty, office, or calling. Unpacked: (mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function); in the TAG table it stands in row F under TAG, beside FEATURE, FRAMEWORK, FORMAT.
+FUNCTION	E	template:E1,wordnet-3.1:13806028	Listen: function. (mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function) -- and that is not nothing.
+FUNCTION	W	wordnet-3.1:13806028	FUNCTION (noun): (mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function).
+FUSION	baseline	wordnet-3.1:07388202	Fusion: an occurrence that involves the production of a union.
+FUSION	N	wordnet-3.1:07388202,scowl,pool:gcide-0.53	A fusion is an occurrence that involves the production of a union. For example: The universal fusion of races, languages, and customs . . . fusion of creeds.
+FUSION	S	gcide-0.53,wordnet-3.1:07388202,table:r	FUSION: The act or operation of melting or rendering fluid by heat. Unpacked: an occurrence that involves the production of a union; in the RECEIPT table it stands in row F under CLASS, beside FIELD, FAILBACK, FORCE.
+FUSION	E	template:E2,wordnet-3.1:07388202	Oh, fusion! An occurrence that involves the production of a union, of all things.
+FUSION	W	wordnet-3.1:07388202	FUSION (noun): an occurrence that involves the production of a union.
+GADGET	baseline	wordnet-3.1:02732963	Gadget: a device or control that is very useful for a particular job.
+GADGET	N	wordnet-3.1:02732963,scowl	A gadget is a device or control that is very useful for a particular job.
+GADGET	S	wordnet-3.1:02732963,table:t	GADGET: a device or control that is very useful for a particular job. Unpacked: In the TAG table it stands in row G under SCALAR, beside GROUP, GRAPH, GATEWAY.
+GADGET	E	template:E3,wordnet-3.1:02732963	Gadget? Yes, gadget: a device or control that is very useful for a particular job, and it hums quietly.
+GADGET	W	wordnet-3.1:02732963	GADGET (noun): a device or control that is very useful for a particular job.
+GADGETRY	baseline	wordnet-3.1:03414830	Gadgetry: appliances collectively.
+GADGETRY	N	wordnet-3.1:03414830,scowl,pool:wordnet-3.1:03414830	A gadgetry is an appliances collectively. For example: laborsaving gadgetry.
+GADGETRY	S	wordnet-3.1:03414830,table:r	GADGETRY: appliances collectively. Unpacked: In the RECEIPT table it stands in row G under CLASS, beside GRID, GAME, GEOMETRY.
+GADGETRY	E	template:E2,wordnet-3.1:03414830	Oh, gadgetry! Appliances collectively, of all things.
+GADGETRY	W	wordnet-3.1:03414830	GADGETRY (noun): appliances collectively.
+GAME	baseline	wordnet-3.1:00456623	Game: a contest with rules to determine a winner.
+GAME	N	wordnet-3.1:00456623,scowl,pool:wordnet-3.1:00456623	A game is a contest with rules to determine a winner. For example: you need four people to play this game.
+GAME	S	wordnet-3.1:00456623,table:r	GAME: a contest with rules to determine a winner. Unpacked: In the RECEIPT table it stands in row G under AGAINST, beside GRID, GADGETRY, GEOMETRY.
+GAME	E	pool:wordnet-3.1:00456623	you need four people to play this game
+GAME	W	wordnet-3.1:00456623	GAME (noun): a contest with rules to determine a winner.
+GARDEN	baseline	wordnet-3.1:03422255	Garden: a plot of ground where plants are cultivated.
+GARDEN	N	wordnet-3.1:03422255,scowl,pool:gcide-0.53	A garden is a plot of ground where plants are cultivated. For example: I am arrived from fruitful Lombardy,garden of great Italy.
+GARDEN	S	gcide-0.53,wordnet-3.1:03422255,table:g	GARDEN: A piece of ground appropriated to the cultivation of herbs, fruits, flowers, or vegetables. Unpacked: a plot of ground where plants are cultivated; in the GROWTH table it stands in row G under FAMILY, beside GATE, GROWTH, GRAVITY.
+GARDEN	E	pool:gcide-0.53	I am arrived from fruitful Lombardy,garden of great Italy.
+GARDEN	W	wordnet-3.1:03422255	GARDEN (noun): a plot of ground where plants are cultivated.
+GATE	baseline	wordnet-3.1:03432206	Gate: a movable barrier in a fence or wall.
+GATE	N	wordnet-3.1:03432206,scowl,pool:gcide-0.53	A gate is a movable barrier in a fence or wall. For example: Opening a gate for a long war.
+GATE	S	gcide-0.53,wordnet-3.1:03432206,table:g	GATE: A large door or passageway in the wall of a city, of an inclosed field or place, or of a grand edifice. Unpacked: a movable barrier in a fence or wall; in the GROWTH table it stands in row G under ATOM, beside GARDEN, GROWTH, GRAVITY.
+GATE	E	pool:gcide-0.53	Knowest thou the way to Dover? gate, horse way and footpath.
+GATE	W	wordnet-3.1:03432206	GATE (noun): a movable barrier in a fence or wall.
+GATEWAY	baseline	wordnet-3.1:03433387	Gateway: an entrance that can be closed by a gate.
+GATEWAY	N	wordnet-3.1:03433387,scowl	A gateway is an entrance that can be closed by a gate.
+GATEWAY	S	gcide-0.53,wordnet-3.1:03433387,table:t	GATEWAY: A passage through a fence or wall. Unpacked: an entrance that can be closed by a gate; in the TAG table it stands in row G under TAG, beside GADGET, GROUP, GRAPH.
+GATEWAY	E	template:E2,wordnet-3.1:03433387	Oh, gateway! An entrance that can be closed by a gate, of all things.
+GATEWAY	W	wordnet-3.1:03433387	GATEWAY (noun): an entrance that can be closed by a gate.
+GEOMETRY	baseline	wordnet-3.1:06014015	Geometry: the pure mathematics of points and lines and curves and surfaces.
+GEOMETRY	N	wordnet-3.1:06014015,scowl	A geometry is the pure mathematics of points and lines and curves and surfaces.
+GEOMETRY	S	gcide-0.53,wordnet-3.1:06014015,table:r	GEOMETRY: That branch of mathematics which investigates the relations, properties, and measurement of solids, surfaces, lines, and angles. Unpacked: the pure mathematics of points and lines and curves and surfaces; in the RECEIPT table it stands in row G under LABEL, beside GRID, GADGETRY, GAME.
+GEOMETRY	E	template:E4,wordnet-3.1:06014015	Say it slowly, geometry... The pure mathematics of points and lines and curves and surfaces.
+GEOMETRY	W	wordnet-3.1:06014015	GEOMETRY (noun): the pure mathematics of points and lines and curves and surfaces.
+GLOSS	baseline	wordnet-3.1:06756695	Gloss: an explanation or definition of an obscure word in a text.
+GLOSS	N	wordnet-3.1:06756695,scowl,pool:gcide-0.53	A gloss is an explanation or definition of an obscure word in a text. For example: To me more dear, congenial to my heart,gloss of art.
+GLOSS	S	gcide-0.53,wordnet-3.1:06756695,table:o	GLOSS: Brightness or luster of a body proceeding from a smooth surface. Unpacked: an explanation or definition of an obscure word in a text; in the OPTIMIZER table it stands in row G under ASSY, beside GUARD, GROUND, GRADIENT.
+GLOSS	E	pool:gcide-0.53	To me more dear, congenial to my heart,gloss of art.
+GLOSS	W	wordnet-3.1:06756695	GLOSS (noun): an explanation or definition of an obscure word in a text.
+GRADIENT	baseline	wordnet-3.1:13881709	Gradient: a graded change in the magnitude of some physical quantity or dimension.
+GRADIENT	N	wordnet-3.1:13881709,scowl	A gradient is a graded change in the magnitude of some physical quantity or dimension.
+GRADIENT	S	wordnet-3.1:13881709,table:o	GRADIENT: a graded change in the magnitude of some physical quantity or dimension. Unpacked: In the OPTIMIZER table it stands in row G under ACCENT, beside GUARD, GLOSS, GROUND.
+GRADIENT	E	template:E1,wordnet-3.1:13881709	Listen: gradient. A graded change in the magnitude of some physical quantity or dimension -- and that is not nothing.
+GRADIENT	W	wordnet-3.1:13881709	GRADIENT (noun): a graded change in the magnitude of some physical quantity or dimension.
+GRAPH	baseline	wordnet-3.1:07012937	Graph: a visual representation of the relations between certain quantities, represented as points, plotted with reference to a set of axes.
+GRAPH	N	wordnet-3.1:07012937,scowl	A graph is a visual representation of the relations between certain quantities, represented as points.
+GRAPH	S	gcide-0.53,wordnet-3.1:07012937,table:t	GRAPH: A curve or surface, the locus of a point whose coordinates are the variables in the equation of the locus. Unpacked: a visual representation of the relations between certain quantities, represented as points, plotted with reference to a set of axes; in the TAG table it stands in row G under COMMAND, beside GADGET, GROUP, GATEWAY.
+GRAPH	E	template:E1,wordnet-3.1:07012937	Listen: graph. A visual representation of the relations between certain quantities, represented as points, plotted with reference to a set of axes -- and that is not nothing.
+GRAPH	W	wordnet-3.1:07012937	GRAPH (noun): a visual representation of the relations between certain quantities, represented as points, plotted with reference to a set of axes.
+GRAVITY	baseline	wordnet-3.1:11484542	Gravity: (physics) the force of attraction between all masses in the universe.
+GRAVITY	N	wordnet-3.1:11484542,scowl,pool:wordnet-3.1:11484542	A gravity is a (physics) the force of attraction between all masses in the universe. For example: the more remote the body the less the gravity.
+GRAVITY	S	gcide-0.53,wordnet-3.1:11484542,table:g	GRAVITY: The state of having weight. Unpacked: (physics) the force of attraction between all masses in the universe; in the GROWTH table it stands in row G under TEMPERATURE, beside GATE, GARDEN, GROWTH.
+GRAVITY	E	template:E4,wordnet-3.1:11484542	Say it slowly, gravity... (physics) the force of attraction between all masses in the universe.
+GRAVITY	W	wordnet-3.1:11484542	GRAVITY (noun): (physics) the force of attraction between all masses in the universe.
+GRID	baseline	wordnet-3.1:05940298	Grid: a pattern of regularly spaced horizontal and vertical lines.
+GRID	N	wordnet-3.1:05940298,scowl	A grid is a pattern of regularly spaced horizontal and vertical lines.
+GRID	S	gcide-0.53,wordnet-3.1:05940298,table:r	GRID: A grating of thin parallel bars, similar to a gridiron. Unpacked: a pattern of regularly spaced horizontal and vertical lines; in the RECEIPT table it stands in row G under ISOTOPE, beside GADGETRY, GAME, GEOMETRY.
+GRID	E	template:E1,wordnet-3.1:05940298	Listen: grid. A pattern of regularly spaced horizontal and vertical lines -- and that is not nothing.
+GRID	W	wordnet-3.1:05940298	GRID (noun): a pattern of regularly spaced horizontal and vertical lines.
+GROUND	baseline	wordnet-3.1:09357302	Ground: the solid part of the earth's surface.
+GROUND	N	wordnet-3.1:09357302,scowl,pool:gcide-0.53	A ground is the solid part of the earth's surface. For example: There was not a man to till the ground.
+GROUND	S	gcide-0.53,wordnet-3.1:09357302,table:o	GROUND: The surface of the earth. Unpacked: the solid part of the earth's surface; in the OPTIMIZER table it stands in row G under HOVER, beside GUARD, GLOSS, GRADIENT.
+GROUND	E	template:E1,wordnet-3.1:09357302	Listen: ground. The solid part of the earth's surface -- and that is not nothing.
+GROUND	W	wordnet-3.1:09357302	GROUND (noun): the solid part of the earth's surface.
+GROUP	baseline	wordnet-3.1:00031563	Group: any number of entities (members) considered as a unit.
+GROUP	N	wordnet-3.1:00031563,scowl	A group is any number of entities (members) considered as a unit.
+GROUP	S	gcide-0.53,wordnet-3.1:00031563,table:t	GROUP: A cluster, crowd, or throng. Unpacked: any number of entities (members) considered as a unit; in the TAG table it stands in row G under GROUP, beside GADGET, GRAPH, GATEWAY.
+GROUP	E	template:E1,wordnet-3.1:00031563	Listen: group. Any number of entities (members) considered as a unit -- and that is not nothing.
+GROUP	W	wordnet-3.1:00031563	GROUP (noun): any number of entities (members) considered as a unit.
+GROWTH	baseline	wordnet-3.1:13510240	Growth: (biology) the process of an individual organism growing organically.
+GROWTH	N	wordnet-3.1:13510240,scowl,pool:gcide-0.53	A growth is a (biology) the process of an individual organism growing organically. For example: Nature multiplies her fertile growth.
+GROWTH	S	gcide-0.53,wordnet-3.1:13510240,table:g	GROWTH: The process of growing. Unpacked: (biology) the process of an individual organism growing organically; in the GROWTH table it stands in row G under APPEND, beside GATE, GARDEN, GRAVITY.
+GROWTH	E	template:E4,wordnet-3.1:13510240	Say it slowly, growth... (biology) the process of an individual organism growing organically.
+GROWTH	W	wordnet-3.1:13510240	GROWTH (noun): (biology) the process of an individual organism growing organically.
+GUARD	baseline	wordnet-3.1:10169591	Guard: a person who keeps watch over something or someone.
+GUARD	N	wordnet-3.1:10169591,scowl	A guard is a person who keeps watch over something or someone.
+GUARD	S	wordnet-3.1:10169591,table:o	GUARD: a person who keeps watch over something or someone. Unpacked: In the OPTIMIZER table it stands in row G under ELEMENT, beside GLOSS, GROUND, GRADIENT.
+GUARD	E	template:E2,wordnet-3.1:10169591	Oh, guard! A person who keeps watch over something or someone, of all things.
+GUARD	W	gcide-0.53,wordnet-3.1:10169591	GUARD (noun): a person who keeps watch over something or someone. Synonyms: To defend, protect, shield, keep.
+HAND	baseline	wordnet-3.1:05572223	Hand: the (prehensile) extremity of the superior limb.
+HAND	N	wordnet-3.1:05572223,scowl,pool:gcide-0.53	A hand is the (prehensile) extremity of the superior limb. For example: He had a great mind to try his hand at a Spectator.
+HAND	S	gcide-0.53,wordnet-3.1:05572223,table:g	HAND: That part of the fore limb below the forearm or wrist in man and monkeys, and the corresponding part in many other animals. Unpacked: the (prehensile) extremity of the superior limb; in the GROWTH table it stands in row H under FAMILY, beside HUNK, HASH, HYDRIDE.
+HAND	E	template:E1,wordnet-3.1:05572223	Listen: hand. The (prehensile) extremity of the superior limb -- and that is not nothing.
+HAND	W	wordnet-3.1:05572223	HAND (noun): the (prehensile) extremity of the superior limb.
+HASH	baseline	wordnet-3.1:07885367	Hash: chopped meat mixed with potatoes and browned.
+HASH	N	wordnet-3.1:07885367,scowl	A hash is a chopped meat mixed with potatoes and browned.
+HASH	S	gcide-0.53,wordnet-3.1:07885367,table:g	HASH: That which is hashed or chopped up. Unpacked: chopped meat mixed with potatoes and browned; in the GROWTH table it stands in row H under APPEND, beside HUNK, HAND, HYDRIDE.
+HASH	E	pool:gcide-0.53	I can not bear elections, and still less the hash of them over again in a first session.
+HASH	W	wordnet-3.1:07885367	HASH (noun): chopped meat mixed with potatoes and browned.
+HAZARD	baseline	wordnet-3.1:14565454	Hazard: a source of danger.
+HAZARD	N	wordnet-3.1:14565454,scowl,pool:gcide-0.53	A hazard is a source of danger. For example: I will stand the hazard of the die.
+HAZARD	S	gcide-0.53,wordnet-3.1:14565454,table:o	HAZARD: A game of chance played with dice. Unpacked: a source of danger; in the OPTIMIZER table it stands in row H under ACCENT, beside HELIUM, HEADER, HOVER.
+HAZARD	E	pool:gcide-0.53	I will stand the hazard of the die.
+HAZARD	W	gcide-0.53,wordnet-3.1:14565454	HAZARD (noun): a source of danger. Synonyms: Danger, risk.
+HEADER	baseline	wordnet-3.1:06355341	Header: a line of text serving to indicate what the passage below it is about.
+HEADER	N	wordnet-3.1:06355341,scowl,pool:wordnet-3.1:06355341	A header is a line of text serving to indicate what the passage below it is about. For example: the heading seemed to have little to do with the text.
+HEADER	S	gcide-0.53,wordnet-3.1:06355341,table:o	HEADER: One who, or that which, heads nails, rivets, etc., esp. Unpacked: a line of text serving to indicate what the passage below it is about; in the OPTIMIZER table it stands in row H under ASSY, beside HELIUM, HOVER, HAZARD.
+HEADER	E	template:E4,wordnet-3.1:06355341	Say it slowly, header... A line of text serving to indicate what the passage below it is about.
+HEADER	W	wordnet-3.1:06355341	HEADER (noun): a line of text serving to indicate what the passage below it is about.
+HELIUM	baseline	wordnet-3.1:14664099	Helium: a very light colorless element that is one of the six inert gasses.
+HELIUM	N	wordnet-3.1:14664099,scowl	A helium is a very light colorless element that is one of the six inert gasses.
+HELIUM	S	gcide-0.53,wordnet-3.1:14664099,table:o	HELIUM: An inert, monoatomic, gaseous element occurring in the atmosphere of the sun and stars, and in small quantities in the earth's atmosphere, in several minerals and in certain mineral waters. Unpacked: a very light colorless element that is one of the six inert gasses; in the OPTIMIZER table it stands in row H under ELEMENT, beside HEADER, HOVER, HAZARD.
+HELIUM	E	template:E2,wordnet-3.1:14664099	Oh, helium! A very light colorless element that is one of the six inert gasses, of all things.
+HELIUM	W	wordnet-3.1:14664099	HELIUM (noun): a very light colorless element that is one of the six inert gasses.
+HELP	baseline	wordnet-3.1:01210099	Help: the activity of contributing to the fulfillment of a need or furtherance of an effort or purpose.
+HELP	N	wordnet-3.1:01210099,scowl,pool:wordnet-3.1:01210099	A help is the activity of contributing to the fulfillment of a need or furtherance of an effort or purpose. For example: offered his help in unloading.
+HELP	S	wordnet-3.1:01210099,table:t	HELP: the activity of contributing to the fulfillment of a need or furtherance of an effort or purpose. Unpacked: In the TAG table it stands in row H under COMMAND, beside HOST, HOME, HEURISTIC.
+HELP	E	template:E1,wordnet-3.1:01210099	Listen: help. The activity of contributing to the fulfillment of a need or furtherance of an effort or purpose -- and that is not nothing.
+HELP	W	gcide-0.53,wordnet-3.1:01210099	HELP (noun): the activity of contributing to the fulfillment of a need or furtherance of an effort or purpose. Synonyms: To aid, assist, succor, relieve.
+HEURISTIC	baseline	wordnet-3.1:05856483	Heuristic: a commonsense rule (or set of rules) intended to increase the probability of solving some problem.
+HEURISTIC	N	wordnet-3.1:05856483,scowl	A heuristic is a commonsense rule (or set of rules) intended to increase the probability of solving some problem.
+HEURISTIC	S	wordnet-3.1:05856483,table:t	HEURISTIC: a commonsense rule (or set of rules) intended to increase the probability of solving some problem. Unpacked: In the TAG table it stands in row H under TAG, beside HOST, HOME, HELP.
+HEURISTIC	E	template:E1,wordnet-3.1:05856483	Listen: heuristic. A commonsense rule (or set of rules) intended to increase the probability of solving some problem -- and that is not nothing.
+HEURISTIC	W	wordnet-3.1:05856483	HEURISTIC (noun): a commonsense rule (or set of rules) intended to increase the probability of solving some problem.
+HIDE	baseline	wordnet-3.1:14783454	Hide: the dressed skin of an animal (especially a large animal).
+HIDE	N	wordnet-3.1:14783454,scowl	A hide is the dressed skin of an animal (especially a large animal).
+HIDE	S	wordnet-3.1:14783454,table:r	HIDE: the dressed skin of an animal (especially a large animal). Unpacked: In the RECEIPT table it stands in row H under AGAINST, beside HYDROGEN, HOLD, HINT.
+HIDE	E	template:E1,wordnet-3.1:14783454	Listen: hide. The dressed skin of an animal (especially a large animal) -- and that is not nothing.
+HIDE	W	gcide-0.53,wordnet-3.1:14783454	HIDE (noun): the dressed skin of an animal (especially a large animal). Synonyms: To conceal, secrete, disguise, dissemble.
+HINT	baseline	wordnet-3.1:07178639	Hint: an indirect suggestion.
+HINT	N	wordnet-3.1:07178639,scowl	A hint is an indirect suggestion.
+HINT	S	wordnet-3.1:07178639,table:r	HINT: an indirect suggestion. Unpacked: In the RECEIPT table it stands in row H under LABEL, beside HYDROGEN, HOLD, HIDE.
+HINT	E	template:E4,wordnet-3.1:07178639	Say it slowly, hint... An indirect suggestion.
+HINT	W	gcide-0.53,wordnet-3.1:07178639	HINT (noun): an indirect suggestion. Synonyms: To suggest, intimate, insinuate.
+HOLD	baseline	wordnet-3.1:00814187	Hold: the act of grasping.
+HOLD	N	wordnet-3.1:00814187,scowl,pool:wordnet-3.1:00814187	A hold is the act of grasping. For example: she kept a firm hold on the railing.
+HOLD	S	gcide-0.53,wordnet-3.1:00814187,table:r	HOLD: The whole interior portion of a vessel below the lower deck, in which the cargo is stowed. Unpacked: the act of grasping; in the RECEIPT table it stands in row H under CLASS, beside HYDROGEN, HIDE, HINT.
+HOLD	E	pool:gcide-0.53	Thy right hand shall hold me.
+HOLD	W	wordnet-3.1:00814187	HOLD (noun): the act of grasping.
+HOME	baseline	wordnet-3.1:08577045	Home: where you live at a particular time.
+HOME	N	wordnet-3.1:08577045,scowl,pool:wordnet-3.1:08577045	A home is a where you live at a particular time. For example: he doesn't have a home to go to.
+HOME	S	wordnet-3.1:08577045,table:t	HOME: where you live at a particular time. Unpacked: In the TAG table it stands in row H under GROUP, beside HOST, HELP, HEURISTIC.
+HOME	E	pool:wordnet-3.1:08577045	deliver the package to my home
+HOME	W	gcide-0.53,wordnet-3.1:08577045	HOME (noun): where you live at a particular time. Synonyms: Tenement, house, dwelling, abode.
+HOST	baseline	wordnet-3.1:10206749	Host: a person who invites guests to a social event (such as a party in his or her own home) and who is responsible for them while they are there.
+HOST	N	wordnet-3.1:10206749,scowl,pool:gcide-0.53	A host is a person who invites guests to a social event (such as a party in his or her own. For example: A host so great as covered all the field.
+HOST	S	gcide-0.53,wordnet-3.1:10206749,table:t	HOST: The consecrated wafer, believed to be the body of Christ, which in the Mass is offered as a sacrifice. Unpacked: a person who invites guests to a social event (such as a party in his or her own home) and who is responsible for them while they are there; in the TAG table it stands in row H under SCALAR, beside HOME, HELP, HEURISTIC.
+HOST	E	pool:gcide-0.53	All at once I saw a crowd,host, of golden daffodils.
+HOST	W	wordnet-3.1:10206749	HOST (noun): a person who invites guests to a social event (such as a party in his or her own home) and who is responsible for them while they are there.
+HOVER	baseline	wordnet-3.1:02711906	Hover: be undecided about something.
+HOVER	N	wordnet-3.1:02711906,scowl	To hover means to be undecided about something.
+HOVER	S	wordnet-3.1:02711906,table:o	HOVER: be undecided about something. Unpacked: In the OPTIMIZER table it stands in row H under HOVER, beside HELIUM, HEADER, HAZARD.
+HOVER	E	template:E4,wordnet-3.1:02711906	Say it slowly, hover... Be undecided about something.
+HOVER	W	wordnet-3.1:02711906	HOVER (verb): be undecided about something.
+HUNK	baseline	wordnet-3.1:10212458	Hunk: a well-built sexually attractive man.
+HUNK	N	wordnet-3.1:10212458,scowl	A hunk is a well-built sexually attractive man.
+HUNK	S	gcide-0.53,wordnet-3.1:10212458,table:g	HUNK: A large lump or piece. Unpacked: a well-built sexually attractive man; in the GROWTH table it stands in row H under ATOM, beside HAND, HASH, HYDRIDE.
+HUNK	E	template:E4,wordnet-3.1:10212458	Say it slowly, hunk... A well-built sexually attractive man.
+HUNK	W	wordnet-3.1:10212458	HUNK (noun): a well-built sexually attractive man.
+HYDRIDE	baseline	wordnet-3.1:14934899	Hydride: any binary compound formed by the union of hydrogen and other elements.
+HYDRIDE	N	wordnet-3.1:14934899,scowl	A hydride is any binary compound formed by the union of hydrogen and other elements.
+HYDRIDE	S	gcide-0.53,wordnet-3.1:14934899,table:g	HYDRIDE: A compound of the binary type, in which hydrogen is united with some other element. Unpacked: any binary compound formed by the union of hydrogen and other elements; in the GROWTH table it stands in row H under TEMPERATURE, beside HUNK, HAND, HASH.
+HYDRIDE	E	template:E4,wordnet-3.1:14934899	Say it slowly, hydride... Any binary compound formed by the union of hydrogen and other elements.
+HYDRIDE	W	wordnet-3.1:14934899	HYDRIDE (noun): any binary compound formed by the union of hydrogen and other elements.
+HYDROGEN	baseline	wordnet-3.1:14664612	Hydrogen: a nonmetallic univalent element that is normally a colorless and odorless highly flammable diatomic gas.
+HYDROGEN	N	wordnet-3.1:14664612,scowl	A hydrogen is a nonmetallic univalent element that is normally a colorless and odorless highly flammable diatomic gas.
+HYDROGEN	S	gcide-0.53,wordnet-3.1:14664612,table:r	HYDROGEN: A gaseous element, colorless, tasteless, and odorless, the lightest known substance, being fourteen and a half times lighter than air (hence its use in filling balloons). Unpacked: a nonmetallic univalent element that is normally a colorless and odorless highly flammable diatomic gas; in the RECEIPT table it stands in row H under ISOTOPE, beside HOLD, HIDE, HINT.
+HYDROGEN	E	template:E2,wordnet-3.1:14664612	Oh, hydrogen! A nonmetallic univalent element that is normally a colorless and odorless highly flammable diatomic gas, of all things.
+HYDROGEN	W	wordnet-3.1:14664612	HYDROGEN (noun): a nonmetallic univalent element that is normally a colorless and odorless highly flammable diatomic gas.
+ICON	baseline	wordnet-3.1:07284621	Icon: (computer science) a graphic symbol (usually a simple picture) that denotes a program or a command or a data file or a concept in a graphical user interface.
+ICON	N	wordnet-3.1:07284621,scowl,pool:gcide-0.53	An icon is a (computer science) a graphic symbol (usually a simple picture) that denotes a program or a command. For example: Netherlands whose names and icons are published.
+ICON	S	gcide-0.53,wordnet-3.1:07284621,table:o	ICON: An image or representation. Unpacked: (computer science) a graphic symbol (usually a simple picture) that denotes a program or a command or a data file or a concept in a graphical user interface; in the OPTIMIZER table it stands in row I under ELEMENT, beside INPUT, IRON, INSTEAD.
+ICON	E	template:E1,wordnet-3.1:07284621	Listen: icon. (computer science) a graphic symbol (usually a simple picture) that denotes a program or a command or a data file or a concept in a graphical user interface -- and that is not nothing.
+ICON	W	wordnet-3.1:07284621	ICON (noun): (computer science) a graphic symbol (usually a simple picture) that denotes a program or a command or a data file or a concept in a graphical user interface.
+IDENTITY	baseline	wordnet-3.1:04625427	Identity: the distinct personality of an individual regarded as a persisting entity.
+IDENTITY	N	wordnet-3.1:04625427,scowl,pool:wordnet-3.1:04625427	An identity is the distinct personality of an individual regarded as a persisting entity. For example: you can lose your identity when you join the army.
+IDENTITY	S	gcide-0.53,wordnet-3.1:04625427,table:t	IDENTITY: The state or quality of being identical, or the same. Unpacked: the distinct personality of an individual regarded as a persisting entity; in the TAG table it stands in row I under GROUP, beside INDEX, INTERN, ITEM.
+IDENTITY	E	pool:wordnet-3.1:04625427	you can lose your identity when you join the army
+IDENTITY	W	wordnet-3.1:04625427	IDENTITY (noun): the distinct personality of an individual regarded as a persisting entity.
+INDEX	baseline	wordnet-3.1:13873264	Index: a numerical scale used to compare variables with one another or with some reference number.
+INDEX	N	wordnet-3.1:13873264,scowl,pool:gcide-0.53	An index is a numerical scale used to compare variables with one another or with some reference number. For example: Tastes are the indexes of the different qualities of plants.
+INDEX	S	gcide-0.53,wordnet-3.1:13873264,table:t	INDEX: That which points out. Unpacked: a numerical scale used to compare variables with one another or with some reference number; in the TAG table it stands in row I under SCALAR, beside IDENTITY, INTERN, ITEM.
+INDEX	E	template:E3,wordnet-3.1:13873264	Index? Yes, index: a numerical scale used to compare variables with one another or with some reference number, and it hums quietly.
+INDEX	W	wordnet-3.1:13873264	INDEX (noun): a numerical scale used to compare variables with one another or with some reference number.
+INFO	baseline	wordnet-3.1:06646883	Info: a message received and understood.
+INFO	N	wordnet-3.1:06646883,scowl	An info is a message received and understood.
+INFO	S	wordnet-3.1:06646883,table:r	INFO: a message received and understood. Unpacked: In the RECEIPT table it stands in row I under CLASS, beside ISOTOPE, ITSELF, INNER.
+INFO	E	template:E4,wordnet-3.1:06646883	Say it slowly, info... A message received and understood.
+INFO	W	wordnet-3.1:06646883	INFO (noun): a message received and understood.
+INNER	baseline	wordnet-3.1:00955021	Inner: located inward.
+INNER	N	wordnet-3.1:00955021,scowl,pool:gcide-0.53	Inner means located inward. For example: This attracts the soul,inner man, the nobler part.
+INNER	S	wordnet-3.1:00955021,table:r	INNER: located inward. Unpacked: In the RECEIPT table it stands in row I under LABEL, beside ISOTOPE, INFO, ITSELF.
+INNER	E	template:E2,wordnet-3.1:00955021	Oh, inner! Located inward, of all things.
+INNER	W	wordnet-3.1:00955021	INNER (adj): located inward.
+INPUT	baseline	wordnet-3.1:07279488	Input: signal going into an electronic system.
+INPUT	N	wordnet-3.1:07279488,scowl	An input is a signal going into an electronic system.
+INPUT	S	wordnet-3.1:07279488,table:o	INPUT: signal going into an electronic system. Unpacked: In the OPTIMIZER table it stands in row I under ASSY, beside ICON, IRON, INSTEAD.
+INPUT	E	template:E1,wordnet-3.1:07279488	Listen: input. Signal going into an electronic system -- and that is not nothing.
+INPUT	W	wordnet-3.1:07279488	INPUT (noun): signal going into an electronic system.
+INSIDE	baseline	wordnet-3.1:08605849	Inside: the region that is inside of something.
+INSIDE	N	wordnet-3.1:08605849,scowl	An inside is the region that is inside of something.
+INSIDE	S	wordnet-3.1:08605849,table:g	INSIDE: the region that is inside of something. Unpacked: In the GROWTH table it stands in row I under FAMILY, beside INSTRUMENT, INSTALL, IONIC.
+INSIDE	E	template:E3,wordnet-3.1:08605849	Inside? Yes, inside: the region that is inside of something, and it hums quietly.
+INSIDE	W	wordnet-3.1:08605849	INSIDE (noun): the region that is inside of something.
+INSTALL	baseline	wordnet-3.1:01572394	Install: set up for use.
+INSTALL	N	wordnet-3.1:01572394,scowl,pool:wordnet-3.1:01572394	To install means to set up for use. For example: install the washer and dryer.
+INSTALL	S	gcide-0.53,wordnet-3.1:01572394,table:g	INSTALL: To set in a seat. Unpacked: set up for use; in the GROWTH table it stands in row I under APPEND, beside INSTRUMENT, INSIDE, IONIC.
+INSTALL	E	template:E1,wordnet-3.1:01572394	Listen: install. Set up for use -- and that is not nothing.
+INSTALL	W	wordnet-3.1:01572394	INSTALL (verb): set up for use.
+INSTEAD	baseline	wordnet-3.1:00063710	Instead: in place of, or as an alternative.
+INSTEAD	N	wordnet-3.1:00063710,scowl,pool:gcide-0.53	Instead means in place of, or as an alternative. For example: Absalom made Amasa captain of the host instead of Joab.
+INSTEAD	S	gcide-0.53,wordnet-3.1:00063710,table:o	INSTEAD: In the place or room. Unpacked: in place of, or as an alternative; in the OPTIMIZER table it stands in row I under ACCENT, beside ICON, INPUT, IRON.
+INSTEAD	E	template:E1,wordnet-3.1:00063710	Listen: instead. In place of, or as an alternative -- and that is not nothing.
+INSTEAD	W	wordnet-3.1:00063710	INSTEAD (adv): in place of, or as an alternative.
+INSTRUMENT	baseline	wordnet-3.1:03579967	Instrument: a device that requires skill for proper use.
+INSTRUMENT	N	wordnet-3.1:03579967,scowl,pool:gcide-0.53	An instrument is a device that requires skill for proper use. For example: All the lofty instruments of war.
+INSTRUMENT	S	gcide-0.53,wordnet-3.1:03579967,table:g	INSTRUMENT: That by means of which any work is performed, or result is effected. Unpacked: a device that requires skill for proper use; in the GROWTH table it stands in row I under ATOM, beside INSIDE, INSTALL, IONIC.
+INSTRUMENT	E	template:E1,wordnet-3.1:03579967	Listen: instrument. A device that requires skill for proper use -- and that is not nothing.
+INSTRUMENT	W	gcide-0.53,wordnet-3.1:03579967	INSTRUMENT (noun): a device that requires skill for proper use. Synonyms: Tool, implement, utensil, machine.
+INTERN	baseline	wordnet-3.1:10230873	Intern: an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term).
+INTERN	N	wordnet-3.1:10230873,scowl	An intern is an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term).
+INTERN	S	wordnet-3.1:10230873,table:t	INTERN: an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term). Unpacked: In the TAG table it stands in row I under COMMAND, beside INDEX, IDENTITY, ITEM.
+INTERN	E	template:E4,wordnet-3.1:10230873	Say it slowly, intern... An advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term).
+INTERN	W	wordnet-3.1:10230873	INTERN (noun): an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term).
+IONIC	baseline	wordnet-3.1:06990270	Ionic: the dialect of Ancient Greek spoken and written in Attica and Athens and Ionia.
+IONIC	N	wordnet-3.1:06990270,scowl	An ionic is the dialect of Ancient Greek spoken and written in Attica and Athens and Ionia.
+IONIC	S	wordnet-3.1:06990270,table:g	IONIC: the dialect of Ancient Greek spoken and written in Attica and Athens and Ionia. Unpacked: In the GROWTH table it stands in row I under TEMPERATURE, beside INSTRUMENT, INSIDE, INSTALL.
+IONIC	E	template:E2,wordnet-3.1:06990270	Oh, ionic! The dialect of Ancient Greek spoken and written in Attica and Athens and Ionia, of all things.
+IONIC	W	wordnet-3.1:06990270	IONIC (noun): the dialect of Ancient Greek spoken and written in Attica and Athens and Ionia.
+IRON	baseline	wordnet-3.1:14666595	Iron: a heavy ductile magnetic metallic element.
+IRON	N	wordnet-3.1:14666595,scowl,pool:gcide-0.53	An iron is a heavy ductile magnetic metallic element. For example: Four of the sufferers were left to rot in irons.
+IRON	S	gcide-0.53,wordnet-3.1:14666595,table:o	IRON: The most common and most useful metallic element, being of almost universal occurrence, usually in the form of an oxide (as hematite, magnetite, etc.), or a hydrous oxide (as limonite. Unpacked: a heavy ductile magnetic metallic element; in the OPTIMIZER table it stands in row I under HOVER, beside ICON, INPUT, INSTEAD.
+IRON	E	pool:gcide-0.53	My young soldier, put up your iron.
+IRON	W	wordnet-3.1:14666595	IRON (noun): a heavy ductile magnetic metallic element.
+ISOTOPE	baseline	wordnet-3.1:14643836	Isotope: one of two or more atoms with the same atomic number but with different numbers of neutrons.
+ISOTOPE	N	wordnet-3.1:14643836,scowl	An isotope is one of two or more atoms with the same atomic number but with different numbers of neutrons.
+ISOTOPE	S	wordnet-3.1:14643836,table:r	ISOTOPE: one of two or more atoms with the same atomic number but with different numbers of neutrons. Unpacked: In the RECEIPT table it stands in row I under ISOTOPE, beside INFO, ITSELF, INNER.
+ISOTOPE	E	template:E4,wordnet-3.1:14643836	Say it slowly, isotope... One of two or more atoms with the same atomic number but with different numbers of neutrons.
+ISOTOPE	W	wordnet-3.1:14643836	ISOTOPE (noun): one of two or more atoms with the same atomic number but with different numbers of neutrons.
+ITEM	baseline	wordnet-3.1:06494090	Item: a distinct part that can be specified separately in a group of things that could be enumerated on a list.
+ITEM	N	wordnet-3.1:06494090,scowl,pool:wordnet-3.1:06494090	An item is a distinct part that can be specified separately in a group of things that could be enumerated on. For example: he noticed an item in the New York Times.
+ITEM	S	wordnet-3.1:06494090,table:t	ITEM: a distinct part that can be specified separately in a group of things that could be enumerated on a list. Unpacked: In the TAG table it stands in row I under TAG, beside INDEX, IDENTITY, INTERN.
+ITEM	E	template:E4,wordnet-3.1:06494090	Say it slowly, item... A distinct part that can be specified separately in a group of things that could be enumerated on a list.
+ITEM	W	wordnet-3.1:06494090	ITEM (noun): a distinct part that can be specified separately in a group of things that could be enumerated on a list.
+ITSELF	baseline	gcide-0.53	Itself: The neuter reflexive pronoun of It.
+ITSELF	N	gcide-0.53,scowl,pool:gcide-0.53	Itself means the neuter reflexive pronoun of It. For example: Borrowing of foreigners, in itself, makes not the kingdom rich or poor.
+ITSELF	S	gcide-0.53,table:r	ITSELF: The neuter reflexive pronoun of It. Unpacked: In the RECEIPT table it stands in row I under AGAINST, beside ISOTOPE, INFO, INNER.
+ITSELF	E	template:E2,gcide-0.53	Oh, itself! The neuter reflexive pronoun of It, of all things.
+ITSELF	W	gcide-0.53	ITSELF (pron.): The neuter reflexive pronoun of It.
+LABEL	baseline	wordnet-3.1:07217239	Label: a brief description given for purposes of identification.
+LABEL	N	wordnet-3.1:07217239,scowl,pool:wordnet-3.1:07217239	A label is a brief description given for purposes of identification. For example: the label modern is applied to many different kinds of architecture.
+LABEL	S	wordnet-3.1:07217239,table:r	LABEL: a brief description given for purposes of identification. Unpacked: In the RECEIPT table it stands in row L under LABEL, beside LIQUID, LEGACY, LEAVE.
+LABEL	E	template:E4,wordnet-3.1:07217239	Say it slowly, label... A brief description given for purposes of identification.
+LABEL	W	wordnet-3.1:07217239	LABEL (noun): a brief description given for purposes of identification.
+LAND	baseline	wordnet-3.1:13270947	Land: the land on which real estate is located.
+LAND	N	wordnet-3.1:13270947,scowl,pool:gcide-0.53	A land is the land on which real estate is located. For example: A poor parson dwelling upon land i.e., in the country.
+LAND	S	wordnet-3.1:13270947,table:g	LAND: the land on which real estate is located. Unpacked: In the GROWTH table it stands in row L under APPEND, beside LANE, LEDGER, LITHIUM.
+LAND	E	pool:gcide-0.53	A poor parson dwelling upon land i.e., in the country.
+LAND	W	wordnet-3.1:13270947	LAND (noun): the land on which real estate is located.
+LANE	baseline	wordnet-3.1:03645903	Lane: a narrow way or road.
+LANE	N	wordnet-3.1:03645903,scowl	A lane is a narrow way or road.
+LANE	S	wordnet-3.1:03645903,table:g	LANE: a narrow way or road. Unpacked: In the GROWTH table it stands in row L under ATOM, beside LEDGER, LAND, LITHIUM.
+LANE	E	template:E2,wordnet-3.1:03645903	Oh, lane! A narrow way or road, of all things.
+LANE	W	wordnet-3.1:03645903	LANE (noun): a narrow way or road.
+LAYOUT	baseline	wordnet-3.1:05845595	Layout: a plan or design of something that is laid out.
+LAYOUT	N	wordnet-3.1:05845595,scowl	A layout is a plan or design of something that is laid out.
+LAYOUT	S	wordnet-3.1:05845595,table:t	LAYOUT: a plan or design of something that is laid out. Unpacked: In the TAG table it stands in row L under SCALAR, beside LIBRARY, LINK, LICENSE.
+LAYOUT	E	template:E3,wordnet-3.1:05845595	Layout? Yes, layout: a plan or design of something that is laid out, and it hums quietly.
+LAYOUT	W	wordnet-3.1:05845595	LAYOUT (noun): a plan or design of something that is laid out.
+LEAVE	baseline	wordnet-3.1:15164090	Leave: the period of time during which you are absent from work or duty.
+LEAVE	N	wordnet-3.1:15164090,scowl,pool:wordnet-3.1:15164090	A leave is the period of time during which you are absent from work or duty. For example: a ten day's leave to visit his mother.
+LEAVE	S	wordnet-3.1:15164090,table:r	LEAVE: the period of time during which you are absent from work or duty. Unpacked: In the RECEIPT table it stands in row L under AGAINST, beside LIQUID, LEGACY, LABEL.
+LEAVE	E	template:E3,wordnet-3.1:15164090	Leave? Yes, leave: the period of time during which you are absent from work or duty, and it hums quietly.
+LEAVE	W	gcide-0.53,wordnet-3.1:15164090	LEAVE (noun): the period of time during which you are absent from work or duty. Synonyms: depart from, forsake, abandon, relinquish.
+LEDGER	baseline	wordnet-3.1:13425421	Ledger: a record in which commercial accounts are recorded.
+LEDGER	N	wordnet-3.1:13425421,scowl	A ledger is a record in which commercial accounts are recorded.
+LEDGER	S	gcide-0.53,wordnet-3.1:13425421,table:g	LEDGER: A book in which a summary of accounts is laid up or preserved. Unpacked: a record in which commercial accounts are recorded; in the GROWTH table it stands in row L under FAMILY, beside LANE, LAND, LITHIUM.
+LEDGER	E	template:E4,wordnet-3.1:13425421	Say it slowly, ledger... A record in which commercial accounts are recorded.
+LEDGER	W	wordnet-3.1:13425421	LEDGER (noun): a record in which commercial accounts are recorded.
+LEGACY	baseline	wordnet-3.1:13284678	Legacy: (law) a gift of personal property by will.
+LEGACY	N	wordnet-3.1:13284678,scowl,pool:gcide-0.53	A legacy is a (law) a gift of personal property by will. For example: He came and told his legacy.
+LEGACY	S	gcide-0.53,wordnet-3.1:13284678,table:r	LEGACY: A gift of property by will, esp. Unpacked: (law) a gift of personal property by will; in the RECEIPT table it stands in row L under CLASS, beside LIQUID, LEAVE, LABEL.
+LEGACY	E	pool:gcide-0.53	My legacy and message wherefore I am sent into the world.
+LEGACY	W	wordnet-3.1:13284678	LEGACY (noun): (law) a gift of personal property by will.
+LENS	baseline	wordnet-3.1:03661810	Lens: a transparent optical device used to converge or diverge transmitted light and to form images.
+LENS	N	wordnet-3.1:03661810,scowl	A lens is a transparent optical device used to converge or diverge transmitted light and to form images.
+LENS	S	gcide-0.53,wordnet-3.1:03661810,table:o	LENS: A piece of glass, or other transparent substance, ground with two opposite regular surfaces, either both curved, or one curved and the other plane, and commonly used. Unpacked: a transparent optical device used to converge or diverge transmitted light and to form images; in the OPTIMIZER table it stands in row L under ELEMENT, beside LESSON, LIVE, LINEAR.
+LENS	E	template:E4,wordnet-3.1:03661810	Say it slowly, lens... A transparent optical device used to converge or diverge transmitted light and to form images.
+LENS	W	wordnet-3.1:03661810	LENS (noun): a transparent optical device used to converge or diverge transmitted light and to form images.
+LESSON	baseline	wordnet-3.1:00891150	Lesson: a unit of instruction.
+LESSON	N	wordnet-3.1:00891150,scowl,pool:gcide-0.53	A lesson is a unit of instruction. For example: She would give her a lesson for walking so late.
+LESSON	S	gcide-0.53,wordnet-3.1:00891150,table:o	LESSON: Anything read or recited to a teacher by a pupil or learner. Unpacked: a unit of instruction; in the OPTIMIZER table it stands in row L under ASSY, beside LENS, LIVE, LINEAR.
+LESSON	E	pool:gcide-0.53	Emprinteth well this lesson in your mind.
+LESSON	W	wordnet-3.1:00891150	LESSON (noun): a unit of instruction.
+LIBRARY	baseline	wordnet-3.1:03666235	Library: a room where books are kept.
+LIBRARY	N	wordnet-3.1:03666235,scowl,pool:wordnet-3.1:03666235	A library is a room where books are kept. For example: they had brandy in the library.
+LIBRARY	S	gcide-0.53,wordnet-3.1:03666235,table:t	LIBRARY: A considerable collection of books kept for use, and not as merchandise. Unpacked: a room where books are kept; in the TAG table it stands in row L under GROUP, beside LAYOUT, LINK, LICENSE.
+LIBRARY	E	template:E1,wordnet-3.1:03666235	Listen: library. A room where books are kept -- and that is not nothing.
+LIBRARY	W	wordnet-3.1:03666235	LIBRARY (noun): a room where books are kept.
+LICENSE	baseline	wordnet-3.1:06561652	License: a legal document giving official permission to do something.
+LICENSE	N	wordnet-3.1:06561652,scowl,pool:gcide-0.53	A license is a legal document giving official permission to do something. For example: To have a license and a leave at London to dwell.
+LICENSE	S	gcide-0.53,wordnet-3.1:06561652,table:t	LICENSE: Authority or liberty given to do or forbear any act. Unpacked: a legal document giving official permission to do something; in the TAG table it stands in row L under TAG, beside LAYOUT, LIBRARY, LINK.
+LICENSE	E	template:E4,wordnet-3.1:06561652	Say it slowly, license... A legal document giving official permission to do something.
+LICENSE	W	gcide-0.53,wordnet-3.1:06561652	LICENSE (noun): a legal document giving official permission to do something. Synonyms: Leave, liberty.
+LINEAR	baseline	wordnet-3.1:01420302	Linear: designating or involving an equation whose terms are of the first degree.
+LINEAR	N	wordnet-3.1:01420302,scowl	Linear means designating or involving an equation whose terms are of the first degree.
+LINEAR	S	gcide-0.53,wordnet-3.1:01420302,table:o	LINEAR: Of or pertaining to a line. Unpacked: designating or involving an equation whose terms are of the first degree; in the OPTIMIZER table it stands in row L under ACCENT, beside LENS, LESSON, LIVE.
+LINEAR	E	template:E2,wordnet-3.1:01420302	Oh, linear! Designating or involving an equation whose terms are of the first degree, of all things.
+LINEAR	W	wordnet-3.1:01420302	LINEAR (adj): designating or involving an equation whose terms are of the first degree.
+LINK	baseline	wordnet-3.1:13814904	Link: the means of connection between things linked in series.
+LINK	N	wordnet-3.1:13814904,scowl,pool:gcide-0.53	A link is the means of connection between things linked in series. For example: And so by double links enchained themselves in lover's life.
+LINK	S	gcide-0.53,wordnet-3.1:13814904,table:t	LINK: A torch made of tow and pitch, or the like. Unpacked: the means of connection between things linked in series; in the TAG table it stands in row L under COMMAND, beside LAYOUT, LIBRARY, LICENSE.
+LINK	E	pool:gcide-0.53	The link of brotherhood, by which / One common Maker bound me to the kind.
+LINK	W	wordnet-3.1:13814904	LINK (noun): the means of connection between things linked in series.
+LIQUID	baseline	wordnet-3.1:14964524	Liquid: a substance that is liquid at room temperature and pressure.
+LIQUID	N	wordnet-3.1:14964524,scowl	A liquid is a substance that is liquid at room temperature and pressure.
+LIQUID	S	wordnet-3.1:14964524,table:r	LIQUID: a substance that is liquid at room temperature and pressure. Unpacked: In the RECEIPT table it stands in row L under ISOTOPE, beside LEGACY, LEAVE, LABEL.
+LIQUID	E	template:E3,wordnet-3.1:14964524	Liquid? Yes, liquid: a substance that is liquid at room temperature and pressure, and it hums quietly.
+LIQUID	W	wordnet-3.1:14964524	LIQUID (noun): a substance that is liquid at room temperature and pressure.
+LITHIUM	baseline	wordnet-3.1:14667971	Lithium: a soft silver-white univalent element of the alkali metal group.
+LITHIUM	N	wordnet-3.1:14667971,scowl	A lithium is a soft silver-white univalent element of the alkali metal group.
+LITHIUM	S	gcide-0.53,wordnet-3.1:14667971,table:g	LITHIUM: A metallic element of the alkaline group, occurring in several minerals, as petalite, spodumene, lepidolite, triphylite, etc., and otherwise widely disseminated, though in small quantities. Unpacked: a soft silver-white univalent element of the alkali metal group; in the GROWTH table it stands in row L under TEMPERATURE, beside LANE, LEDGER, LAND.
+LITHIUM	E	template:E4,wordnet-3.1:14667971	Say it slowly, lithium... A soft silver-white univalent element of the alkali metal group.
+LITHIUM	W	wordnet-3.1:14667971	LITHIUM (noun): a soft silver-white univalent element of the alkali metal group.
+LIVE	baseline	wordnet-3.1:02655932	Live: be an inhabitant of or reside.
+LIVE	N	wordnet-3.1:02655932,scowl,pool:gcide-0.53	To live means to be an inhabitant of or reside. For example: Men's evil manners live in brass; their virtues / We write in water.
+LIVE	S	wordnet-3.1:02655932,table:o	LIVE: be an inhabitant of or reside. Unpacked: In the OPTIMIZER table it stands in row L under HOVER, beside LENS, LESSON, LINEAR.
+LIVE	E	pool:gcide-0.53	Men's evil manners live in brass; their virtues / We write in water.
+LIVE	W	wordnet-3.1:02655932	LIVE (verb): be an inhabitant of or reside.
+MANIFEST	baseline	wordnet-3.1:06513909	Manifest: a customs document listing the contents put on a ship or plane.
+MANIFEST	N	wordnet-3.1:06513909,scowl	A manifest is a customs document listing the contents put on a ship or plane.
+MANIFEST	S	wordnet-3.1:06513909,table:g	MANIFEST: a customs document listing the contents put on a ship or plane. Unpacked: In the GROWTH table it stands in row M under ATOM, beside MESH, MOVE, MOLAR.
+MANIFEST	E	template:E1,wordnet-3.1:06513909	Listen: manifest. A customs document listing the contents put on a ship or plane -- and that is not nothing.
+MANIFEST	W	gcide-0.53,wordnet-3.1:06513909	MANIFEST (noun): a customs document listing the contents put on a ship or plane. Synonyms: Open, clear, apparent, evident.
+MARKER	baseline	wordnet-3.1:03727288	Marker: some conspicuous object used to distinguish or mark something.
+MARKER	N	wordnet-3.1:03727288,scowl,pool:wordnet-3.1:03727288	A marker is some conspicuous object used to distinguish or mark something. For example: the buoys were markers for the channel.
+MARKER	S	gcide-0.53,wordnet-3.1:03727288,table:t	MARKER: One who or that which marks. Unpacked: some conspicuous object used to distinguish or mark something; in the TAG table it stands in row M under TAG, beside MATRIX, MEASURE, MODEL.
+MARKER	E	template:E4,wordnet-3.1:03727288	Say it slowly, marker... Some conspicuous object used to distinguish or mark something.
+MARKER	W	wordnet-3.1:03727288	MARKER (noun): some conspicuous object used to distinguish or mark something.
+MASS	baseline	wordnet-3.1:05031420	Mass: the property of a body that causes it to have weight in a gravitational field.
+MASS	N	wordnet-3.1:05031420,scowl,pool:gcide-0.53	A mass is the property of a body that causes it to have weight in a gravitational field. For example: He had spent a huge mass of treasure.
+MASS	S	gcide-0.53,wordnet-3.1:05031420,table:r	MASS: The sacrifice in the sacrament of the Eucharist, or the consecration and oblation of the host. Unpacked: the property of a body that causes it to have weight in a gravitational field; in the RECEIPT table it stands in row M under CLASS, beside MEMBER, MUST, MISSING.
+MASS	E	template:E2,wordnet-3.1:05031420	Oh, mass! The property of a body that causes it to have weight in a gravitational field, of all things.
+MASS	W	wordnet-3.1:05031420	MASS (noun): the property of a body that causes it to have weight in a gravitational field.
+MATRIX	baseline	wordnet-3.1:08284561	Matrix: (mathematics) a rectangular array of quantities or expressions set out by rows and columns.
+MATRIX	N	wordnet-3.1:08284561,scowl,pool:gcide-0.53	A matrix is a (mathematics) a rectangular array of quantities or expressions set out by rows and columns. For example: All that openeth the matrix is mine.
+MATRIX	S	wordnet-3.1:08284561,table:t	MATRIX: (mathematics) a rectangular array of quantities or expressions set out by rows and columns. Unpacked: In the TAG table it stands in row M under SCALAR, beside MEASURE, MODEL, MARKER.
+MATRIX	E	template:E3,wordnet-3.1:08284561	Matrix? Yes, matrix: (mathematics) a rectangular array of quantities or expressions set out by rows and columns, and it hums quietly.
+MATRIX	W	wordnet-3.1:08284561	MATRIX (noun): (mathematics) a rectangular array of quantities or expressions set out by rows and columns.
+MEANING	baseline	wordnet-3.1:06613680	Meaning: the message that is intended or expressed or signified.
+MEANING	N	wordnet-3.1:06613680,scowl,pool:gcide-0.53	A meaning is the message that is intended or expressed or signified. For example: If there be any good meaning towards you.
+MEANING	S	gcide-0.53,wordnet-3.1:06613680,table:o	MEANING: That which is meant or intended. Unpacked: the message that is intended or expressed or signified; in the OPTIMIZER table it stands in row M under ACCENT, beside MICROSCOPE, MOLECULE, MUTED.
+MEANING	E	pool:gcide-0.53	If there be any good meaning towards you.
+MEANING	W	wordnet-3.1:06613680	MEANING (noun): the message that is intended or expressed or signified.
+MEASURE	baseline	wordnet-3.1:00175261	Measure: any maneuver made as part of progress toward a goal.
+MEASURE	N	wordnet-3.1:00175261,scowl,pool:gcide-0.53	A measure is any maneuver made as part of progress toward a goal. For example: The measure thereof is longer than the earth, and broader than the sea.
+MEASURE	S	gcide-0.53,wordnet-3.1:00175261,table:t	MEASURE: A standard of dimension. Unpacked: any maneuver made as part of progress toward a goal; in the TAG table it stands in row M under GROUP, beside MATRIX, MODEL, MARKER.
+MEASURE	E	template:E2,wordnet-3.1:00175261	Oh, measure! Any maneuver made as part of progress toward a goal, of all things.
+MEASURE	W	wordnet-3.1:00175261	MEASURE (noun): any maneuver made as part of progress toward a goal.
+MEMBER	baseline	wordnet-3.1:10326901	Member: one of the persons who compose a social group (especially individuals who have joined and participate in a group organization).
+MEMBER	N	wordnet-3.1:10326901,scowl,pool:wordnet-3.1:10326901	A member is one of the persons who compose a social group (especially individuals who have joined and participate. For example: a member of the faculty.
+MEMBER	S	wordnet-3.1:10326901,table:r	MEMBER: one of the persons who compose a social group (especially individuals who have joined and participate in a group organization). Unpacked: In the RECEIPT table it stands in row M under ISOTOPE, beside MASS, MUST, MISSING.
+MEMBER	E	template:E1,wordnet-3.1:10326901	Listen: member. One of the persons who compose a social group (especially individuals who have joined and participate in a group organization) -- and that is not nothing.
+MEMBER	W	wordnet-3.1:10326901	MEMBER (noun): one of the persons who compose a social group (especially individuals who have joined and participate in a group organization).
+MESH	baseline	wordnet-3.1:13676507	Mesh: the number of openings per linear inch of a screen.
+MESH	N	wordnet-3.1:13676507,scowl,pool:wordnet-3.1:13676507	A mesh is the number of openings per linear inch of a screen. For example: a 100 mesh screen.
+MESH	S	gcide-0.53,wordnet-3.1:13676507,table:g	MESH: The opening or space inclosed by the threads of a net between knot and knot, or the threads inclosing such a space. Unpacked: the number of openings per linear inch of a screen; in the GROWTH table it stands in row M under FAMILY, beside MANIFEST, MOVE, MOLAR.
+MESH	E	template:E2,wordnet-3.1:13676507	Oh, mesh! The number of openings per linear inch of a screen, of all things.
+MESH	W	wordnet-3.1:13676507	MESH (noun): the number of openings per linear inch of a screen.
+MICROSCOPE	baseline	wordnet-3.1:03766206	Microscope: magnifier of the image of small objects.
+MICROSCOPE	N	wordnet-3.1:03766206,scowl,pool:wordnet-3.1:03766206	A microscope is a magnifier of the image of small objects. For example: the invention of the microscope led to the discovery of the cell.
+MICROSCOPE	S	gcide-0.53,wordnet-3.1:03766206,table:o	MICROSCOPE: An optical instrument, consisting of a lens, or combination of lenses, for making an enlarged image of an object which is too minute to be viewed by the naked eye. Unpacked: magnifier of the image of small objects; in the OPTIMIZER table it stands in row M under ELEMENT, beside MOLECULE, MUTED, MEANING.
+MICROSCOPE	E	template:E3,wordnet-3.1:03766206	Microscope? Yes, microscope: magnifier of the image of small objects, and it hums quietly.
+MICROSCOPE	W	wordnet-3.1:03766206	MICROSCOPE (noun): magnifier of the image of small objects.
+MISSING	baseline	wordnet-3.1:01452957	Missing: not able to be found.
+MISSING	N	wordnet-3.1:01452957,scowl,pool:wordnet-3.1:01452957	Missing means not able to be found. For example: a missing person.
+MISSING	S	gcide-0.53,wordnet-3.1:01452957,table:r	MISSING: Absent from the place where it was expected to be found. Unpacked: not able to be found; in the RECEIPT table it stands in row M under LABEL, beside MEMBER, MASS, MUST.
+MISSING	E	template:E3,wordnet-3.1:01452957	Missing? Yes, missing: not able to be found, and it hums quietly.
+MISSING	W	wordnet-3.1:01452957	MISSING (adj): not able to be found.
+MODEL	baseline	wordnet-3.1:05898856	Model: a hypothetical description of a complex entity or process.
+MODEL	N	wordnet-3.1:05898856,scowl,pool:gcide-0.53	A model is a hypothetical description of a complex entity or process. For example: In charts, in maps, and eke in models made.
+MODEL	S	gcide-0.53,wordnet-3.1:05898856,table:t	MODEL: A miniature representation of a thing, with the several parts in due proportion. Unpacked: a hypothetical description of a complex entity or process; in the TAG table it stands in row M under COMMAND, beside MATRIX, MEASURE, MARKER.
+MODEL	E	pool:gcide-0.53	I had my father's signet in my purse,model of that Danish seal.
+MODEL	W	wordnet-3.1:05898856	MODEL (noun): a hypothetical description of a complex entity or process.
+MOLAR	baseline	wordnet-3.1:05315272	Molar: grinding tooth with a broad crown.
+MOLAR	N	wordnet-3.1:05315272,scowl	A molar is a grinding tooth with a broad crown.
+MOLAR	S	wordnet-3.1:05315272,table:g	MOLAR: grinding tooth with a broad crown. Unpacked: In the GROWTH table it stands in row M under TEMPERATURE, beside MANIFEST, MESH, MOVE.
+MOLAR	E	template:E1,wordnet-3.1:05315272	Listen: molar. Grinding tooth with a broad crown -- and that is not nothing.
+MOLAR	W	wordnet-3.1:05315272	MOLAR (noun): grinding tooth with a broad crown.
+MOLECULE	baseline	wordnet-3.1:14706294	Molecule: (physics and chemistry) the simplest structural unit of an element or compound.
+MOLECULE	N	wordnet-3.1:14706294,scowl	A molecule is a (physics and chemistry) the simplest structural unit of an element or compound.
+MOLECULE	S	gcide-0.53,wordnet-3.1:14706294,table:o	MOLECULE: One of the very small invisible particles of which all ordinary matter is supposed to consist. Unpacked: (physics and chemistry) the simplest structural unit of an element or compound; in the OPTIMIZER table it stands in row M under ASSY, beside MICROSCOPE, MUTED, MEANING.
+MOLECULE	E	template:E1,wordnet-3.1:14706294	Listen: molecule. (physics and chemistry) the simplest structural unit of an element or compound -- and that is not nothing.
+MOLECULE	W	wordnet-3.1:14706294	MOLECULE (noun): (physics and chemistry) the simplest structural unit of an element or compound.
+MOVE	baseline	wordnet-3.1:00166763	Move: the act of deciding to do something.
+MOVE	N	wordnet-3.1:00166763,scowl,pool:wordnet-3.1:00166763	A move is the act of deciding to do something. For example: he didn't make a move to help.
+MOVE	S	wordnet-3.1:00166763,table:g	MOVE: the act of deciding to do something. Unpacked: In the GROWTH table it stands in row M under APPEND, beside MANIFEST, MESH, MOLAR.
+MOVE	E	template:E1,wordnet-3.1:00166763	Listen: move. The act of deciding to do something -- and that is not nothing.
+MOVE	W	gcide-0.53,wordnet-3.1:00166763	MOVE (noun): the act of deciding to do something. Synonyms: To stir, agitate, trouble, affect.
+MUST	baseline	wordnet-3.1:09386867	Must: a necessary or essential thing.
+MUST	N	wordnet-3.1:09386867,scowl,pool:gcide-0.53	A must is a necessary or essential thing. For example: Morover, he a bishop must have a good report of them which are without.
+MUST	S	wordnet-3.1:09386867,table:r	MUST: a necessary or essential thing. Unpacked: In the RECEIPT table it stands in row M under AGAINST, beside MEMBER, MASS, MISSING.
+MUST	E	template:E2,wordnet-3.1:09386867	Oh, must! A necessary or essential thing, of all things.
+MUST	W	wordnet-3.1:09386867	MUST (noun): a necessary or essential thing.
+MUTED	baseline	wordnet-3.1:01458319	Muted: in a softened tone.
+MUTED	N	wordnet-3.1:01458319,scowl,pool:wordnet-3.1:01458319	Muted means in a softened tone. For example: muted trumpets.
+MUTED	S	wordnet-3.1:01458319,table:o	MUTED: in a softened tone. Unpacked: In the OPTIMIZER table it stands in row M under HOVER, beside MICROSCOPE, MOLECULE, MEANING.
+MUTED	E	template:E2,wordnet-3.1:01458319	Oh, muted! In a softened tone, of all things.
+MUTED	W	gcide-0.53,wordnet-3.1:01458319	MUTED (adj): in a softened tone. Synonyms: dull, muffled.
+NAME	baseline	wordnet-3.1:06344646	Name: a language unit by which a person or thing is known.
+NAME	N	wordnet-3.1:06344646,scowl,pool:gcide-0.53	A name is a language unit by which a person or thing is known. For example: What men of name resort to him?.
+NAME	S	gcide-0.53,wordnet-3.1:06344646,table:g	NAME: The title by which any person or thing is known or designated. Unpacked: a language unit by which a person or thing is known; in the GROWTH table it stands in row N under APPEND, beside NUCLEUS, NOTES, NONCE.
+NAME	E	pool:gcide-0.53	What men of name resort to him?
+NAME	W	gcide-0.53,wordnet-3.1:06344646	NAME (noun): a language unit by which a person or thing is known. Synonyms: Appellation, title, designation, cognomen.
+NEEDS	baseline	wordnet-3.1:00113314	Needs: in such a manner as could not be otherwise.
+NEEDS	N	wordnet-3.1:00113314,scowl,pool:gcide-0.53	Needs means in such a manner as could not be otherwise. For example: A man must needs love mauger his head.
+NEEDS	S	wordnet-3.1:00113314,table:r	NEEDS: in such a manner as could not be otherwise. Unpacked: In the RECEIPT table it stands in row N under CLASS, beside NEUTRON, NOTIFY, NEUTRAL.
+NEEDS	E	pool:wordnet-3.1:00113314	we must needs by objective
+NEEDS	W	wordnet-3.1:00113314	NEEDS (adv): in such a manner as could not be otherwise.
+NEGOTIATE	baseline	wordnet-3.1:00763758	Negotiate: discuss the terms of an arrangement.
+NEGOTIATE	N	wordnet-3.1:00763758,scowl,pool:wordnet-3.1:00763758	To negotiate means to discuss the terms of an arrangement. For example: They negotiated the sale of the house.
+NEGOTIATE	S	wordnet-3.1:00763758,table:t	NEGOTIATE: discuss the terms of an arrangement. Unpacked: In the TAG table it stands in row N under COMMAND, beside NODE, NETWORK, NOTE.
+NEGOTIATE	E	template:E4,wordnet-3.1:00763758	Say it slowly, negotiate... Discuss the terms of an arrangement.
+NEGOTIATE	W	wordnet-3.1:00763758	NEGOTIATE (verb): discuss the terms of an arrangement.
+NETWORK	baseline	wordnet-3.1:08451269	Network: an interconnected system of things or people.
+NETWORK	N	wordnet-3.1:08451269,scowl,pool:wordnet-3.1:08451269	A network is an interconnected system of things or people. For example: he owned a network of shops.
+NETWORK	S	gcide-0.53,wordnet-3.1:08451269,table:t	NETWORK: A fabric of threads, cords, or wires crossing each other at certain intervals, and knotted or secured at the crossings, thus leaving spaces or meshes between them. Unpacked: an interconnected system of things or people; in the TAG table it stands in row N under GROUP, beside NODE, NEGOTIATE, NOTE.
+NETWORK	E	pool:wordnet-3.1:08451269	retirement meant dropping out of a whole network of people who had been part of my life
+NETWORK	W	wordnet-3.1:08451269	NETWORK (noun): an interconnected system of things or people.
+NEUTRAL	baseline	wordnet-3.1:10374841	Neutral: one who does not side with any party in a war or dispute.
+NEUTRAL	N	wordnet-3.1:10374841,scowl	A neutral is one who does not side with any party in a war or dispute.
+NEUTRAL	S	wordnet-3.1:10374841,table:r	NEUTRAL: one who does not side with any party in a war or dispute. Unpacked: In the RECEIPT table it stands in row N under LABEL, beside NEUTRON, NEEDS, NOTIFY.
+NEUTRAL	E	template:E2,wordnet-3.1:10374841	Oh, neutral! One who does not side with any party in a war or dispute, of all things.
+NEUTRAL	W	wordnet-3.1:10374841	NEUTRAL (noun): one who does not side with any party in a war or dispute.
+NEUTRON	baseline	wordnet-3.1:09392431	Neutron: an elementary particle with 0 charge and mass about equal to a proton.
+NEUTRON	N	wordnet-3.1:09392431,scowl	A neutron is an elementary particle with 0 charge and mass about equal to a proton.
+NEUTRON	S	wordnet-3.1:09392431,table:r	NEUTRON: an elementary particle with 0 charge and mass about equal to a proton. Unpacked: In the RECEIPT table it stands in row N under ISOTOPE, beside NEEDS, NOTIFY, NEUTRAL.
+NEUTRON	E	template:E3,wordnet-3.1:09392431	Neutron? Yes, neutron: an elementary particle with 0 charge and mass about equal to a proton, and it hums quietly.
+NEUTRON	W	wordnet-3.1:09392431	NEUTRON (noun): an elementary particle with 0 charge and mass about equal to a proton.
+NEVER	baseline	wordnet-3.1:00021214	Never: not ever.
+NEVER	N	wordnet-3.1:00021214,scowl,pool:wordnet-3.1:00021214	Never means not ever. For example: I have never been to China.
+NEVER	S	wordnet-3.1:00021214,table:o	NEVER: not ever. Unpacked: In the OPTIMIZER table it stands in row N under ACCENT, beside NULL, NOBLE, NEXT.
+NEVER	E	pool:wordnet-3.1:00021214	I will never marry you!
+NEVER	W	wordnet-3.1:00021214	NEVER (adv): not ever.
+NEXT	baseline	wordnet-3.1:00128838	Next: immediately following in time or order.
+NEXT	N	wordnet-3.1:00128838,scowl,pool:gcide-0.53	Next means immediately following in time or order. For example: The man is near of kin unto us, one of our next kinsmen.
+NEXT	S	wordnet-3.1:00128838,table:o	NEXT: immediately following in time or order. Unpacked: In the OPTIMIZER table it stands in row N under HOVER, beside NULL, NOBLE, NEVER.
+NEXT	E	pool:gcide-0.53	Fear followed me so hard, that I fled the next way.
+NEXT	W	wordnet-3.1:00128838	NEXT (adj): immediately following in time or order.
+NOBLE	baseline	wordnet-3.1:10291374	Noble: a titled peer of the realm.
+NOBLE	N	wordnet-3.1:10291374,scowl	A noble is a titled peer of the realm.
+NOBLE	S	wordnet-3.1:10291374,table:o	NOBLE: a titled peer of the realm. Unpacked: In the OPTIMIZER table it stands in row N under ASSY, beside NULL, NEXT, NEVER.
+NOBLE	E	template:E3,wordnet-3.1:10291374	Noble? Yes, noble: a titled peer of the realm, and it hums quietly.
+NOBLE	W	gcide-0.53,wordnet-3.1:10291374	NOBLE (noun): a titled peer of the realm. Synonyms: Honorable, worthy, dignified, elevated.
+NODE	baseline	wordnet-3.1:13934060	Node: a connecting point at which several lines come together.
+NODE	N	wordnet-3.1:13934060,scowl	A node is a connecting point at which several lines come together.
+NODE	S	gcide-0.53,wordnet-3.1:13934060,table:t	NODE: A knot, a knob. Unpacked: a connecting point at which several lines come together; in the TAG table it stands in row N under SCALAR, beside NETWORK, NEGOTIATE, NOTE.
+NODE	E	template:E1,wordnet-3.1:13934060	Listen: node. A connecting point at which several lines come together -- and that is not nothing.
+NODE	W	wordnet-3.1:13934060	NODE (noun): a connecting point at which several lines come together.
+NONCE	baseline	wordnet-3.1:15160386	Nonce: the present occasion.
+NONCE	N	wordnet-3.1:15160386,scowl,pool:wordnet-3.1:15160386	A nonce is the present occasion. For example: for the nonce.
+NONCE	S	gcide-0.53,wordnet-3.1:15160386,table:g	NONCE: The one or single occasion. Unpacked: the present occasion; in the GROWTH table it stands in row N under TEMPERATURE, beside NUCLEUS, NOTES, NAME.
+NONCE	E	template:E2,wordnet-3.1:15160386	Oh, nonce! The present occasion, of all things.
+NONCE	W	wordnet-3.1:15160386	NONCE (noun): the present occasion.
+NOTE	baseline	wordnet-3.1:06516453	Note: a brief written record.
+NOTE	N	wordnet-3.1:06516453,scowl,pool:wordnet-3.1:06516453	A note is a brief written record. For example: he made a note of the appointment.
+NOTE	S	wordnet-3.1:06516453,table:t	NOTE: a brief written record. Unpacked: In the TAG table it stands in row N under TAG, beside NODE, NETWORK, NEGOTIATE.
+NOTE	E	template:E2,wordnet-3.1:06516453	Oh, note! A brief written record, of all things.
+NOTE	W	wordnet-3.1:06516453	NOTE (noun): a brief written record.
+NOTES	baseline	wordnet-3.1:06516453	Notes: a brief written record.
+NOTES	N	wordnet-3.1:06516453,scowl,pool:wordnet-3.1:06516453	A notes is a brief written record. For example: he made a note of the appointment.
+NOTES	S	wordnet-3.1:06516453,table:g	NOTES: a brief written record. Unpacked: In the GROWTH table it stands in row N under FAMILY, beside NUCLEUS, NAME, NONCE.
+NOTES	E	template:E3,wordnet-3.1:06516453	Notes? Yes, notes: a brief written record, and it hums quietly.
+NOTES	W	wordnet-3.1:06516453	NOTES (noun): a brief written record.
+NOTIFY	baseline	wordnet-3.1:00875364	Notify: inform (somebody) of something.
+NOTIFY	N	wordnet-3.1:00875364,scowl,pool:gcide-0.53	To notify means to inform (somebody) of something. For example: No law can bind till it be notified or promulged.
+NOTIFY	S	wordnet-3.1:00875364,table:r	NOTIFY: inform (somebody) of something. Unpacked: In the RECEIPT table it stands in row N under AGAINST, beside NEUTRON, NEEDS, NEUTRAL.
+NOTIFY	E	template:E1,wordnet-3.1:00875364	Listen: notify. Inform (somebody) of something -- and that is not nothing.
+NOTIFY	W	wordnet-3.1:00875364	NOTIFY (verb): inform (somebody) of something.
+NUCLEUS	baseline	wordnet-3.1:05442503	Nucleus: a part of the cell containing DNA and RNA and responsible for growth and reproduction.
+NUCLEUS	N	wordnet-3.1:05442503,scowl,pool:gcide-0.53	A nucleus is a part of the cell containing DNA and RNA and responsible for growth and reproduction. For example: It must contain within itself a nucleus of truth.
+NUCLEUS	S	wordnet-3.1:05442503,table:g	NUCLEUS: a part of the cell containing DNA and RNA and responsible for growth and reproduction. Unpacked: In the GROWTH table it stands in row N under ATOM, beside NOTES, NAME, NONCE.
+NUCLEUS	E	template:E4,wordnet-3.1:05442503	Say it slowly, nucleus... A part of the cell containing DNA and RNA and responsible for growth and reproduction.
+NUCLEUS	W	wordnet-3.1:05442503	NUCLEUS (noun): a part of the cell containing DNA and RNA and responsible for growth and reproduction.
+NULL	baseline	wordnet-3.1:13762308	Null: a quantity of no importance.
+NULL	N	wordnet-3.1:13762308,scowl	A null is a quantity of no importance.
+NULL	S	wordnet-3.1:13762308,table:o	NULL: a quantity of no importance. Unpacked: In the OPTIMIZER table it stands in row N under ELEMENT, beside NOBLE, NEXT, NEVER.
+NULL	E	template:E2,wordnet-3.1:13762308	Oh, null! A quantity of no importance, of all things.
+NULL	W	wordnet-3.1:13762308	NULL (noun): a quantity of no importance.
+OBFUSCATE	baseline	wordnet-3.1:00942245	Obfuscate: make obscure or unclear.
+OBFUSCATE	N	wordnet-3.1:00942245,scowl	To obfuscate means to make obscure or unclear.
+OBFUSCATE	S	wordnet-3.1:00942245,table:t	OBFUSCATE: make obscure or unclear. Unpacked: In the TAG table it stands in row O under COMMAND, beside OBJECT, OPERATION, OTHER.
+OBFUSCATE	E	template:E2,wordnet-3.1:00942245	Oh, obfuscate! Make obscure or unclear, of all things.
+OBFUSCATE	W	wordnet-3.1:00942245	OBFUSCATE (verb): make obscure or unclear.
+OBJECT	baseline	wordnet-3.1:00002684	Object: a tangible and visible entity.
+OBJECT	N	wordnet-3.1:00002684,scowl,pool:wordnet-3.1:00002684	An object is a tangible and visible entity. For example: it was full of rackets, balls and other objects.
+OBJECT	S	wordnet-3.1:00002684,table:t	OBJECT: a tangible and visible entity. Unpacked: In the TAG table it stands in row O under SCALAR, beside OPERATION, OBFUSCATE, OTHER.
+OBJECT	E	template:E2,wordnet-3.1:00002684	Oh, object! A tangible and visible entity, of all things.
+OBJECT	W	wordnet-3.1:00002684	OBJECT (noun): a tangible and visible entity.
+OFFLOAD	baseline	wordnet-3.1:02237863	Offload: transfer to a peripheral device, of computer data.
+OFFLOAD	N	wordnet-3.1:02237863,scowl	To offload means to transfer to a peripheral device, of computer data.
+OFFLOAD	S	wordnet-3.1:02237863,table:g	OFFLOAD: transfer to a peripheral device, of computer data. Unpacked: In the GROWTH table it stands in row O under APPEND, beside ORBITAL, OMNI, ORIGIN.
+OFFLOAD	E	template:E1,wordnet-3.1:02237863	Listen: offload. Transfer to a peripheral device, of computer data -- and that is not nothing.
+OFFLOAD	W	wordnet-3.1:02237863	OFFLOAD (verb): transfer to a peripheral device, of computer data.
+ONCE	baseline	wordnet-3.1:00119765	Once: on one occasion.
+ONCE	N	wordnet-3.1:00119765,scowl,pool:wordnet-3.1:00119765	Once means on one occasion. For example: once I ran into her.
+ONCE	S	wordnet-3.1:00119765,table:r	ONCE: on one occasion. Unpacked: In the RECEIPT table it stands in row O under LABEL, beside OWNER, ORGANIC, OPENING.
+ONCE	E	pool:wordnet-3.1:00119765	once I ran into her
+ONCE	W	wordnet-3.1:00119765	ONCE (adv): on one occasion.
+OPENING	baseline	wordnet-3.1:09402023	Opening: an open or empty space in or between things.
+OPENING	N	wordnet-3.1:09402023,scowl,pool:gcide-0.53	An opening is an open or empty space in or between things. For example: We saw him at the opening of his tent.
+OPENING	S	gcide-0.53,wordnet-3.1:09402023,table:r	OPENING: The act or process of opening. Unpacked: an open or empty space in or between things; in the RECEIPT table it stands in row O under AGAINST, beside OWNER, ORGANIC, ONCE.
+OPENING	E	pool:gcide-0.53	We saw him at the opening of his tent.
+OPENING	W	wordnet-3.1:09402023	OPENING (noun): an open or empty space in or between things.
+OPERATION	baseline	wordnet-3.1:14032291	Operation: the state of being in effect or being operative.
+OPERATION	N	wordnet-3.1:14032291,scowl,pool:wordnet-3.1:14032291	An operation is the state of being in effect or being operative. For example: that rule is no longer in operation.
+OPERATION	S	gcide-0.53,wordnet-3.1:14032291,table:t	OPERATION: The act or process of operating. Unpacked: the state of being in effect or being operative; in the TAG table it stands in row O under GROUP, beside OBJECT, OBFUSCATE, OTHER.
+OPERATION	E	template:E3,wordnet-3.1:14032291	Operation? Yes, operation: the state of being in effect or being operative, and it hums quietly.
+OPERATION	W	wordnet-3.1:14032291	OPERATION (noun): the state of being in effect or being operative.
+ORBITAL	baseline	wordnet-3.1:02990830	Orbital: of or relating to an orbit.
+ORBITAL	N	wordnet-3.1:02990830,scowl,pool:wordnet-3.1:02990830	Orbital means of or relating to an orbit. For example: orbital velocity.
+ORBITAL	S	gcide-0.53,wordnet-3.1:02990830,table:g	ORBITAL: Of or pertaining to an orbit. Unpacked: of or relating to an orbit; in the GROWTH table it stands in row O under ATOM, beside OMNI, OFFLOAD, ORIGIN.
+ORBITAL	E	template:E3,wordnet-3.1:02990830	Orbital? Yes, orbital: of or relating to an orbit, and it hums quietly.
+ORBITAL	W	wordnet-3.1:02990830	ORBITAL (adj): of or relating to an orbit.
+ORDER	baseline	wordnet-3.1:07183274	Order: (often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed.
+ORDER	N	wordnet-3.1:07183274,scowl,pool:gcide-0.53	An order is a (often plural) a command given by a superior (e.g. For example: Good order is the foundation of all good things.
+ORDER	S	wordnet-3.1:07183274,table:o	ORDER: (often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed. Unpacked: In the OPTIMIZER table it stands in row O under ASSY, beside OPTIMIZER, OVERLAP, ORPHAN.
+ORDER	E	template:E4,wordnet-3.1:07183274	Say it slowly, order... (often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed.
+ORDER	W	gcide-0.53,wordnet-3.1:07183274	ORDER (noun): (often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed. Synonyms: Arrangement.
+ORGANIC	baseline	wordnet-3.1:14883989	Organic: a fertilizer that is derived from animal or vegetable matter.
+ORGANIC	N	wordnet-3.1:14883989,scowl	An organic is a fertilizer that is derived from animal or vegetable matter.
+ORGANIC	S	wordnet-3.1:14883989,table:r	ORGANIC: a fertilizer that is derived from animal or vegetable matter. Unpacked: In the RECEIPT table it stands in row O under CLASS, beside OWNER, OPENING, ONCE.
+ORGANIC	E	template:E2,wordnet-3.1:14883989	Oh, organic! A fertilizer that is derived from animal or vegetable matter, of all things.
+ORGANIC	W	wordnet-3.1:14883989	ORGANIC (noun): a fertilizer that is derived from animal or vegetable matter.
+ORIGIN	baseline	wordnet-3.1:08524579	Origin: the place where something begins, where it springs into being.
+ORIGIN	N	wordnet-3.1:08524579,scowl,pool:wordnet-3.1:08524579	An origin is the place where something begins, where it springs into being. For example: Jupiter was the origin of the radiation.
+ORIGIN	S	gcide-0.53,wordnet-3.1:08524579,table:g	ORIGIN: The first existence or beginning of anything. Unpacked: the place where something begins, where it springs into being; in the GROWTH table it stands in row O under TEMPERATURE, beside ORBITAL, OMNI, OFFLOAD.
+ORIGIN	E	pool:gcide-0.53	I think he would have set out just as he did, with the origin of ideas -- the proper starting point of a grammarian, who is to treat of their signs.
+ORIGIN	W	gcide-0.53,wordnet-3.1:08524579	ORIGIN (noun): the place where something begins, where it springs into being. Synonyms: Commencement, rise, source, spring.
+ORPHAN	baseline	wordnet-3.1:10404091	Orphan: a child who has lost both parents.
+ORPHAN	N	wordnet-3.1:10404091,scowl	An orphan is a child who has lost both parents.
+ORPHAN	S	gcide-0.53,wordnet-3.1:10404091,table:o	ORPHAN: A child bereaved of both father and mother. Unpacked: a child who has lost both parents; in the OPTIMIZER table it stands in row O under ACCENT, beside OPTIMIZER, ORDER, OVERLAP.
+ORPHAN	E	template:E1,wordnet-3.1:10404091	Listen: orphan. A child who has lost both parents -- and that is not nothing.
+ORPHAN	W	wordnet-3.1:10404091	ORPHAN (noun): a child who has lost both parents.
+OTHER	baseline	wordnet-3.1:02076759	Other: not the same one or ones already mentioned or implied.
+OTHER	N	wordnet-3.1:02076759,scowl,pool:wordnet-3.1:02076759	Other means not the same one or ones already mentioned or implied. For example: she lived on the other side of the street from me.
+OTHER	S	wordnet-3.1:02076759,table:t	OTHER: not the same one or ones already mentioned or implied. Unpacked: In the TAG table it stands in row O under TAG, beside OBJECT, OPERATION, OBFUSCATE.
+OTHER	E	pool:wordnet-3.1:02076759	then we looked at the other house
+OTHER	W	wordnet-3.1:02076759	OTHER (adj): not the same one or ones already mentioned or implied.
+OVERLAP	baseline	wordnet-3.1:05772362	Overlap: a representation of common ground between theories or phenomena.
+OVERLAP	N	wordnet-3.1:05772362,scowl,pool:wordnet-3.1:05772362	An overlap is a representation of common ground between theories or phenomena. For example: there was no overlap between their proposals.
+OVERLAP	S	wordnet-3.1:05772362,table:o	OVERLAP: a representation of common ground between theories or phenomena. Unpacked: In the OPTIMIZER table it stands in row O under HOVER, beside OPTIMIZER, ORDER, ORPHAN.
+OVERLAP	E	template:E3,wordnet-3.1:05772362	Overlap? Yes, overlap: a representation of common ground between theories or phenomena, and it hums quietly.
+OVERLAP	W	wordnet-3.1:05772362	OVERLAP (noun): a representation of common ground between theories or phenomena.
+OWNER	baseline	wordnet-3.1:10408623	Owner: (law) someone who owns (is legal possessor of) a business.
+OWNER	N	wordnet-3.1:10408623,scowl,pool:wordnet-3.1:10408623	An owner is a (law) someone who owns (is legal possessor of) a business. For example: he is the owner of a chain of restaurants.
+OWNER	S	wordnet-3.1:10408623,table:r	OWNER: (law) someone who owns (is legal possessor of) a business. Unpacked: In the RECEIPT table it stands in row O under ISOTOPE, beside ORGANIC, OPENING, ONCE.
+OWNER	E	template:E1,wordnet-3.1:10408623	Listen: owner. (law) someone who owns (is legal possessor of) a business -- and that is not nothing.
+OWNER	W	wordnet-3.1:10408623	OWNER (noun): (law) someone who owns (is legal possessor of) a business.
+PACKAGE	baseline	wordnet-3.1:08024575	Package: a collection of things wrapped or boxed together.
+PACKAGE	N	wordnet-3.1:08024575,scowl	A package is a collection of things wrapped or boxed together.
+PACKAGE	S	gcide-0.53,wordnet-3.1:08024575,table:t	PACKAGE: Act or process of packing. Unpacked: a collection of things wrapped or boxed together; in the TAG table it stands in row P under TAG, beside PROGRAM, PROJECT, PIPE.
+PACKAGE	E	template:E1,wordnet-3.1:08024575	Listen: package. A collection of things wrapped or boxed together -- and that is not nothing.
+PACKAGE	W	wordnet-3.1:08024575	PACKAGE (noun): a collection of things wrapped or boxed together.
+PAIR	baseline	wordnet-3.1:08001665	Pair: a set of two similar things considered as a unit.
+PAIR	N	wordnet-3.1:08001665,scowl,pool:gcide-0.53	A pair is a set of two similar things considered as a unit. For example: My heart was made to fit and pair with thine.
+PAIR	S	gcide-0.53,wordnet-3.1:08001665,table:g	PAIR: A number of things resembling one another, or belonging together. Unpacked: a set of two similar things considered as a unit; in the GROWTH table it stands in row P under FAMILY, beside PASSAGE, PIN, PHOTON.
+PAIR	E	pool:gcide-0.53	Two crowns in my pocket, two pair of cards.
+PAIR	W	gcide-0.53,wordnet-3.1:08001665	PAIR (noun): a set of two similar things considered as a unit. Synonyms: Pair, Flight, also.
+PANEL	baseline	wordnet-3.1:03887755	Panel: sheet that forms a distinct (usually flat and rectangular) section or component of something.
+PANEL	N	wordnet-3.1:03887755,scowl	A panel is a sheet that forms a distinct (usually flat and rectangular) section or component of something.
+PANEL	S	gcide-0.53,wordnet-3.1:03887755,table:o	PANEL: A sunken compartment with raised margins, molded or otherwise, as in ceilings, wainscotings. Unpacked: sheet that forms a distinct (usually flat and rectangular) section or component of something; in the OPTIMIZER table it stands in row P under ASSY, beside PIVOT, PASS, POSITRON.
+PANEL	E	template:E1,wordnet-3.1:03887755	Listen: panel. Sheet that forms a distinct (usually flat and rectangular) section or component of something -- and that is not nothing.
+PANEL	W	wordnet-3.1:03887755	PANEL (noun): sheet that forms a distinct (usually flat and rectangular) section or component of something.
+PASS	baseline	wordnet-3.1:00128106	Pass: (baseball) an advance to first base by a batter who receives four balls.
+PASS	N	wordnet-3.1:00128106,scowl	A pass is a (baseball) an advance to first base by a batter who receives four balls.
+PASS	S	wordnet-3.1:00128106,table:o	PASS: (baseball) an advance to first base by a batter who receives four balls. Unpacked: In the OPTIMIZER table it stands in row P under HOVER, beside PIVOT, PANEL, POSITRON.
+PASS	E	template:E1,wordnet-3.1:00128106	Listen: pass. (baseball) an advance to first base by a batter who receives four balls -- and that is not nothing.
+PASS	W	wordnet-3.1:00128106	PASS (noun): (baseball) an advance to first base by a batter who receives four balls.
+PASSAGE	baseline	wordnet-3.1:00201907	Passage: the act of passing from one state or place to the next.
+PASSAGE	N	wordnet-3.1:00201907,scowl,pool:gcide-0.53	A passage is the act of passing from one state or place to the next. For example: The ship in which he had taken passage.
+PASSAGE	S	gcide-0.53,wordnet-3.1:00201907,table:g	PASSAGE: The act of passing. Unpacked: the act of passing from one state or place to the next; in the GROWTH table it stands in row P under ATOM, beside PAIR, PIN, PHOTON.
+PASSAGE	E	pool:gcide-0.53	What! are my doors opposed against my passage!
+PASSAGE	W	gcide-0.53,wordnet-3.1:00201907	PASSAGE (noun): the act of passing from one state or place to the next. Synonyms: Vestibule, hall.
+PHASE	baseline	wordnet-3.1:15315573	Phase: any distinct time period in a sequence of events.
+PHASE	N	wordnet-3.1:15315573,scowl	A phase is any distinct time period in a sequence of events.
+PHASE	S	gcide-0.53,wordnet-3.1:15315573,table:r	PHASE: That which is exhibited to the eye. Unpacked: any distinct time period in a sequence of events; in the RECEIPT table it stands in row P under LABEL, beside PLASMA, PRACTICE, PUSH.
+PHASE	E	template:E2,wordnet-3.1:15315573	Oh, phase! Any distinct time period in a sequence of events, of all things.
+PHASE	W	gcide-0.53,wordnet-3.1:15315573	PHASE (noun): any distinct time period in a sequence of events. Synonyms: faze.
+PHOTON	baseline	wordnet-3.1:09414116	Photon: a quantum of electromagnetic radiation.
+PHOTON	N	wordnet-3.1:09414116,scowl	A photon is a quantum of electromagnetic radiation.
+PHOTON	S	wordnet-3.1:09414116,table:g	PHOTON: a quantum of electromagnetic radiation. Unpacked: In the GROWTH table it stands in row P under TEMPERATURE, beside PASSAGE, PAIR, PIN.
+PHOTON	E	template:E1,wordnet-3.1:09414116	Listen: photon. A quantum of electromagnetic radiation -- and that is not nothing.
+PHOTON	W	wordnet-3.1:09414116	PHOTON (noun): a quantum of electromagnetic radiation.
+PIN	baseline	wordnet-3.1:03946989	Pin: a piece of jewelry that is pinned onto the wearer's garment.
+PIN	N	wordnet-3.1:03946989,scowl	A pin is a piece of jewelry that is pinned onto the wearer's garment.
+PIN	S	wordnet-3.1:03946989,table:g	PIN: a piece of jewelry that is pinned onto the wearer's garment. Unpacked: In the GROWTH table it stands in row P under APPEND, beside PASSAGE, PAIR, PHOTON.
+PIN	E	template:E2,wordnet-3.1:03946989	Oh, pin! A piece of jewelry that is pinned onto the wearer's garment, of all things.
+PIN	W	wordnet-3.1:03946989	PIN (noun): a piece of jewelry that is pinned onto the wearer's garment.
+PIPE	baseline	wordnet-3.1:03951443	Pipe: a tube with a small bowl at one end.
+PIPE	N	wordnet-3.1:03951443,scowl,pool:gcide-0.53	A pipe is a tube with a small bowl at one end. For example: Now had he rather hear the tabor and the pipe.
+PIPE	S	gcide-0.53,wordnet-3.1:03951443,table:t	PIPE: A wind instrument of music, consisting of a tube or tubes of straw, reed, wood, or metal. Unpacked: a tube with a small bowl at one end; in the TAG table it stands in row P under COMMAND, beside PROGRAM, PROJECT, PACKAGE.
+PIPE	E	pool:gcide-0.53	We have piped unto you, and ye have not danced.
+PIPE	W	wordnet-3.1:03951443	PIPE (noun): a tube with a small bowl at one end.
+PIVOT	baseline	wordnet-3.1:10456474	Pivot: the person in a rank around whom the others wheel and maneuver.
+PIVOT	N	wordnet-3.1:10456474,scowl	A pivot is the person in a rank around whom the others wheel and maneuver.
+PIVOT	S	gcide-0.53,wordnet-3.1:10456474,table:o	PIVOT: A fixed pin or short axis, on the end of which a wheel or other body turns. Unpacked: the person in a rank around whom the others wheel and maneuver; in the OPTIMIZER table it stands in row P under ELEMENT, beside PANEL, PASS, POSITRON.
+PIVOT	E	template:E2,wordnet-3.1:10456474	Oh, pivot! The person in a rank around whom the others wheel and maneuver, of all things.
+PIVOT	W	wordnet-3.1:10456474	PIVOT (noun): the person in a rank around whom the others wheel and maneuver.
+PLASMA	baseline	wordnet-3.1:05410770	Plasma: the colorless watery fluid of the blood and lymph that contains no cells, but in which the blood cells (erythrocytes, leukocytes, and thrombocytes) are suspended.
+PLASMA	N	wordnet-3.1:05410770,scowl	A plasma is the colorless watery fluid of the blood and lymph that contains no cells.
+PLASMA	S	gcide-0.53,wordnet-3.1:05410770,table:r	PLASMA: A variety of quartz, of a color between grass green and leek green, which is found associated with common chalcedony. Unpacked: the colorless watery fluid of the blood and lymph that contains no cells, but in which the blood cells (erythrocytes, leukocytes, and thrombocytes) are suspended; in the RECEIPT table it stands in row P under ISOTOPE, beside PRACTICE, PUSH, PHASE.
+PLASMA	E	template:E4,wordnet-3.1:05410770	Say it slowly, plasma... The colorless watery fluid of the blood and lymph that contains no cells, but in which the blood cells (erythrocytes, leukocytes, and thrombocytes) are suspended.
+PLASMA	W	wordnet-3.1:05410770	PLASMA (noun): the colorless watery fluid of the blood and lymph that contains no cells, but in which the blood cells (erythrocytes, leukocytes, and thrombocytes) are suspended.
+POSITRON	baseline	wordnet-3.1:09420771	Positron: an elementary particle with positive charge.
+POSITRON	N	wordnet-3.1:09420771,scowl	A positron is an elementary particle with positive charge.
+POSITRON	S	wordnet-3.1:09420771,table:o	POSITRON: an elementary particle with positive charge. Unpacked: In the OPTIMIZER table it stands in row P under ACCENT, beside PIVOT, PANEL, PASS.
+POSITRON	E	template:E3,wordnet-3.1:09420771	Positron? Yes, positron: an elementary particle with positive charge, and it hums quietly.
+POSITRON	W	wordnet-3.1:09420771	POSITRON (noun): an elementary particle with positive charge.
+PRACTICE	baseline	wordnet-3.1:00411260	Practice: a customary way of operation or behavior.
+PRACTICE	N	wordnet-3.1:00411260,scowl,pool:wordnet-3.1:00411260	A practice is a customary way of operation or behavior. For example: it is their practice to give annual raises.
+PRACTICE	S	gcide-0.53,wordnet-3.1:00411260,table:r	PRACTICE: Frequently repeated or customary action. Unpacked: a customary way of operation or behavior; in the RECEIPT table it stands in row P under CLASS, beside PLASMA, PUSH, PHASE.
+PRACTICE	E	template:E2,wordnet-3.1:00411260	Oh, practice! A customary way of operation or behavior, of all things.
+PRACTICE	W	gcide-0.53,wordnet-3.1:00411260	PRACTICE (noun): a customary way of operation or behavior. Synonyms: Custom, usage, habit.
+PROGRAM	baseline	wordnet-3.1:05907175	Program: a series of steps to be carried out or goals to be accomplished.
+PROGRAM	N	wordnet-3.1:05907175,scowl	A program is a series of steps to be carried out or goals to be accomplished.
+PROGRAM	S	wordnet-3.1:05907175,table:t	PROGRAM: a series of steps to be carried out or goals to be accomplished. Unpacked: In the TAG table it stands in row P under SCALAR, beside PROJECT, PIPE, PACKAGE.
+PROGRAM	E	template:E1,wordnet-3.1:05907175	Listen: program. A series of steps to be carried out or goals to be accomplished -- and that is not nothing.
+PROGRAM	W	wordnet-3.1:05907175	PROGRAM (noun): a series of steps to be carried out or goals to be accomplished.
+PROJECT	baseline	wordnet-3.1:00797381	Project: any piece of work that is undertaken or attempted.
+PROJECT	N	wordnet-3.1:00797381,scowl,pool:gcide-0.53	A project is any piece of work that is undertaken or attempted. For example: Before his feet herself she did project.
+PROJECT	S	gcide-0.53,wordnet-3.1:00797381,table:t	PROJECT: The place from which a thing projects, or starts forth. Unpacked: any piece of work that is undertaken or attempted; in the TAG table it stands in row P under GROUP, beside PROGRAM, PIPE, PACKAGE.
+PROJECT	E	template:E4,wordnet-3.1:00797381	Say it slowly, project... Any piece of work that is undertaken or attempted.
+PROJECT	W	gcide-0.53,wordnet-3.1:00797381	PROJECT (noun): any piece of work that is undertaken or attempted. Synonyms: Design, scheme, plan, but.
+PUSH	baseline	wordnet-3.1:00113132	Push: the act of applying force in order to move something away.
+PUSH	N	wordnet-3.1:00113132,scowl,pool:wordnet-3.1:00113132	A push is the act of applying force in order to move something away. For example: he gave the door a hard push.
+PUSH	S	wordnet-3.1:00113132,table:r	PUSH: the act of applying force in order to move something away. Unpacked: In the RECEIPT table it stands in row P under AGAINST, beside PLASMA, PRACTICE, PHASE.
+PUSH	E	pool:gcide-0.53	We are pushed for an answer.
+PUSH	W	wordnet-3.1:00113132	PUSH (noun): the act of applying force in order to move something away.
+RADICAL	baseline	wordnet-3.1:14645624	Radical: (chemistry) two or more atoms bound together as a single unit and forming part of a molecule.
+RADICAL	N	wordnet-3.1:14645624,scowl	A radical is a (chemistry) two or more atoms bound together as a single unit and forming part of a molecule.
+RADICAL	S	wordnet-3.1:14645624,table:g	RADICAL: (chemistry) two or more atoms bound together as a single unit and forming part of a molecule. Unpacked: In the GROWTH table it stands in row R under ATOM, beside RING, RELEASE, REGISTER.
+RADICAL	E	template:E3,wordnet-3.1:14645624	Radical? Yes, radical: (chemistry) two or more atoms bound together as a single unit and forming part of a molecule, and it hums quietly.
+RADICAL	W	gcide-0.53,wordnet-3.1:14645624	RADICAL (noun): (chemistry) two or more atoms bound together as a single unit and forming part of a molecule. Synonyms: Primitive, original, natural, underived.
+RADIUS	baseline	wordnet-3.1:05109363	Radius: the length of a line segment between the center and circumference of a circle or sphere.
+RADIUS	N	wordnet-3.1:05109363,scowl	A radius is the length of a line segment between the center and circumference of a circle or sphere.
+RADIUS	S	gcide-0.53,wordnet-3.1:05109363,table:o	RADIUS: A right line drawn or extending from the center of a circle to the periphery. Unpacked: the length of a line segment between the center and circumference of a circle or sphere; in the OPTIMIZER table it stands in row R under ELEMENT, beside RANGE, RULE, RATHER.
+RADIUS	E	template:E4,wordnet-3.1:05109363	Say it slowly, radius... The length of a line segment between the center and circumference of a circle or sphere.
+RADIUS	W	wordnet-3.1:05109363	RADIUS (noun): the length of a line segment between the center and circumference of a circle or sphere.
+RANGE	baseline	wordnet-3.1:05132642	Range: an area in which something acts or operates or has power or control: "the range of a supersonic jet.
+RANGE	N	wordnet-3.1:05132642,scowl,pool:wordnet-3.1:05132642	A range is an area in which something acts or operates or has power or control: "the range of a supersonic. For example: a piano has a greater range than the human voice.
+RANGE	S	wordnet-3.1:05132642,table:o	RANGE: an area in which something acts or operates or has power or control: "the range of a supersonic jet. Unpacked: In the OPTIMIZER table it stands in row R under ASSY, beside RADIUS, RULE, RATHER.
+RANGE	E	template:E4,wordnet-3.1:05132642	Say it slowly, range... An area in which something acts or operates or has power or control: "the range of a supersonic jet.
+RANGE	W	gcide-0.53,wordnet-3.1:05132642	RANGE (noun): an area in which something acts or operates or has power or control: "the range of a supersonic jet. Synonyms: To rove, roam, ramble, wander.
+RATHER	baseline	wordnet-3.1:00099264	Rather: on the contrary.
+RATHER	N	wordnet-3.1:00099264,scowl,pool:wordnet-3.1:00099264	Rather means on the contrary. For example: he didn't call; rather (or instead), he wrote her a letter.
+RATHER	S	wordnet-3.1:00099264,table:o	RATHER: on the contrary. Unpacked: In the OPTIMIZER table it stands in row R under ACCENT, beside RADIUS, RANGE, RULE.
+RATHER	E	template:E1,wordnet-3.1:00099264	Listen: rather. On the contrary -- and that is not nothing.
+RATHER	W	wordnet-3.1:00099264	RATHER (adv): on the contrary.
+REACTOR	baseline	wordnet-3.1:04064958	Reactor: an electrical device used to introduce reactance into a circuit.
+REACTOR	N	wordnet-3.1:04064958,scowl	A reactor is an electrical device used to introduce reactance into a circuit.
+REACTOR	S	wordnet-3.1:04064958,table:r	REACTOR: an electrical device used to introduce reactance into a circuit. Unpacked: In the RECEIPT table it stands in row R under CLASS, beside RECEIPT, REMOVE, REQUEST.
+REACTOR	E	template:E2,wordnet-3.1:04064958	Oh, reactor! An electrical device used to introduce reactance into a circuit, of all things.
+REACTOR	W	wordnet-3.1:04064958	REACTOR (noun): an electrical device used to introduce reactance into a circuit.
+RECEIPT	baseline	wordnet-3.1:00091073	Receipt: the act of receiving.
+RECEIPT	N	wordnet-3.1:00091073,scowl,pool:gcide-0.53	A receipt is the act of receiving. For example: Thy kind receipt of me.
+RECEIPT	S	gcide-0.53,wordnet-3.1:00091073,table:r	RECEIPT: The act of receiving. Unpacked: In the RECEIPT table it stands in row R under ISOTOPE, beside REACTOR, REMOVE, REQUEST.
+RECEIPT	E	pool:gcide-0.53	Thy kind receipt of me.
+RECEIPT	W	wordnet-3.1:00091073	RECEIPT (noun): the act of receiving.
+REGISTER	baseline	wordnet-3.1:06519032	Register: an official written record of names or events or transactions.
+REGISTER	N	wordnet-3.1:06519032,scowl,pool:gcide-0.53	A register is an official written record of names or events or transactions. For example: Such follow him as shall be registered.
+REGISTER	S	gcide-0.53,wordnet-3.1:06519032,table:g	REGISTER: A written account or entry. Unpacked: an official written record of names or events or transactions; in the GROWTH table it stands in row R under TEMPERATURE, beside RADICAL, RING, RELEASE.
+REGISTER	E	pool:gcide-0.53	As you have one eye upon my follies, . . . turn another into the register of your own.
+REGISTER	W	gcide-0.53,wordnet-3.1:06519032	REGISTER (noun): an official written record of names or events or transactions. Synonyms: List, catalogue, roll, record.
+REGISTRY	baseline	wordnet-3.1:06519032	Registry: an official written record of names or events or transactions.
+REGISTRY	N	wordnet-3.1:06519032,scowl	A registry is an official written record of names or events or transactions.
+REGISTRY	S	gcide-0.53,wordnet-3.1:06519032,table:t	REGISTRY: The act of recording or writing in a register. Unpacked: an official written record of names or events or transactions; in the TAG table it stands in row R under GROUP, beside ROUTER, RELAY, ROUTINE.
+REGISTRY	E	template:E2,wordnet-3.1:06519032	Oh, registry! An official written record of names or events or transactions, of all things.
+REGISTRY	W	wordnet-3.1:06519032	REGISTRY (noun): an official written record of names or events or transactions.
+RELAY	baseline	wordnet-3.1:00319393	Relay: the act of passing something along from one person or group to another.
+RELAY	N	wordnet-3.1:00319393,scowl,pool:wordnet-3.1:00319393	A relay is the act of passing something along from one person or group to another. For example: the relay was successful.
+RELAY	S	wordnet-3.1:00319393,table:t	RELAY: the act of passing something along from one person or group to another. Unpacked: In the TAG table it stands in row R under COMMAND, beside ROUTER, REGISTRY, ROUTINE.
+RELAY	E	template:E1,wordnet-3.1:00319393	Listen: relay. The act of passing something along from one person or group to another -- and that is not nothing.
+RELAY	W	wordnet-3.1:00319393	RELAY (noun): the act of passing something along from one person or group to another.
+RELEASE	baseline	wordnet-3.1:04080320	Release: merchandise issued for sale or public showing (especially a record or film).
+RELEASE	N	wordnet-3.1:04080320,scowl,pool:wordnet-3.1:04080320	A release is a merchandise issued for sale or public showing (especially a record or film). For example: a new release from the London Symphony Orchestra.
+RELEASE	S	wordnet-3.1:04080320,table:g	RELEASE: merchandise issued for sale or public showing (especially a record or film). Unpacked: In the GROWTH table it stands in row R under APPEND, beside RADICAL, RING, REGISTER.
+RELEASE	E	template:E2,wordnet-3.1:04080320	Oh, release! Merchandise issued for sale or public showing (especially a record or film), of all things.
+RELEASE	W	gcide-0.53,wordnet-3.1:04080320	RELEASE (noun): merchandise issued for sale or public showing (especially a record or film). Synonyms: To free, liberate, loose, discharge.
+REMOVE	baseline	wordnet-3.1:05097462	Remove: degree of figurative distance or separation.
+REMOVE	N	wordnet-3.1:05097462,scowl,pool:wordnet-3.1:05097462	A remove is a degree of figurative distance or separation. For example: just one remove from madness.
+REMOVE	S	wordnet-3.1:05097462,table:r	REMOVE: degree of figurative distance or separation. Unpacked: In the RECEIPT table it stands in row R under AGAINST, beside RECEIPT, REACTOR, REQUEST.
+REMOVE	E	template:E3,wordnet-3.1:05097462	Remove? Yes, remove: degree of figurative distance or separation, and it hums quietly.
+REMOVE	W	wordnet-3.1:05097462	REMOVE (noun): degree of figurative distance or separation.
+REQUEST	baseline	wordnet-3.1:06525357	Request: a formal message requesting something that is submitted to an authority.
+REQUEST	N	wordnet-3.1:06525357,scowl,pool:gcide-0.53	A request is a formal message requesting something that is submitted to an authority. For example: I will marry her, sir, at your request.
+REQUEST	S	gcide-0.53,wordnet-3.1:06525357,table:r	REQUEST: The act of asking for anything desired. Unpacked: a formal message requesting something that is submitted to an authority; in the RECEIPT table it stands in row R under LABEL, beside RECEIPT, REACTOR, REMOVE.
+REQUEST	E	pool:gcide-0.53	I will marry her, sir, at your request.
+REQUEST	W	gcide-0.53,wordnet-3.1:06525357	REQUEST (noun): a formal message requesting something that is submitted to an authority. Synonyms: Asking, solicitation, petition, prayer.
+RING	baseline	wordnet-3.1:04988907	Ring: a characteristic sound.
+RING	N	wordnet-3.1:04988907,scowl,pool:wordnet-3.1:04988907	A ring is a characteristic sound. For example: it has the ring of sincerity.
+RING	S	wordnet-3.1:04988907,table:g	RING: a characteristic sound. Unpacked: In the GROWTH table it stands in row R under FAMILY, beside RADICAL, RELEASE, REGISTER.
+RING	E	template:E4,wordnet-3.1:04988907	Say it slowly, ring... A characteristic sound.
+RING	W	wordnet-3.1:04988907	RING (noun): a characteristic sound.
+ROUTER	baseline	wordnet-3.1:10560429	Router: a worker who routes shipments for distribution and delivery.
+ROUTER	N	wordnet-3.1:10560429,scowl	A router is a worker who routes shipments for distribution and delivery.
+ROUTER	S	gcide-0.53,wordnet-3.1:10560429,table:t	ROUTER: A plane made like a spokeshave, for working the inside edges of circular sashes. Unpacked: a worker who routes shipments for distribution and delivery; in the TAG table it stands in row R under SCALAR, beside REGISTRY, RELAY, ROUTINE.
+ROUTER	E	template:E1,wordnet-3.1:10560429	Listen: router. A worker who routes shipments for distribution and delivery -- and that is not nothing.
+ROUTER	W	wordnet-3.1:10560429	ROUTER (noun): a worker who routes shipments for distribution and delivery.
+ROUTINE	baseline	wordnet-3.1:01028424	Routine: an unvarying or habitual method or procedure.
+ROUTINE	N	wordnet-3.1:01028424,scowl	A routine is an unvarying or habitual method or procedure.
+ROUTINE	S	gcide-0.53,wordnet-3.1:01028424,table:t	ROUTINE: A round of business, amusement, or pleasure, daily or frequently pursued. Unpacked: an unvarying or habitual method or procedure; in the TAG table it stands in row R under TAG, beside ROUTER, REGISTRY, RELAY.
+ROUTINE	E	template:E1,wordnet-3.1:01028424	Listen: routine. An unvarying or habitual method or procedure -- and that is not nothing.
+ROUTINE	W	wordnet-3.1:01028424	ROUTINE (noun): an unvarying or habitual method or procedure.
+RULE	baseline	wordnet-3.1:05854581	Rule: a principle or condition that customarily governs behavior.
+RULE	N	wordnet-3.1:05854581,scowl,pool:gcide-0.53	A rule is a principle or condition that customarily governs behavior. For example: 'T is against the rule of nature.
+RULE	S	gcide-0.53,wordnet-3.1:05854581,table:o	RULE: That which is prescribed or laid down as a guide for conduct or action. Unpacked: a principle or condition that customarily governs behavior; in the OPTIMIZER table it stands in row R under HOVER, beside RADIUS, RANGE, RATHER.
+RULE	E	pool:gcide-0.53	Obey them that have the rule over you.
+RULE	W	gcide-0.53,wordnet-3.1:05854581	RULE (noun): a principle or condition that customarily governs behavior. Synonyms: regulation, law, precept, maxim.
+SCALAR	baseline	wordnet-3.1:05872935	Scalar: a variable quantity that cannot be resolved into components.
+SCALAR	N	wordnet-3.1:05872935,scowl	A scalar is a variable quantity that cannot be resolved into components.
+SCALAR	S	gcide-0.53,wordnet-3.1:05872935,table:t	SCALAR: In the quaternion analysis, a quantity that has magnitude, but not direction. Unpacked: a variable quantity that cannot be resolved into components; in the TAG table it stands in row S under SCALAR, beside SPOKE, SELECT, SEMAPHORE.
+SCALAR	E	template:E2,wordnet-3.1:05872935	Oh, scalar! A variable quantity that cannot be resolved into components, of all things.
+SCALAR	W	wordnet-3.1:05872935	SCALAR (noun): a variable quantity that cannot be resolved into components.
+SCENE	baseline	wordnet-3.1:08663538	Scene: the place where some action occurs.
+SCENE	N	wordnet-3.1:08663538,scowl,pool:gcide-0.53	A scene is the place where some action occurs. For example: The world is a vast scene of strife.
+SCENE	S	gcide-0.53,wordnet-3.1:08663538,table:o	SCENE: The structure on which a spectacle or play is exhibited. Unpacked: the place where some action occurs; in the OPTIMIZER table it stands in row S under ASSY, beside SEAT, STEP, SWITCHBACK.
+SCENE	E	pool:gcide-0.53	My dismal scene I needs must act alone.
+SCENE	W	wordnet-3.1:08663538	SCENE (noun): the place where some action occurs.
+SEAM	baseline	wordnet-3.1:04167433	Seam: joint consisting of a line formed by joining two pieces.
+SEAM	N	wordnet-3.1:04167433,scowl,pool:gcide-0.53	A seam is a joint consisting of a line formed by joining two pieces. For example: Later their lips began to parch and seam.
+SEAM	S	wordnet-3.1:04167433,table:g	SEAM: joint consisting of a line formed by joining two pieces. Unpacked: In the GROWTH table it stands in row S under ATOM, beside SHELL, SEND, SUPERPOSITION.
+SEAM	E	template:E4,wordnet-3.1:04167433	Say it slowly, seam... Joint consisting of a line formed by joining two pieces.
+SEAM	W	wordnet-3.1:04167433	SEAM (noun): joint consisting of a line formed by joining two pieces.
+SEAT	baseline	wordnet-3.1:08665191	Seat: a space reserved for sitting (as in a theater or on a train or airplane).
+SEAT	N	wordnet-3.1:08665191,scowl,pool:gcide-0.53	A seat is a space reserved for sitting (as in a theater or on a train or airplane). For example: He that builds a fair house upon an ill seat committeth himself to prison.
+SEAT	S	gcide-0.53,wordnet-3.1:08665191,table:o	SEAT: The place or thing upon which one sits. Unpacked: a space reserved for sitting (as in a theater or on a train or airplane); in the OPTIMIZER table it stands in row S under ELEMENT, beside SCENE, STEP, SWITCHBACK.
+SEAT	E	template:E3,wordnet-3.1:08665191	Seat? Yes, seat: a space reserved for sitting (as in a theater or on a train or airplane), and it hums quietly.
+SEAT	W	wordnet-3.1:08665191	SEAT (noun): a space reserved for sitting (as in a theater or on a train or airplane).
+SELECT	baseline	wordnet-3.1:00676526	Select: pick out, select, or choose from a number of alternatives.
+SELECT	N	wordnet-3.1:00676526,scowl	To select means to pick out, select, or choose from a number of alternatives.
+SELECT	S	wordnet-3.1:00676526,table:t	SELECT: pick out, select, or choose from a number of alternatives. Unpacked: In the TAG table it stands in row S under COMMAND, beside SCALAR, SPOKE, SEMAPHORE.
+SELECT	E	template:E3,wordnet-3.1:00676526	Select? Yes, select: pick out, select, or choose from a number of alternatives, and it hums quietly.
+SELECT	W	wordnet-3.1:00676526	SELECT (verb): pick out, select, or choose from a number of alternatives.
+SEMAPHORE	baseline	wordnet-3.1:04178269	Semaphore: an apparatus for visual signaling with lights or mechanically moving arms.
+SEMAPHORE	N	wordnet-3.1:04178269,scowl	A semaphore is an apparatus for visual signaling with lights or mechanically moving arms.
+SEMAPHORE	S	wordnet-3.1:04178269,table:t	SEMAPHORE: an apparatus for visual signaling with lights or mechanically moving arms. Unpacked: In the TAG table it stands in row S under TAG, beside SCALAR, SPOKE, SELECT.
+SEMAPHORE	E	template:E4,wordnet-3.1:04178269	Say it slowly, semaphore... An apparatus for visual signaling with lights or mechanically moving arms.
+SEMAPHORE	W	wordnet-3.1:04178269	SEMAPHORE (noun): an apparatus for visual signaling with lights or mechanically moving arms.
+SEND	baseline	wordnet-3.1:01955339	Send: cause to go somewhere.
+SEND	N	wordnet-3.1:01955339,scowl,pool:gcide-0.53	To send means to cause to go somewhere. For example: I have not sent these prophets, yet they ran.
+SEND	S	gcide-0.53,wordnet-3.1:01955339,table:g	SEND: To cause to go in any manner. Unpacked: cause to go somewhere; in the GROWTH table it stands in row S under APPEND, beside SEAM, SHELL, SUPERPOSITION.
+SEND	E	pool:gcide-0.53	I have not sent these prophets, yet they ran.
+SEND	W	wordnet-3.1:01955339	SEND (verb): cause to go somewhere.
+SHELL	baseline	wordnet-3.1:04197507	Shell: ammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile.
+SHELL	N	wordnet-3.1:04197507,scowl,pool:gcide-0.53	A shell is an ammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile. For example: Think him as a serpent's egg, . . .shell.
+SHELL	S	gcide-0.53,wordnet-3.1:04197507,table:g	SHELL: A hard outside covering, as of a fruit or an animal. Unpacked: ammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile; in the GROWTH table it stands in row S under FAMILY, beside SEAM, SEND, SUPERPOSITION.
+SHELL	E	template:E2,wordnet-3.1:04197507	Oh, shell! Ammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile, of all things.
+SHELL	W	wordnet-3.1:04197507	SHELL (noun): ammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile.
+SKILL	baseline	wordnet-3.1:05645403	Skill: an ability that has been acquired by training.
+SKILL	N	wordnet-3.1:05645403,scowl,pool:gcide-0.53	A skill is an ability that has been acquired by training. For example: Nor want we skill or art.
+SKILL	S	wordnet-3.1:05645403,table:r	SKILL: an ability that has been acquired by training. Unpacked: In the RECEIPT table it stands in row S under ISOTOPE, beside SPECTRUM, SPLIT, STROKE.
+SKILL	E	pool:gcide-0.53	Nor want we skill or art.
+SKILL	W	gcide-0.53,wordnet-3.1:05645403	SKILL (noun): an ability that has been acquired by training. Synonyms: Dexterity, adroitness, expertness, art.
+SPECTRUM	baseline	wordnet-3.1:11440945	Spectrum: an ordered array of the components of an emission or wave.
+SPECTRUM	N	wordnet-3.1:11440945,scowl	A spectrum is an ordered array of the components of an emission or wave.
+SPECTRUM	S	wordnet-3.1:11440945,table:r	SPECTRUM: an ordered array of the components of an emission or wave. Unpacked: In the RECEIPT table it stands in row S under CLASS, beside SKILL, SPLIT, STROKE.
+SPECTRUM	E	template:E4,wordnet-3.1:11440945	Say it slowly, spectrum... An ordered array of the components of an emission or wave.
+SPECTRUM	W	wordnet-3.1:11440945	SPECTRUM (noun): an ordered array of the components of an emission or wave.
+SPLIT	baseline	wordnet-3.1:00438869	Split: extending the legs at right angles to the trunk (one in front and the other in back).
+SPLIT	N	wordnet-3.1:00438869,scowl	A split is an extending the legs at right angles to the trunk (one in front and the other in back).
+SPLIT	S	wordnet-3.1:00438869,table:r	SPLIT: extending the legs at right angles to the trunk (one in front and the other in back). Unpacked: In the RECEIPT table it stands in row S under AGAINST, beside SKILL, SPECTRUM, STROKE.
+SPLIT	E	template:E4,wordnet-3.1:00438869	Say it slowly, split... Extending the legs at right angles to the trunk (one in front and the other in back).
+SPLIT	W	wordnet-3.1:00438869	SPLIT (noun): extending the legs at right angles to the trunk (one in front and the other in back).
+SPOKE	baseline	wordnet-3.1:04290516	Spoke: support consisting of a radial member of a wheel joining the hub to the rim.
+SPOKE	N	wordnet-3.1:04290516,scowl	A spoke is a support consisting of a radial member of a wheel joining the hub to the rim.
+SPOKE	S	wordnet-3.1:04290516,table:t	SPOKE: support consisting of a radial member of a wheel joining the hub to the rim. Unpacked: In the TAG table it stands in row S under GROUP, beside SCALAR, SELECT, SEMAPHORE.
+SPOKE	E	template:E2,wordnet-3.1:04290516	Oh, spoke! Support consisting of a radial member of a wheel joining the hub to the rim, of all things.
+SPOKE	W	wordnet-3.1:04290516	SPOKE (noun): support consisting of a radial member of a wheel joining the hub to the rim.
+STEP	baseline	wordnet-3.1:00175261	Step: any maneuver made as part of progress toward a goal.
+STEP	N	wordnet-3.1:00175261,scowl,pool:wordnet-3.1:00175261	A step is any maneuver made as part of progress toward a goal. For example: the police took steps to reduce crime.
+STEP	S	wordnet-3.1:00175261,table:o	STEP: any maneuver made as part of progress toward a goal. Unpacked: In the OPTIMIZER table it stands in row S under HOVER, beside SEAT, SCENE, SWITCHBACK.
+STEP	E	template:E4,wordnet-3.1:00175261	Say it slowly, step... Any maneuver made as part of progress toward a goal.
+STEP	W	wordnet-3.1:00175261	STEP (noun): any maneuver made as part of progress toward a goal.
+STROKE	baseline	wordnet-3.1:00566339	Stroke: (sports) the act of swinging or striking at a ball with a club or racket or bat or cue or hand.
+STROKE	N	wordnet-3.1:00566339,scowl,pool:wordnet-3.1:00566339	A stroke is a (sports) the act of swinging or striking at a ball with a club or racket or bat. For example: it took two strokes to get out of the bunker.
+STROKE	S	wordnet-3.1:00566339,table:r	STROKE: (sports) the act of swinging or striking at a ball with a club or racket or bat or cue or hand. Unpacked: In the RECEIPT table it stands in row S under LABEL, beside SKILL, SPECTRUM, SPLIT.
+STROKE	E	template:E1,wordnet-3.1:00566339	Listen: stroke. (sports) the act of swinging or striking at a ball with a club or racket or bat or cue or hand -- and that is not nothing.
+STROKE	W	wordnet-3.1:00566339	STROKE (noun): (sports) the act of swinging or striking at a ball with a club or racket or bat or cue or hand.
+SUPERPOSITION	baseline	wordnet-3.1:13584585	Superposition: (geology) the deposition of one geological stratum on another.
+SUPERPOSITION	N	wordnet-3.1:13584585,scowl	A superposition is a (geology) the deposition of one geological stratum on another.
+SUPERPOSITION	S	gcide-0.53,wordnet-3.1:13584585,table:g	SUPERPOSITION: The act of superposing, or the state of being superposed. Unpacked: (geology) the deposition of one geological stratum on another; in the GROWTH table it stands in row S under TEMPERATURE, beside SEAM, SHELL, SEND.
+SUPERPOSITION	E	template:E3,wordnet-3.1:13584585	Superposition? Yes, superposition: (geology) the deposition of one geological stratum on another, and it hums quietly.
+SUPERPOSITION	W	wordnet-3.1:13584585	SUPERPOSITION (noun): (geology) the deposition of one geological stratum on another.
+TABLE	baseline	wordnet-3.1:08283156	Table: a set of data arranged in rows and columns.
+TABLE	N	wordnet-3.1:08283156,scowl,pool:wordnet-3.1:08283156	A table is a set of data arranged in rows and columns. For example: see table 1.
+TABLE	S	gcide-0.53,wordnet-3.1:08283156,table:g	TABLE: A smooth, flat surface, like the side of a board. Unpacked: a set of data arranged in rows and columns; in the GROWTH table it stands in row T under FAMILY, beside TOMBSTONE, TRANSITION, TEMPERATURE.
+TABLE	E	pool:gcide-0.53	And stand there with your tables to glean / The golden sentences.
+TABLE	W	wordnet-3.1:08283156	TABLE (noun): a set of data arranged in rows and columns.
+TAG	baseline	wordnet-3.1:07287841	Tag: a label written or printed on paper, cardboard, or plastic that is attached to something to indicate its owner, nature, price.
+TAG	N	wordnet-3.1:07287841,scowl,pool:gcide-0.53	A tag is a label written or printed on paper, cardboard. For example: He learned to make long-tagged thread laces.
+TAG	S	gcide-0.53,wordnet-3.1:07287841,table:t	TAG: Any slight appendage, as to an article of dress. Unpacked: a label written or printed on paper, cardboard, or plastic that is attached to something to indicate its owner, nature, price; in the TAG table it stands in row T under TAG, beside TEMPLATE, TAXONOMY, TEST.
+TAG	E	template:E3,wordnet-3.1:07287841	Tag? Yes, tag: a label written or printed on paper, cardboard, or plastic that is attached to something to indicate its owner, nature, price, and it hums quietly.
+TAG	W	wordnet-3.1:07287841	TAG (noun): a label written or printed on paper, cardboard, or plastic that is attached to something to indicate its owner, nature, price.
+TARGET	baseline	wordnet-3.1:07276776	Target: a reference point to shoot at.
+TARGET	N	wordnet-3.1:07276776,scowl	A target is a reference point to shoot at.
+TARGET	S	gcide-0.53,wordnet-3.1:07276776,table:o	TARGET: A kind of small shield or buckler, used as a defensive weapon in war. Unpacked: a reference point to shoot at; in the OPTIMIZER table it stands in row T under HOVER, beside TUMBLER, TIME, THESIS.
+TARGET	E	template:E1,wordnet-3.1:07276776	Listen: target. A reference point to shoot at -- and that is not nothing.
+TARGET	W	wordnet-3.1:07276776	TARGET (noun): a reference point to shoot at.
+TAXONOMY	baseline	wordnet-3.1:08395087	Taxonomy: a classification of organisms into groups based on similarities of structure or origin.
+TAXONOMY	N	wordnet-3.1:08395087,scowl	A taxonomy is a classification of organisms into groups based on similarities of structure or origin.
+TAXONOMY	S	gcide-0.53,wordnet-3.1:08395087,table:t	TAXONOMY: That division of the natural sciences which treats of the classification of animals and plants, primarily by consideration of their natural relationships with respect to their structure or genetic origin. Unpacked: a classification of organisms into groups based on similarities of structure or origin; in the TAG table it stands in row T under GROUP, beside TEMPLATE, TEST, TAG.
+TAXONOMY	E	template:E4,wordnet-3.1:08395087	Say it slowly, taxonomy... A classification of organisms into groups based on similarities of structure or origin.
+TAXONOMY	W	wordnet-3.1:08395087	TAXONOMY (noun): a classification of organisms into groups based on similarities of structure or origin.
+TEMPERATURE	baseline	wordnet-3.1:05018974	Temperature: the degree of hotness or coldness of a body or environment (corresponding to its molecular activity).
+TEMPERATURE	N	wordnet-3.1:05018974,scowl,pool:gcide-0.53	A temperature is the degree of hotness or coldness of a body or environment (corresponding to its molecular activity). For example: In that proud port, which her so goodly graceth,temperature you may descry.
+TEMPERATURE	S	wordnet-3.1:05018974,table:g	TEMPERATURE: the degree of hotness or coldness of a body or environment (corresponding to its molecular activity). Unpacked: In the GROWTH table it stands in row T under TEMPERATURE, beside TOMBSTONE, TABLE, TRANSITION.
+TEMPERATURE	E	pool:gcide-0.53	In that proud port, which her so goodly graceth,temperature you may descry.
+TEMPERATURE	W	wordnet-3.1:05018974	TEMPERATURE (noun): the degree of hotness or coldness of a body or environment (corresponding to its molecular activity).
+TEMPLATE	baseline	wordnet-3.1:05947694	Template: a model or standard for making comparisons.
+TEMPLATE	N	wordnet-3.1:05947694,scowl	A template is a model or standard for making comparisons.
+TEMPLATE	S	wordnet-3.1:05947694,table:t	TEMPLATE: a model or standard for making comparisons. Unpacked: In the TAG table it stands in row T under SCALAR, beside TAXONOMY, TEST, TAG.
+TEMPLATE	E	template:E2,wordnet-3.1:05947694	Oh, template! A model or standard for making comparisons, of all things.
+TEMPLATE	W	wordnet-3.1:05947694	TEMPLATE (noun): a model or standard for making comparisons.
+TEST	baseline	wordnet-3.1:05807220	Test: trying something to find out about it.
+TEST	N	wordnet-3.1:05807220,scowl,pool:gcide-0.53	A test is a trying something to find out about it. For example: Life, force, and beauty must to all impart,test of art.
+TEST	S	gcide-0.53,wordnet-3.1:05807220,table:t	TEST: A cupel or cupelling hearth in which precious metals are melted for trial and refinement. Unpacked: trying something to find out about it; in the TAG table it stands in row T under COMMAND, beside TEMPLATE, TAXONOMY, TAG.
+TEST	E	pool:gcide-0.53	Our test excludes your tribe from benefit.
+TEST	W	gcide-0.53,wordnet-3.1:05807220	TEST (noun): trying something to find out about it. Synonyms: Criterion, standard, experience, proof.
+THESIS	baseline	wordnet-3.1:06768165	Thesis: an unproved statement put forward as a premise in an argument.
+THESIS	N	wordnet-3.1:06768165,scowl	A thesis is an unproved statement put forward as a premise in an argument.
+THESIS	S	gcide-0.53,wordnet-3.1:06768165,table:o	THESIS: A position or proposition which a person advances and offers to maintain, or which is actually maintained by argument. Unpacked: an unproved statement put forward as a premise in an argument; in the OPTIMIZER table it stands in row T under ACCENT, beside TUMBLER, TIME, TARGET.
+THESIS	E	pool:gcide-0.53	I told them of the grave, becoming, and sublime deportment they should assume upon this mystical occasion, and read them two homilies and a thesis of my own composing, to prepare them.
+THESIS	W	wordnet-3.1:06768165	THESIS (noun): an unproved statement put forward as a premise in an argument.
+TIME	baseline	wordnet-3.1:07324217	Time: an instance or single occasion for some event.
+TIME	N	wordnet-3.1:07324217,scowl,pool:gcide-0.53	A time is an instance or single occasion for some event. For example: The time wasteth i. e. passes away night and day.
+TIME	S	gcide-0.53,wordnet-3.1:07324217,table:o	TIME: Duration, considered independently of any system of measurement or any employment of terms which designate limited portions thereof. Unpacked: an instance or single occasion for some event; in the OPTIMIZER table it stands in row T under ASSY, beside TUMBLER, TARGET, THESIS.
+TIME	E	pool:gcide-0.53	The time wasteth i. e. passes away night and day.
+TIME	W	wordnet-3.1:07324217	TIME (noun): an instance or single occasion for some event.
+TITLE	baseline	wordnet-3.1:06357363	Title: a heading that names a statute or legislative bill.
+TITLE	N	wordnet-3.1:06357363,scowl,pool:gcide-0.53	A title is a heading that names a statute or legislative bill. For example: With his former title greet Macbeth.
+TITLE	S	gcide-0.53,wordnet-3.1:06357363,table:r	TITLE: An inscription put over or upon anything as a name by which it is known. Unpacked: a heading that names a statute or legislative bill; in the RECEIPT table it stands in row T under CLASS, beside TRIPWIRE, TRANSFORM, TRUE.
+TITLE	E	template:E4,wordnet-3.1:06357363	Say it slowly, title... A heading that names a statute or legislative bill.
+TITLE	W	gcide-0.53,wordnet-3.1:06357363	TITLE (noun): a heading that names a statute or legislative bill. Synonyms: Epithet, name, appellation.
+TOMBSTONE	baseline	wordnet-3.1:03460432	Tombstone: a stone that is used to mark a grave.
+TOMBSTONE	N	wordnet-3.1:03460432,scowl	A tombstone is a stone that is used to mark a grave.
+TOMBSTONE	S	gcide-0.53,wordnet-3.1:03460432,table:g	TOMBSTONE: A stone or small stone monument erected over a grave, bearing the name of the dead person interred there, to preserve the memory of the deceased. Unpacked: a stone that is used to mark a grave; in the GROWTH table it stands in row T under ATOM, beside TABLE, TRANSITION, TEMPERATURE.
+TOMBSTONE	E	template:E4,wordnet-3.1:03460432	Say it slowly, tombstone... A stone that is used to mark a grave.
+TOMBSTONE	W	wordnet-3.1:03460432	TOMBSTONE (noun): a stone that is used to mark a grave.
+TRANSFORM	baseline	wordnet-3.1:00545091	Transform: subject to a mathematical transformation.
+TRANSFORM	N	wordnet-3.1:00545091,scowl,pool:gcide-0.53	To transform means to subject to a mathematical transformation. For example: Love may transform me to an oyster.
+TRANSFORM	S	gcide-0.53,wordnet-3.1:00545091,table:r	TRANSFORM: To change the form. Unpacked: subject to a mathematical transformation; in the RECEIPT table it stands in row T under AGAINST, beside TRIPWIRE, TITLE, TRUE.
+TRANSFORM	E	pool:gcide-0.53	Love may transform me to an oyster.
+TRANSFORM	W	wordnet-3.1:00545091	TRANSFORM (verb): subject to a mathematical transformation.
+TRANSITION	baseline	wordnet-3.1:00201907	Transition: the act of passing from one state or place to the next.
+TRANSITION	N	wordnet-3.1:00201907,scowl,pool:gcide-0.53	A transition is the act of passing from one state or place to the next. For example: There is no death, what seems so is transition.
+TRANSITION	S	gcide-0.53,wordnet-3.1:00201907,table:g	TRANSITION: Passage from one place or state to another. Unpacked: the act of passing from one state or place to the next; in the GROWTH table it stands in row T under APPEND, beside TOMBSTONE, TABLE, TEMPERATURE.
+TRANSITION	E	template:E2,wordnet-3.1:00201907	Oh, transition! The act of passing from one state or place to the next, of all things.
+TRANSITION	W	wordnet-3.1:00201907	TRANSITION (noun): the act of passing from one state or place to the next.
+TRUE	baseline	wordnet-3.1:05084517	True: proper alignment.
+TRUE	N	wordnet-3.1:05084517,scowl,pool:wordnet-3.1:05084517	A true is a proper alignment. For example: out of true.
+TRUE	S	wordnet-3.1:05084517,table:r	TRUE: proper alignment. Unpacked: In the RECEIPT table it stands in row T under LABEL, beside TRIPWIRE, TITLE, TRANSFORM.
+TRUE	E	template:E2,wordnet-3.1:05084517	Oh, true! Proper alignment, of all things.
+TRUE	W	wordnet-3.1:05084517	TRUE (noun): proper alignment.
+TUMBLER	baseline	wordnet-3.1:10752624	Tumbler: a gymnast who performs rolls and somersaults and twists.
+TUMBLER	N	wordnet-3.1:10752624,scowl	A tumbler is a gymnast who performs rolls and somersaults and twists.
+TUMBLER	S	wordnet-3.1:10752624,table:o	TUMBLER: a gymnast who performs rolls and somersaults and twists. Unpacked: In the OPTIMIZER table it stands in row T under ELEMENT, beside TIME, TARGET, THESIS.
+TUMBLER	E	template:E2,wordnet-3.1:10752624	Oh, tumbler! A gymnast who performs rolls and somersaults and twists, of all things.
+TUMBLER	W	wordnet-3.1:10752624	TUMBLER (noun): a gymnast who performs rolls and somersaults and twists.
+WARN	baseline	wordnet-3.1:00871877	Warn: notify of danger, potential harm, or risk.
+WARN	N	wordnet-3.1:00871877,scowl,pool:gcide-0.53	To warn means to notify of danger, potential harm, or risk. For example: Who is it that hath warned us to the walls?.
+WARN	S	wordnet-3.1:00871877,table:r	WARN: notify of danger, potential harm, or risk. Unpacked: In the RECEIPT table it stands in row W under AGAINST, beside WINDOW, WAVE, WHISTLE.
+WARN	E	pool:gcide-0.53	Who is it that hath warned us to the walls?
+WARN	W	wordnet-3.1:00871877	WARN (verb): notify of danger, potential harm, or risk.
+WATCH	baseline	wordnet-3.1:04563183	Watch: a small portable timepiece.
+WATCH	N	wordnet-3.1:04563183,scowl,pool:gcide-0.53	A watch is a small portable timepiece. For example: Still, when she slept, he kept both watch and ward.
+WATCH	S	gcide-0.53,wordnet-3.1:04563183,table:g	WATCH: The act of watching. Unpacked: a small portable timepiece; in the GROWTH table it stands in row W under APPEND, beside WIRE, WORLD, WAALS.
+WATCH	E	template:E2,wordnet-3.1:04563183	Oh, watch! A small portable timepiece, of all things.
+WATCH	W	wordnet-3.1:04563183	WATCH (noun): a small portable timepiece.
+WAVE	baseline	wordnet-3.1:07366790	Wave: one of a series of ridges that moves across the surface of a liquid (especially across a large body of water).
+WAVE	N	wordnet-3.1:07366790,scowl	A wave is one of a series of ridges that moves across the surface of a liquid (especially across a large.
+WAVE	S	wordnet-3.1:07366790,table:r	WAVE: one of a series of ridges that moves across the surface of a liquid (especially across a large body of water). Unpacked: In the RECEIPT table it stands in row W under CLASS, beside WINDOW, WARN, WHISTLE.
+WAVE	E	template:E2,wordnet-3.1:07366790	Oh, wave! One of a series of ridges that moves across the surface of a liquid (especially across a large body of water), of all things.
+WAVE	W	wordnet-3.1:07366790	WAVE (noun): one of a series of ridges that moves across the surface of a liquid (especially across a large body of water).
+WAVELENGTH	baseline	wordnet-3.1:05093476	Wavelength: the distance (measured in the direction of propagation) between two points in the same phase in consecutive cycles of a wave.
+WAVELENGTH	N	wordnet-3.1:05093476,scowl	A wavelength is the distance (measured in the direction of propagation) between two points in the same phase in consecutive cycles.
+WAVELENGTH	S	wordnet-3.1:05093476,table:o	WAVELENGTH: the distance (measured in the direction of propagation) between two points in the same phase in consecutive cycles of a wave. Unpacked: In the OPTIMIZER table it stands in row W under ACCENT, beside WEIGHT, WORMHOLE, WRAP.
+WAVELENGTH	E	template:E3,wordnet-3.1:05093476	Wavelength? Yes, wavelength: the distance (measured in the direction of propagation) between two points in the same phase in consecutive cycles of a wave, and it hums quietly.
+WAVELENGTH	W	wordnet-3.1:05093476	WAVELENGTH (noun): the distance (measured in the direction of propagation) between two points in the same phase in consecutive cycles of a wave.
+WEBSITE	baseline	wordnet-3.1:06370600	Website: a computer connected to the internet that maintains a series of web pages on the World Wide Web.
+WEBSITE	N	wordnet-3.1:06370600,scowl	A website is a computer connected to the internet that maintains a series of web pages on the World Wide Web.
+WEBSITE	S	wordnet-3.1:06370600,table:t	WEBSITE: a computer connected to the internet that maintains a series of web pages on the World Wide Web. Unpacked: In the TAG table it stands in row W under GROUP, beside WORKER, WRITE, WORK.
+WEBSITE	E	template:E4,wordnet-3.1:06370600	Say it slowly, website... A computer connected to the internet that maintains a series of web pages on the World Wide Web.
+WEBSITE	W	wordnet-3.1:06370600	WEBSITE (noun): a computer connected to the internet that maintains a series of web pages on the World Wide Web.
+WEIGHT	baseline	wordnet-3.1:05034009	Weight: the vertical force exerted by a mass as a result of gravity.
+WEIGHT	N	wordnet-3.1:05034009,scowl,pool:gcide-0.53	A weight is the vertical force exerted by a mass as a result of gravity. For example: In such a point of weight, so near mine honor.
+WEIGHT	S	gcide-0.53,wordnet-3.1:05034009,table:o	WEIGHT: The quality of being heavy. Unpacked: the vertical force exerted by a mass as a result of gravity; in the OPTIMIZER table it stands in row W under ELEMENT, beside WORMHOLE, WRAP, WAVELENGTH.
+WEIGHT	E	template:E2,wordnet-3.1:05034009	Oh, weight! The vertical force exerted by a mass as a result of gravity, of all things.
+WEIGHT	W	gcide-0.53,wordnet-3.1:05034009	WEIGHT (noun): the vertical force exerted by a mass as a result of gravity. Synonyms: Ponderousness, gravity, heaviness, pressure.
+WHISTLE	baseline	wordnet-3.1:07414756	Whistle: the sound made by something moving rapidly or by steam coming out of a small aperture.
+WHISTLE	N	wordnet-3.1:07414756,scowl	A whistle is the sound made by something moving rapidly or by steam coming out of a small aperture.
+WHISTLE	S	wordnet-3.1:07414756,table:r	WHISTLE: the sound made by something moving rapidly or by steam coming out of a small aperture. Unpacked: In the RECEIPT table it stands in row W under LABEL, beside WINDOW, WAVE, WARN.
+WHISTLE	E	template:E4,wordnet-3.1:07414756	Say it slowly, whistle... The sound made by something moving rapidly or by steam coming out of a small aperture.
+WHISTLE	W	wordnet-3.1:07414756	WHISTLE (noun): the sound made by something moving rapidly or by steam coming out of a small aperture.
+WINDOW	baseline	wordnet-3.1:04594951	Window: a framework of wood or metal that contains a glass windowpane and is built into a wall or roof to admit light or air.
+WINDOW	N	wordnet-3.1:04594951,scowl,pool:gcide-0.53	A window is a framework of wood or metal that contains a glass windowpane and is built into a wall. For example: Till he has windows on his bread and butter.
+WINDOW	S	gcide-0.53,wordnet-3.1:04594951,table:r	WINDOW: An opening in the wall of a building for the admission of light and air, usually closed by casements or sashes containing some transparent material, as glass. Unpacked: a framework of wood or metal that contains a glass windowpane and is built into a wall or roof to admit light or air; in the RECEIPT table it stands in row W under ISOTOPE, beside WAVE, WARN, WHISTLE.
+WINDOW	E	pool:gcide-0.53	I leaped from the window of the citadel.
+WINDOW	W	wordnet-3.1:04594951	WINDOW (noun): a framework of wood or metal that contains a glass windowpane and is built into a wall or roof to admit light or air.
+WIRE	baseline	wordnet-3.1:04601545	Wire: ligament made of metal and used to fasten things or make cages or fences.
+WIRE	N	wordnet-3.1:04601545,scowl	A wire is a ligament made of metal and used to fasten things or make cages or fences.
+WIRE	S	gcide-0.53,wordnet-3.1:04601545,table:g	WIRE: A thread or slender rod of metal. Unpacked: ligament made of metal and used to fasten things or make cages or fences; in the GROWTH table it stands in row W under ATOM, beside WORLD, WATCH, WAALS.
+WIRE	E	template:E1,wordnet-3.1:04601545	Listen: wire. Ligament made of metal and used to fasten things or make cages or fences -- and that is not nothing.
+WIRE	W	wordnet-3.1:04601545	WIRE (noun): ligament made of metal and used to fasten things or make cages or fences.
+WORK	baseline	wordnet-3.1:00576778	Work: activity directed toward making or doing something.
+WORK	N	wordnet-3.1:00576778,scowl,pool:gcide-0.53	A work is an activity directed toward making or doing something. For example: To leave no rubs or blotches in the work.
+WORK	S	gcide-0.53,wordnet-3.1:00576778,table:t	WORK: Exertion of strength or faculties. Unpacked: activity directed toward making or doing something; in the TAG table it stands in row W under TAG, beside WORKER, WEBSITE, WRITE.
+WORK	E	pool:gcide-0.53	Come on, Nerissa; I have work in hand / That you yet know not of.
+WORK	W	wordnet-3.1:00576778	WORK (noun): activity directed toward making or doing something.
+WORKER	baseline	wordnet-3.1:09655706	Worker: a person who works at a specific occupation.
+WORKER	N	wordnet-3.1:09655706,scowl,pool:wordnet-3.1:09655706	A worker is a person who works at a specific occupation. For example: he is a good worker.
+WORKER	S	gcide-0.53,wordnet-3.1:09655706,table:t	WORKER: One who, or that which, works. Unpacked: a person who works at a specific occupation; in the TAG table it stands in row W under SCALAR, beside WEBSITE, WRITE, WORK.
+WORKER	E	template:E2,wordnet-3.1:09655706	Oh, worker! A person who works at a specific occupation, of all things.
+WORKER	W	wordnet-3.1:09655706	WORKER (noun): a person who works at a specific occupation.
+WORLD	baseline	wordnet-3.1:09489410	World: everything that exists anywhere.
+WORLD	N	wordnet-3.1:09489410,scowl,pool:gcide-0.53	A world is an everything that exists anywhere. For example: The invisible things of him from the creation of the world are clearly seen.
+WORLD	S	gcide-0.53,wordnet-3.1:09489410,table:g	WORLD: The earth and the surrounding heavens. Unpacked: everything that exists anywhere; in the GROWTH table it stands in row W under FAMILY, beside WIRE, WATCH, WAALS.
+WORLD	E	template:E4,wordnet-3.1:09489410	Say it slowly, world... Everything that exists anywhere.
+WORLD	W	wordnet-3.1:09489410	WORLD (noun): everything that exists anywhere.
+WORMHOLE	baseline	wordnet-3.1:09504166	Wormhole: hole made by a burrowing worm.
+WORMHOLE	N	wordnet-3.1:09504166,scowl	A wormhole is a hole made by a burrowing worm.
+WORMHOLE	S	gcide-0.53,wordnet-3.1:09504166,table:o	WORMHOLE: A burrow made by a worm. Unpacked: hole made by a burrowing worm; in the OPTIMIZER table it stands in row W under ASSY, beside WEIGHT, WRAP, WAVELENGTH.
+WORMHOLE	E	template:E2,wordnet-3.1:09504166	Oh, wormhole! Hole made by a burrowing worm, of all things.
+WORMHOLE	W	wordnet-3.1:09504166	WORMHOLE (noun): hole made by a burrowing worm.
+WRAP	baseline	wordnet-3.1:04612804	Wrap: cloak that is folded or wrapped around a person.
+WRAP	N	wordnet-3.1:04612804,scowl	A wrap is a cloak that is folded or wrapped around a person.
+WRAP	S	wordnet-3.1:04612804,table:o	WRAP: cloak that is folded or wrapped around a person. Unpacked: In the OPTIMIZER table it stands in row W under HOVER, beside WEIGHT, WORMHOLE, WAVELENGTH.
+WRAP	E	template:E2,wordnet-3.1:04612804	Oh, wrap! Cloak that is folded or wrapped around a person, of all things.
+WRAP	W	wordnet-3.1:04612804	WRAP (noun): cloak that is folded or wrapped around a person.
+WRITE	baseline	wordnet-3.1:01702148	Write: produce a literary work.
+WRITE	N	wordnet-3.1:01702148,scowl,pool:gcide-0.53	To write means to produce a literary work. For example: Last night she enjoined me to write some lines to one she loves.
+WRITE	S	gcide-0.53,wordnet-3.1:01702148,table:t	WRITE: To set down, as legible characters. Unpacked: produce a literary work; in the TAG table it stands in row W under COMMAND, beside WORKER, WEBSITE, WORK.
+WRITE	E	pool:gcide-0.53	I chose to write the thing I durst not speak / To her I loved.
+WRITE	W	wordnet-3.1:01702148	WRITE (verb): produce a literary work.

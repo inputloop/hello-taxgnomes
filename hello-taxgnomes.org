@@ -1,0 +1,821 @@
+#+TITLE: hello-taxgnomes: the Gnemonic Word Mines
+#+AUTHOR: Corwin Brust and Contributors
+#+PROPERTY: header-args :padline no :mkdirp yes
+#+STARTUP: showall
+
+* What this is
+
+A reading component built from a taxonomy at build time.  Pick a word from the word game's four
+tables (GROWTH, OPTIMIZER, RECEIPT, TAG); move a four-way slider; read the word's meaning told four
+ways:
+
+- *north*, simpler: a short sentence in common words;
+- *south*, denser: one dense line, then a longer line unpacking it;
+- *east*, moodier: more voice and intonation (the words wobble a little, unless you asked for
+  reduced motion);
+- *west*, drier: direct and plain, with the dictionary's synonyms.
+
+The centre is the plain gloss.  Every sentence says who wrote it: a dictionary, the game's pooled
+sentences, a template, or the local model.
+
+It is a worked example for egad: a composable component whose hooks into egad and egadjit are
+suggestions, not requirements.  The page works alone; given egad, a viewer's preference can choose
+where the slider starts, and egadjit's own resolver can choose for a room of viewers.
+
+| unfolds into              | what                                                              |
+|---------------------------+-------------------------------------------------------------------|
+| =tools/tg1bd.py=          | the builder: tables, three dictionary sources, drafts, into readings |
+| =tools/tg1rd=             | the second reader (sh and awk): every direction's rule, checked apart from the builder |
+| =tools/tg1dr.py=          | takes in sentences the local model drafted, with their provenance |
+| =tools/tg1pg.py=          | writes the page from the template and the readings                |
+| =page/template.html=      | the page, with its inline tests                                   |
+| =egad/read-category.json= | an egadjit category: where the slider starts, for whoever is looking |
+| =egad/greeting.org=       | the smallest Org declaration of the component, for egad's declarative layer |
+| =tools/tg1ck.py=          | the build's honesty check (five readings, each with a source)     |
+| =tests/taxgnomes-tests.sh= | the checks, with =--prove-red=                                   |
+
+The inputs are read at build time from the word game (=../mini-c4-game= by default, =TG_GAME=
+moves it): its tables, meanings and pooled sentences, and its cache of WordNet 3.1 and GCIDE 0.53;
+the third source is SCOWL's word list as hunspell ships it (=/usr/share/hunspell/en_US.dic=,
+=TG_SCOWL=).  That is GRAIN, four backing sentences per word, from GRAIN − 1, three
+dictionary-shaped sources, as he asked.  Nothing is fetched; a missing source is named.
+
+* The builder
+
+#+begin_src python :tangle tools/tg1bd.py
+#!/usr/bin/env python3
+"""tg1bd -- TAXGNOMES 1 BUILD: the word game's tables and three dictionary sources, read at build
+time, become four readings per word (north, south, east, west) plus the plain gloss.
+
+usage: tg1bd.py            writes data/readings.json, data/readings.txt, data/words.txt,
+                           data/drafts.txt and data/SOURCES; prints a summary line
+Environment: TG_GAME (../mini-c4-game), TG_GCIDE (TG_GAME/sources/cache/gcide-0.53),
+TG_SCOWL (/usr/share/hunspell/en_US.dic), TG_DRAFTS (drafts/), TG_OUT (data/).
+The model is never called here: drafts already on disk are taken in, with their provenance.
+Unfolded from hello-taxgnomes.org; edit that, not this.
+Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
+Mentat (for Corwin; claude-opus-5-5)
+"""
+import glob
+import hashlib
+import json
+import os
+import re
+import sys
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+GAME = os.environ.get("TG_GAME", os.path.join(HERE, "..", "mini-c4-game"))
+GCIDE = os.environ.get("TG_GCIDE", os.path.join(GAME, "sources", "cache", "gcide-0.53"))
+SCOWL = os.environ.get("TG_SCOWL", "/usr/share/hunspell/en_US.dic")
+DRAFTS = os.environ.get("TG_DRAFTS", os.path.join(HERE, "drafts"))
+OUT = os.environ.get("TG_OUT", os.path.join(HERE, "data"))
+TABLES = [("g", "GROWTH"), ("o", "OPTIMIZER"), ("r", "RECEIPT"), ("t", "TAG")]
+VOICE = re.compile(r"[?!]|\b(I|me|my|you|your|we|us|let's)\b", re.I)
+WORDS = re.compile(r"[A-Za-z']+")
+E_TEMPLATES = [
+    ("template:E1", "Listen: {w}. {G} -- and that is not nothing."),
+    ("template:E2", "Oh, {w}! {G}, of all things."),
+    ("template:E3", "{W}? Yes, {w}: {g}, and it hums quietly."),
+    ("template:E4", "Say it slowly, {w}... {G}."),
+]
+
+
+def read(path):
+    with open(path, encoding="utf-8", errors="replace") as fh:
+        return fh.read()
+
+
+DANGLING = {"a", "an", "the", "or", "and", "of", "to", "in", "as", "by", "with", "for", "etc"}
+
+
+def clean(s):
+    """Dictionary markup out: line breaks become slashes, tags go, glued quotes get a space."""
+    s = s.replace("<br/", " / ")
+    s = re.sub(r"<[^>]*>?", "", s)
+    s = re.sub(r"([?!])([A-Za-z])", r"\1 \2", s)
+    s = s.replace("[", "").replace("]", "")
+    return " ".join(s.split())
+
+
+def first_clause(s, limit=30):
+    """The first clause, never cut mid-clause: past LIMIT words, cut at the last comma, and drop a
+    dangling little word ("or a")."""
+    s = clean(s).strip()
+    s = re.split(r";\s|\.\s|\.$", s)[0].strip()
+    w = s.split()
+    if len(w) > limit:
+        part = " ".join(w[:limit])
+        k = part.rfind(",")
+        s = part[:k] if k > len(part) // 3 else part
+    w = s.rstrip(",:.").split()
+    while w and w[-1].lower().strip(",.") in DANGLING:
+        w.pop()
+    return " ".join(w).rstrip(",:.")
+
+
+def lower_first(s):
+    return s[:1].lower() + s[1:] if s[:1].isupper() and s[1:2].islower() else s
+
+
+def mean_len(s):
+    t = WORDS.findall(s)
+    return sum(len(x) for x in t) / len(t) if t else 99.0
+
+
+def cap(s):
+    return s[:1].upper() + s[1:] if s else s
+
+
+def article(gloss):
+    g = gloss.lower()
+    if re.match(r"(a|an|the|one|any|some|something|someone)\b", g):
+        return gloss
+    return ("an " if g[:1] in "aeiou" else "a ") + gloss
+
+
+def scowl_words():
+    if not os.path.isfile(SCOWL):
+        return None
+    out = set()
+    for i, line in enumerate(read(SCOWL).split("\n")):
+        if i == 0 or not line:
+            continue
+        out.add(line.split("/")[0].lower())
+    return out
+
+
+def gcide_syns(wanted):
+    if not os.path.isdir(GCIDE):
+        return None
+    syn, ent = {}, None
+    for f in sorted(glob.glob(os.path.join(GCIDE, "CIDE.*"))):
+        for line in read(f).split("\n"):
+            m = re.search(r"<ent>([^<]+)</ent>", line)
+            if m:
+                ent = m.group(1).strip().upper()
+            if "<syn>" in line and ent in wanted and ent not in syn:
+                t = re.sub(r"<[^>]+>", "", line)
+                t = t.split("Syn. --", 1)[-1]
+                items = [x.strip(" .") for x in re.split(r"[,;]", t) if x.strip(" .")]
+                items = [x for x in items if re.match(r"^[A-Za-z][A-Za-z -]{0,24}$", x)]
+                if items:
+                    syn[ent] = items[:4]
+    return syn
+
+
+def drafts():
+    out = {}
+    for f in sorted(glob.glob(os.path.join(DRAFTS, "*-E.json"))):
+        m = re.match(r"(\d{4}-\d\d-\d\d)-(.+)-E\.json$", os.path.basename(f))
+        if not m:
+            continue
+        model = m.group(2)
+        for w, items in json.loads(read(f)).items():
+            for it in items:
+                out.setdefault(w.upper(), []).append(("draft:" + model, it["text"]))
+    return out
+
+
+def main():
+    os.makedirs(OUT, exist_ok=True)
+    present = {"wordnet-3.1+gcide-0.53 (game meanings)": os.path.isdir(os.path.join(GAME, "meanings")),
+               "gcide-0.53 (synonyms)": os.path.isdir(GCIDE), "scowl (hunspell en_US)": os.path.isfile(SCOWL)}
+    tables, words = [], {}
+    for key, name in TABLES:
+        heads = read(os.path.join(GAME, "taxonomy", "d", "m", key)).split()[1:]
+        rows = []
+        for line in read(os.path.join(GAME, "taxonomy", "m", key)).split("\n"):
+            p = line.split()
+            if len(p) != 5:
+                continue
+            rows.append([p[0], p[1:]])
+            for i, w in enumerate(p[1:]):
+                words[w] = {"table": name, "key": key, "row": p[0], "head": heads[i] if i < len(heads) else "",
+                            "mates": [x for x in p[1:] if x != w]}
+        tables.append({"key": key, "name": name, "heads": heads, "rows": rows})
+    scowl = scowl_words()
+    syns = gcide_syns(set(words)) or {}
+    dr = drafts()
+    counts = {"complete": 0, "none": 0, "E-draft": 0, "E-pool": 0, "E-template": 0}
+    flat, wl, dl = [], [], []
+    for w in sorted(words):
+        rec = words[w]
+        mpath = os.path.join(GAME, "meanings", w)
+        wn = gc = None
+        if os.path.isfile(mpath):
+            for line in read(mpath).split("\n"):
+                f = line.split("\t")
+                if len(f) < 4 or not f[3].strip():
+                    continue
+                if f[1].startswith("wordnet") and not wn:
+                    wn = (f[1], f[2], f[3].strip())
+                elif f[1].startswith("gcide") and not gc:
+                    gc = (f[1], f[2], f[3].strip())
+        if not wn and not gc:
+            rec["none"] = True
+            counts["none"] += 1
+            wl.append((w, "none"))
+            continue
+        pool = []
+        ppath = os.path.join(GAME, "pool", w)
+        if os.path.isfile(ppath):
+            for line in read(ppath).split("\n"):
+                f = line.split("\t")
+                if len(f) < 3:
+                    continue
+                sent = clean(f[2])
+                if "<" in f[2] and "<br/" not in f[2]:
+                    continue
+                if re.search(r"\b%s" % re.escape(w.lower()[:max(3, len(w) - 2)]), sent.lower()):
+                    pool.append((f[1], sent))
+        base = wn or gc
+        pos = base[1] or "word"
+        gloss = first_clause(base[2])
+        lw = w.lower()
+        R = {"baseline": {"text": "%s: %s." % (cap(lw), gloss), "sources": [base[0]]}}
+        # north: the simpler of the two glosses, said plainly; then the shortest example
+        simp = wn or gc
+        sg = lower_first(first_clause(simp[2], 18))
+        if pos == "verb":
+            n1 = "To %s means to %s." % (lw, re.sub(r"^to ", "", sg))
+        elif pos == "noun":
+            n1 = "%s %s is %s." % ("An" if lw[:1] in "aeiou" else "A", lw, article(sg))
+        else:
+            n1 = "%s means %s." % (cap(lw), sg)
+        nsrc = [simp[0], "scowl"] if scowl is not None else [simp[0]]
+        short = sorted([p for p in pool if len(p[1].split()) <= 14 and not p[0].startswith("draft:")],
+                       key=lambda p: (mean_len(p[1]), len(p[1])))
+        if short:
+            n1 += " For example: " + short[0][1].rstrip(".") + "."
+            nsrc.append("pool:" + short[0][0])
+        R["N"] = {"text": n1, "sources": nsrc}
+        # south: one dense line, then the unpacking
+        dense = gc if gc and len(first_clause(gc[2], 30).split()) >= 4 else (wn or gc)
+        d1 = "%s: %s." % (w, first_clause(dense[2], 30))
+        plain = first_clause((wn or gc)[2])
+        where = "in the %s table it stands in row %s under %s, beside %s." % (rec["table"], rec["row"], rec["head"], ", ".join(rec["mates"]))
+        un = "Unpacked: " + (where[:1].upper() + where[1:] if plain.lower() in d1.lower() else plain + "; " + where)
+        R["S"] = {"text": d1 + " " + un, "sources": sorted({dense[0], (wn or gc)[0]}) + ["table:" + rec["key"]]}
+        # east: a drafted sentence, else a pooled one with voice, else a template
+        ed = [d for d in dr.get(w, []) if lw[:max(3, len(lw) - 2)] in d[1].lower() and len(d[1].split()) <= 25]
+        voiced = [p for p in pool if VOICE.search(p[1]) and not p[0].startswith("draft:")]
+        if ed:
+            R["E"] = {"text": ed[0][1], "sources": [ed[0][0]]}
+            counts["E-draft"] += 1
+            dl.append((w, ed[0][0][len("draft:"):]))
+        elif voiced:
+            v = min(voiced, key=lambda p: len(p[1]))
+            R["E"] = {"text": v[1], "sources": ["pool:" + v[0]]}
+            counts["E-pool"] += 1
+        else:
+            k = int(hashlib.sha256(w.encode()).hexdigest(), 16) % len(E_TEMPLATES)
+            name, t = E_TEMPLATES[k]
+            R["E"] = {"text": t.format(w=lw, W=cap(lw), g=gloss, G=cap(gloss)), "sources": [name, base[0]]}
+            counts["E-template"] += 1
+        # west: plain, with the dictionary's synonyms
+        wt = "%s (%s): %s." % (w, pos, gloss)
+        wsrc = [base[0]]
+        if w in syns:
+            wt += " Synonyms: %s." % ", ".join(syns[w])
+            wsrc.append("gcide-0.53")
+        R["W"] = {"text": re.sub(r"[!?]", ".", wt), "sources": sorted(set(wsrc))}
+        rec["pos"] = pos
+        rec["readings"] = R
+        counts["complete"] += 1
+        wl.append((w, "meaning"))
+        for d in ("baseline", "N", "S", "E", "W"):
+            flat.append("%s\t%s\t%s\t%s" % (w, d, ",".join(R[d]["sources"]), R[d]["text"]))
+    meta = {"title": "The Gnemonic Word Mines", "sources": present, "counts": counts,
+            "grain": 4, "dictionary_sources": 3, "missing": [k for k, v in present.items() if not v]}
+    with open(os.path.join(OUT, "readings.json"), "w", encoding="utf-8") as fh:
+        json.dump({"meta": meta, "tables": tables, "words": words}, fh, ensure_ascii=False, indent=0, sort_keys=True)
+    for name, lines in (("readings.txt", flat), ("words.txt", ["%s\t%s" % x for x in wl]), ("drafts.txt", ["%s\t%s" % x for x in dl])):
+        with open(os.path.join(OUT, name), "w", encoding="utf-8") as fh:
+            fh.write("\n".join(lines) + ("\n" if lines else ""))
+    with open(os.path.join(OUT, "SOURCES"), "w", encoding="utf-8") as fh:
+        for k, v in present.items():
+            fh.write("%s\t%s\n" % ("present" if v else "MISSING", k))
+    print("tg1bd: %d words; %d complete; %d with no meaning found; E: %d drafted, %d pooled, %d templated; missing sources: %s"
+          % (len(words), counts["complete"], counts["none"], counts["E-draft"], counts["E-pool"], counts["E-template"],
+             ", ".join(meta["missing"]) or "none"))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+#+end_src
+
+* The second reader
+
+It reads the flat file the builder wrote, the word list, the drafts list and SCOWL, and checks each
+direction's rule by itself.  It shares no code with the builder.
+
+#+begin_src sh :tangle tools/tg1rd
+#!/bin/sh
+# tg1rd -- TAXGNOMES 1 READ: the second reader.  Checks data/readings.txt against each direction's
+# rule, apart from the builder: five readings per word with a meaning; every reading cites allowed
+# sources; west carries no exclamation or question; south has a dense line and its unpacking; every
+# draft citation has a draft behind it; and, over the whole table, north's words are shorter on
+# average than south's and at least as often common (in SCOWL).
+# usage: tg1rd [DATA_DIR] [SCOWL_DIC]     prints FAULT lines and a summary; exit 1 on any fault
+# TG1RD_AWK chooses the awk.  Unfolded from hello-taxgnomes.org; edit that, not this.
+# Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
+# Mentat (for Corwin; claude-opus-5-5)
+set -u
+LC_ALL=C; export LC_ALL
+here=$(cd "$(dirname "$0")/.." && pwd)
+d=${1:-$here/data}; sc=${2:-${TG_SCOWL:-/usr/share/hunspell/en_US.dic}}
+[ -f "$d/readings.txt" ] || { echo "tg1rd: no readings in $d" >&2; exit 2; }
+[ -f "$sc" ] || sc=/dev/null
+exec ${TG1RD_AWK:-awk} -F'\t' '
+FILENAME == ARGV[1] { if (FNR > 1) { w = $0; sub(/\/.*/, "", w); common[tolower(w)] = 1; nsc++ } next }
+FILENAME == ARGV[2] { status[$1] = $2; nw++; next }
+FILENAME == ARGV[3] { drafted[$1, $2] = 1; next }
+{
+  w = $1; dir = $2; src = $3; text = $4; got[w, dir]++; seen[w] = 1
+  if (src == "") { fault("no source", w, dir) }
+  ns = split(src, S, ",")
+  for (i = 1; i <= ns; i++) {
+    s = S[i]
+    if (s !~ /^(wordnet-3\.1:[0-9]+|gcide-0\.53|scowl|pool:.+|draft:.+|template:E[1-4]|table:[gort])$/) fault("a source not allowed: " s, w, dir)
+    if (s ~ /^draft:/) { m = s; sub(/^draft:/, "", m); if (!((w, m) in drafted)) fault("a draft cited with no draft behind it: " s, w, dir) }
+  }
+  if (dir == "W" && text ~ /[!?]/) fault("west asks or exclaims", w, dir)
+  if (dir == "S" && index(text, " Unpacked: ") == 0) fault("south has no unpacking line", w, dir)
+  if (dir == "N" || dir == "S") {
+    t = tolower(text); gsub(/[^a-z]+/, " ", t); n = split(t, T, " ")
+    for (i = 1; i <= n; i++) { L[dir] += length(T[i]); C[dir]++; if (T[i] in common) K[dir]++ }
+  }
+}
+function fault(why, w, dir) { print "FAULT   " w " " dir ": " why; faults++ }
+END {
+  complete = 0
+  for (w in status) {
+    if (status[w] != "meaning") continue
+    ok = 1
+    split("baseline N S E W", D, " ")
+    for (i = 1; i <= 5; i++) if (got[w, D[i]] != 1) { fault("readings for " D[i] ": " (got[w, D[i]] + 0), w, D[i]); ok = 0 }
+    complete += ok
+  }
+  for (w in seen) if (status[w] != "meaning") fault("readings for a word with no meaning", w, "-")
+  mn = C["N"] ? L["N"] / C["N"] : 0; ms = C["S"] ? L["S"] / C["S"] : 0
+  if (!(mn < ms)) fault(sprintf("north words are not shorter than south words (%.2f vs %.2f)", mn, ms), "ALL", "N")
+  if (nsc > 0) {
+    kn = C["N"] ? K["N"] / C["N"] : 0; ks = C["S"] ? K["S"] / C["S"] : 0
+    if (kn < ks) fault(sprintf("north is less common than south (%.3f vs %.3f)", kn, ks), "ALL", "N")
+    shares = sprintf("; common words north %.3f, south %.3f", kn, ks)
+  } else shares = "; SCOWL not read: commonness NOT CHECKED"
+  printf "tg1rd: %d words; %d complete; mean word length north %.2f, south %.2f%s; %d fault(s)\n", nw, complete, mn, ms, shares, faults + 0
+  exit (faults > 0)
+}' "$sc" "$d/words.txt" "$d/drafts.txt" "$d/readings.txt"
+#+end_src
+
+* Drafts from the local model
+
+The local model (through the llama bridge, in the background) is asked for one moody sentence per
+word.  Its answer, a JSON object of word to sentence, is taken in here: kept only if it uses the
+word and runs 25 words or fewer, and filed with the model's name and the date, so the page can say
+the model wrote it.
+
+#+begin_src python :tangle tools/tg1dr.py
+#!/usr/bin/env python3
+"""tg1dr -- TAXGNOMES 1 DRAFTS: take in sentences the local model drafted for the east direction.
+
+usage: tg1dr.py ingest MODEL ANSWER.json [DATE]   writes drafts/DATE-MODEL-E.json (merging, never
+                                                  dropping); prints what was kept and why not
+ANSWER.json is the model's {"WORD": "sentence", ...}.  A sentence is kept only if it uses the word
+(or its stem) and runs 25 words or fewer.  The model is not called here.
+Unfolded from hello-taxgnomes.org; edit that, not this.
+Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
+Mentat (for Corwin; claude-opus-5-5)
+"""
+import datetime
+import json
+import os
+import re
+import sys
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def main(argv):
+    if len(argv) < 3 or argv[0] != "ingest":
+        sys.stderr.write(__doc__)
+        return 2
+    model, path = argv[1], argv[2]
+    date = argv[3] if len(argv) > 3 else datetime.date.today().isoformat()
+    if not re.match(r"^[A-Za-z0-9._:-]+$", model):
+        sys.stderr.write("tg1dr: a model name is letters, digits and ._:- only\n")
+        return 2
+    ans = json.load(open(path, encoding="utf-8"))
+    out_path = os.path.join(HERE, "drafts", "%s-%s-E.json" % (date, model.replace(":", "-")))
+    have = json.load(open(out_path, encoding="utf-8")) if os.path.exists(out_path) else {}
+    kept = 0
+    for w, s in sorted(ans.items()):
+        w = w.upper()
+        s = " ".join(str(s).split())
+        stem = w.lower()[:max(3, len(w) - 2)]
+        if stem not in s.lower():
+            print("dropped %s: the sentence does not use the word" % w)
+            continue
+        if len(s.split()) > 25:
+            print("dropped %s: longer than 25 words" % w)
+            continue
+        if any(x["text"] == s for x in have.get(w, [])):
+            continue
+        have.setdefault(w, []).append({"text": s})
+        kept += 1
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as fh:
+        json.dump(have, fh, ensure_ascii=False, indent=1, sort_keys=True)
+        fh.write("\n")
+    print("tg1dr: kept %d sentence(s) in %s" % (kept, os.path.relpath(out_path, HERE)))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
+#+end_src
+
+* The page
+
+#+begin_src python :tangle tools/tg1pg.py
+#!/usr/bin/env python3
+"""tg1pg -- TAXGNOMES 1 PAGE: write build/hello-taxgnomes.html from page/template.html and
+data/readings.json.  One file, offline; the readings are inlined.
+
+usage: tg1pg.py [OUT.html]
+Unfolded from hello-taxgnomes.org; edit that, not this.
+Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
+Mentat (for Corwin; claude-opus-5-5)
+"""
+import json
+import os
+import sys
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+def main(argv):
+    out = argv[0] if argv else os.path.join(HERE, "build", "hello-taxgnomes.html")
+    t = open(os.path.join(HERE, "page", "template.html"), encoding="utf-8").read()
+    data = json.load(open(os.path.join(HERE, "data", "readings.json"), encoding="utf-8"))
+    marker = "/*__READINGS__*/null"
+    if t.count(marker) != 1:
+        sys.stderr.write("tg1pg: the template must hold the readings marker exactly once\n")
+        return 2
+    blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    with open(out, "w", encoding="utf-8") as fh:
+        fh.write(t.replace(marker, blob))
+    print("tg1pg: %s (%d bytes)" % (os.path.relpath(out, HERE), os.path.getsize(out)))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
+#+end_src
+
+The page.  Colours come from egad's tokens when a host defines them (=--egad-color-*=), else from
+its own; a host may set =data-egad-read= on the root element (north, south, east, west) to choose
+where the slider starts, which is how egadjit's choice reaches it.
+
+#+begin_src html :tangle page/template.html
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gnemonic Word Mines</title>
+<!-- hello-taxgnomes: built by tools/tg1pg.py from data/readings.json.  @licstart  The code on this
+page is free software: GPL-3.0-or-later.  The readings come from WordNet 3.1 (WordNet licence),
+GCIDE 0.53 (GPL-3.0-or-later) and SCOWL (permissive); see the project's NOTICE.  @licend -->
+<style>
+:root{--tg-bg:var(--egad-color-bg,#fbf8f1);--tg-ink:var(--egad-color-ink,#1f1d1a);--tg-muted:var(--egad-color-muted,#5c564c);
+--tg-line:var(--egad-color-line,#d8d0c0);--tg-card:var(--egad-color-card,#fffdf7);--tg-accent:var(--egad-color-accent,#2c6e5c);--tg-focus:#b3570f}
+@media (prefers-color-scheme:dark){:root{--tg-bg:var(--egad-color-bg,#17160f);--tg-ink:var(--egad-color-ink,#ece6da);--tg-muted:var(--egad-color-muted,#b0a796);
+--tg-line:var(--egad-color-line,#3b372e);--tg-card:var(--egad-color-card,#201e17);--tg-accent:var(--egad-color-accent,#83c9b4);--tg-focus:#f0a35a}}
+,*{box-sizing:border-box}
+body{margin:0;background:var(--tg-bg);color:var(--tg-ink);font:17px/1.55 Georgia,"Iowan Old Style",serif}
+main{max-width:980px;margin:0 auto;padding:28px 16px 48px}
+h1{font-size:clamp(26px,4.5vw,38px);margin:0 0 4px}
+.sub{color:var(--tg-muted);margin:0 0 20px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px}
+@media (max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--tg-card);border:1px solid var(--tg-line);border-radius:6px;padding:14px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+button{font:inherit;color:inherit;background:transparent;border:1px solid var(--tg-line);border-radius:4px;padding:4px 9px;cursor:pointer}
+button[aria-pressed="true"],button[aria-selected="true"]{border-color:var(--tg-accent);box-shadow:inset 0 0 0 1px var(--tg-accent)}
+button:focus-visible,#pad:focus-visible{outline:3px solid var(--tg-focus);outline-offset:2px}
+.row{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0}
+.row .reg{width:1.4em;color:var(--tg-muted);font-family:ui-monospace,monospace}
+.words button{font-size:14px;padding:2px 6px}
+#pad{position:relative;width:220px;height:220px;margin:6px auto 10px;border:1px solid var(--tg-line);border-radius:50%;
+background:radial-gradient(circle,var(--tg-card) 55%,var(--tg-bg))}
+#knob{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:var(--tg-accent);left:50%;top:50%;transition:left .25s,top .25s}
+.lbl{position:absolute;font:600 12px/1.2 system-ui,sans-serif;color:var(--tg-muted)}
+.lbl.n{top:6px;left:50%;transform:translateX(-50%)}.lbl.s{bottom:6px;left:50%;transform:translateX(-50%)}
+.lbl.e{right:8px;top:50%;transform:translateY(-50%)}.lbl.w{left:8px;top:50%;transform:translateY(-50%)}
+.dirs{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:6px;margin-bottom:10px}
+#reading{font-size:20px;min-height:4.5em}
+#reading.east{display:inline-block;animation:wob 2.4s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(0)}25%{transform:rotate(-.4deg)}75%{transform:rotate(.4deg)}}
+.reduce-motion #knob,.reduce-motion #reading{transition:none!important;animation:none!important}
+@media (prefers-reduced-motion:reduce){#knob,#reading{transition:none!important;animation:none!important}}
+#who{color:var(--tg-muted);font-size:14px;margin-top:8px}
+.note{color:var(--tg-muted);font-size:14px;border-left:3px solid var(--tg-line);padding-left:10px}
+footer{margin-top:28px;color:var(--tg-muted);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<h1>The Gnemonic Word Mines</h1>
+<p class="sub">Pick a word.  Move the slider: north simpler, south denser, east moodier, west drier.
+The centre is the plain gloss.  Every sentence says who wrote it.</p>
+<div class="grid">
+  <section class="card" aria-label="Words">
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="words" id="words"></div>
+  </section>
+  <section class="card" aria-label="Reading">
+    <div id="pad" tabindex="0" role="group" aria-label="Reading direction. Arrow keys move north (simpler), south (denser), east (moodier), west (drier); Home returns to the centre.">
+      <span class="lbl n">N simpler</span><span class="lbl s">S denser</span><span class="lbl e">E moodier</span><span class="lbl w">W drier</span>
+      <span id="knob" aria-hidden="true"></span>
+    </div>
+    <div class="dirs" role="group" aria-label="Directions">
+      <span></span><button data-dir="N" aria-pressed="false">North: simpler</button><span></span>
+      <button data-dir="W" aria-pressed="false">West: drier</button><button data-dir="baseline" aria-pressed="true">Centre: plain</button><button data-dir="E" aria-pressed="false">East: moodier</button>
+      <span></span><button data-dir="S" aria-pressed="false">South: denser</button><span></span>
+    </div>
+    <h2 id="word" style="margin:0 0 6px;font-size:22px"></h2>
+    <div aria-live="polite" id="live"><span id="reading"></span></div>
+    <p id="who"></p>
+    <p class="note" id="sign" hidden></p>
+  </section>
+</div>
+<footer>hello-taxgnomes · readings from WordNet 3.1, GCIDE 0.53 and SCOWL, and the word game's pooled
+sentences; east sentences may be drafted by a local model and say so.  Code GPL-3.0-or-later; text CC
+BY-SA 4.0.  Corwin Brust and Contributors; Mentat (for Corwin; claude-opus-5-5).</footer>
+</main>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-3.0-or-later
+"use strict";
+const DATA = /*__READINGS__*/null;
+const POS = {baseline:[50,50], N:[50,14], S:[50,86], E:[86,50], W:[14,50]};
+const NAMES = {baseline:"the centre (plain)", N:"north (simpler)", S:"south (denser)", E:"east (moodier)", W:"west (drier)"};
+const st = {table: null, word: null, dir: "baseline"};
+const $ = s => document.querySelector(s);
+function who(src) {
+  return src.map(s => s.startsWith("wordnet") ? "WordNet 3.1" : s.startsWith("gcide") ? "GCIDE 0.53 (Webster 1913)"
+    : s === "scowl" ? "SCOWL (common words)" : s.startsWith("pool:") ? "the word game's sentences (" + s.slice(5) + ")"
+    : s.startsWith("draft:") ? "a local model (" + s.slice(6) + "), drafted" : s.startsWith("template:") ? "a template (" + s.slice(9) + ")"
+    : s.startsWith("table:") ? "the game's table" : s).filter((v, i, a) => a.indexOf(v) === i).join(" · ");
+}
+function show() {
+  const w = DATA.words[st.word], el = $("#reading");
+  $("#word").textContent = st.word ? st.word.toLowerCase() : "";
+  el.className = "";
+  if (!w || w.none) {
+    el.textContent = "No meaning found for this word in the sources; nothing is invented for it.";
+    $("#who").textContent = "Sources read: WordNet 3.1, GCIDE 0.53.";
+  } else {
+    const r = w.readings[st.dir];
+    el.textContent = r.text;
+    if (st.dir === "E") el.className = "east";
+    $("#who").textContent = "Written by: " + who(r.sources) + " — " + NAMES[st.dir] + ".";
+  }
+  const p = POS[st.dir]; $("#knob").style.left = p[0] + "%"; $("#knob").style.top = p[1] + "%";
+  document.querySelectorAll(".dirs button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.dir === st.dir)));
+  const t = DATA.meta.counts["E-template"] || 0;
+  $("#sign").hidden = !t;
+  if (t) $("#sign").textContent = t + " of the east readings come from a template: the local model had not drafted those words when this page was built.";
+}
+function setDir(d) { if (!(d in POS)) return; st.dir = d; show(); }
+function setWord(w) { st.word = w; document.querySelectorAll(".words button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.word === w))); show(); }
+function setTable(k) {
+  st.table = k; const t = DATA.tables.find(x => x.key === k), box = $("#words"); box.textContent = "";
+  document.querySelectorAll("#tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.key === k)));
+  t.rows.forEach(r => { const row = document.createElement("div"); row.className = "row";
+    const g = document.createElement("span"); g.className = "reg"; g.textContent = r[0]; row.appendChild(g);
+    r[1].forEach(w => { const b = document.createElement("button"); b.textContent = w.toLowerCase(); b.dataset.word = w;
+      b.setAttribute("aria-pressed", "false"); b.addEventListener("click", () => setWord(w)); row.appendChild(b); });
+    box.appendChild(row); });
+}
+const MOVE = {ArrowUp: {baseline:"N", S:"baseline"}, ArrowDown: {baseline:"S", N:"baseline"}, ArrowRight: {baseline:"E", W:"baseline"}, ArrowLeft: {baseline:"W", E:"baseline"}};
+function key(e) {
+  if (e.key === "Home") { setDir("baseline"); e.preventDefault(); return; }
+  const m = MOVE[e.key]; if (!m) return; e.preventDefault();
+  if (m[st.dir]) setDir(m[st.dir]); else if (st.dir !== "baseline") setDir("baseline");
+}
+function init() {
+  if (!DATA) { $("#reading").textContent = "The readings did not load; the page was built without data."; return; }
+  if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("reduce-motion");
+  const tabs = $("#tabs"); tabs.textContent = "";
+  DATA.tables.forEach(t => { const b = document.createElement("button"); b.setAttribute("role", "tab"); b.dataset.key = t.key; b.textContent = t.name.toLowerCase();
+    b.addEventListener("click", () => setTable(t.key)); tabs.appendChild(b); });
+  document.querySelectorAll(".dirs button").forEach(b => b.addEventListener("click", () => setDir(b.dataset.dir)));
+  $("#pad").addEventListener("keydown", key);
+  $("#pad").addEventListener("click", e => { const r = $("#pad").getBoundingClientRect(), x = e.clientX - r.left - r.width / 2, y = e.clientY - r.top - r.height / 2;
+    if (Math.hypot(x, y) < r.width * 0.16) return setDir("baseline");
+    setDir(Math.abs(x) > Math.abs(y) ? (x > 0 ? "E" : "W") : (y > 0 ? "S" : "N")); });
+  const start = {north:"N", south:"S", east:"E", west:"W"}[document.documentElement.dataset.egadRead || ""] || "baseline";
+  setTable(DATA.tables[0].key); setWord(DATA.tables[0].rows[0][1][0]); setDir(start);
+}
+init();
+
+// ---- inline tests: window.__runAllTests() -> [{id, pass, msg}] ----
+function lum(c) { const m = c.match(/\d+(\.\d+)?/g).map(Number).slice(0, 3).map(v => { v /= 255; return v <= .03928 ? v / 12.92 : Math.pow((v + .055) / 1.055, 2.4); }); return .2126 * m[0] + .7152 * m[1] + .0722 * m[2]; }
+function ratio(a, b) { const x = lum(a), y = lum(b); return (Math.max(x, y) + .05) / (Math.min(x, y) + .05); }
+const TESTS = [
+  {id: "T-SLIDE", fn() { const w = Object.keys(DATA.words).find(k => !DATA.words[k].none); setWord(w);
+      for (const d of ["N", "S", "E", "W", "baseline"]) { setDir(d); if ($("#reading").textContent !== DATA.words[w].readings[d].text) throw "reading for " + d + " does not match its data"; }
+      return "five readings, each the data's own"; }},
+  {id: "T-KEYS", fn() { setDir("baseline"); const k = n => $("#pad").dispatchEvent(new KeyboardEvent("keydown", {key: n, bubbles: true}));
+      k("ArrowUp"); if (st.dir !== "N") throw "up did not go north"; k("ArrowDown"); if (st.dir !== "baseline") throw "down from north did not return to the centre";
+      k("ArrowDown"); if (st.dir !== "S") throw "down from the centre did not go south"; k("Home"); if (st.dir !== "baseline") throw "Home did not return to the centre";
+      k("ArrowRight"); if (st.dir !== "E") throw "right did not go east"; k("Home"); return "arrows and Home move the knob"; }},
+  {id: "T-SOURCES", fn() { const w = Object.keys(DATA.words).find(k => !DATA.words[k].none); setWord(w); setDir("W");
+      if (!/WordNet|GCIDE/.test($("#who").textContent)) throw "the west reading does not say which dictionary wrote it";
+      setDir("S"); if (!/table/.test($("#who").textContent)) throw "the south reading does not name the game's table";
+      return "who wrote it is said beside each reading"; }},
+  {id: "T-A11Y", fn() { const pad = $("#pad"); if (pad.tabIndex !== 0 || !pad.getAttribute("aria-label")) throw "the pad is not reachable or not named";
+      if ($("#live").getAttribute("aria-live") !== "polite") throw "the reading is not in a live region";
+      const bs = [...document.querySelectorAll(".dirs button")]; if (bs.length !== 5 || bs.some(b => !b.textContent.trim())) throw "the five buttons are not all named";
+      return "pad, live region, and a no-picture path of five named buttons"; }},
+  {id: "T-MOTION", fn() { document.documentElement.classList.add("reduce-motion"); setDir("E");
+      const an = getComputedStyle($("#reading")).animationName, tr = getComputedStyle($("#knob")).transitionDuration;
+      document.documentElement.classList.remove("reduce-motion");
+      if (an !== "none" || !/^0s/.test(tr)) throw "reduced motion did not stop the wobble or the knob's glide (" + an + ", " + tr + ")";
+      return "reduced motion stops the wobble and the glide"; }},
+  {id: "T-CONTRAST", fn() { const cs = getComputedStyle(document.body), ink = cs.color, bg = cs.backgroundColor;
+      const r1 = ratio(ink, bg); if (r1 < 4.5) throw "text contrast " + r1.toFixed(2);
+      const ac = getComputedStyle($("#knob")).backgroundColor, r2 = ratio(ac, bg); if (r2 < 3) throw "knob contrast " + r2.toFixed(2);
+      return "text " + r1.toFixed(1) + ":1, knob " + r2.toFixed(1) + ":1"; }},
+  {id: "T-SIGN", fn() { const t = DATA.meta.counts["E-template"] || 0;
+      if (Boolean(t) === $("#sign").hidden) throw "the note on templated readings is " + ($("#sign").hidden ? "missing" : "shown with none templated");
+      const w = Object.keys(DATA.words).find(k => !DATA.words[k].none && DATA.words[k].readings.E.sources.some(s => s.startsWith("template:")));
+      if (w) { setWord(w); setDir("E"); if (!/template/.test($("#who").textContent)) throw "a templated east reading does not say so"; }
+      return t + " templated east reading(s), each said"; }},
+  {id: "T-EMPTY", fn() { const w = Object.keys(DATA.words).find(k => DATA.words[k].none); if (!w) return "no word without a meaning (nothing to show)";
+      setWord(w); if (!/No meaning found/.test($("#reading").textContent)) throw "a word with no meaning did not say so"; return "a word with no meaning says so"; }},
+  {id: "T-EGAD", fn() { document.documentElement.dataset.egadRead = "west"; init();
+      const ok = st.dir === "W"; delete document.documentElement.dataset.egadRead; init();
+      if (!ok) throw "data-egad-read=west did not start the knob west"; if (st.dir !== "baseline") throw "without the hint the knob did not start at the centre";
+      return "a host's hint chooses the start; without it, the centre"; }},
+];
+window.__runAllTests = () => TESTS.map(t => { try { return {id: t.id, pass: true, msg: t.fn()}; } catch (e) { return {id: t.id, pass: false, msg: String(e)}; } });
+// @license-end
+</script>
+</body>
+</html>
+#+end_src
+
+* The egad hooks
+
+An egadjit category.  The east treatment moves (its words wobble), so a viewer who asked for reduced
+motion is not given it; anyone may still choose it by hand, and the page then holds the words still.
+
+#+begin_src js :tangle egad/read-category.json
+{"category": "read", "baseline": "baseline",
+ "order": ["baseline", "north", "west", "south", "east"],
+ "treatments": {
+  "baseline": {"motion": false, "announces": true, "forms": ["hello-taxgnomes.html#baseline"], "summary": "the plain gloss"},
+  "north": {"motion": false, "announces": true, "forms": ["hello-taxgnomes.html#north"], "summary": "simpler: short sentences, common words"},
+  "south": {"motion": false, "announces": true, "forms": ["hello-taxgnomes.html#south"], "summary": "denser: a dense line, then its unpacking"},
+  "east": {"motion": true, "announces": true, "forms": ["hello-taxgnomes.html#east"], "summary": "moodier: voice and intonation; the words wobble"},
+  "west": {"motion": false, "announces": true, "forms": ["hello-taxgnomes.html#west"], "summary": "drier: direct, with synonyms"}}}
+#+end_src
+
+The component, as egad's declarative layer reads it (Org property drawers; keys lower-case).
+
+#+begin_src org :tangle egad/greeting.org
+,* taxgnomes
+:PROPERTIES:
+:component: hello-taxgnomes
+:page: build/hello-taxgnomes.html
+:category: read
+:start: baseline
+:directions+: north south east west
+:grain: 4
+:sources: 3
+:END:
+#+end_src
+
+* The checks
+
+#+begin_src sh :tangle tests/taxgnomes-tests.sh
+#!/bin/sh
+# taxgnomes-tests.sh -- hello-taxgnomes' checks.
+# usage: sh tests/taxgnomes-tests.sh            the build is complete and honest
+#        sh tests/taxgnomes-tests.sh --reader   the second reader agrees with the builder
+#        sh tests/taxgnomes-tests.sh --prove-red    planted faults, each caught
+#        sh tests/taxgnomes-tests.sh --cold     a build with no drafts completes and says so
+#        sh tests/taxgnomes-tests.sh --offline  the page asks nothing of the network
+#        sh tests/taxgnomes-tests.sh --egad     egadjit's resolver reads the category (needs ../egad)
+# Builds into a scratch folder; the committed data/ is compared, never rewritten.
+# Unfolded from hello-taxgnomes.org; edit that, not this.
+# Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
+# Mentat (for Corwin; claude-opus-5-5)
+set -u
+here=$(cd "$(dirname "$0")/.." && pwd)
+w=$(mktemp -d) || exit 2; trap 'rm -rf "$w"' EXIT
+mode=${1:-}; fail=0
+TG_GAME=${TG_GAME:-$(cd "$here/../mini-c4-game" 2>/dev/null && pwd)}; export TG_GAME
+build() { # OUT [DRAFTS] [BUILDER]
+  if [ -n "${2:-}" ]; then env TG_OUT="$1" TG_DRAFTS="$2" python3 "${3:-$here/tools/tg1bd.py}"
+  else env TG_OUT="$1" python3 "${3:-$here/tools/tg1bd.py}"; fi
+}
+honest() { # DIR -> 0 when every word with a meaning has five readings, each with text and a source
+  python3 "$here/tools/tg1ck.py" "$1"
+}
+plant() { # NAME AWKPROG -> the second reader must catch the fault planted in a copy of the build
+  cp -R "$w/d" "$w/$1"; awk -F'\t' -v OFS='\t' "$2" "$w/d/readings.txt" > "$w/$1/readings.txt"
+  cmp -s "$w/d/readings.txt" "$w/$1/readings.txt" && { echo "prove-red: $1 could not be planted"; r=1; return; }
+  if sh "$here/tools/tg1rd" "$w/$1" > /dev/null; then echo "prove-red: $1 was NOT caught"; r=1; else echo "prove-red: $1 was caught"; fi
+}
+case $mode in
+  ''|--reader)
+    build "$w/d" > "$w/b.out" || { echo "FAIL the build"; exit 1; }
+    for f in readings.json readings.txt words.txt drafts.txt SOURCES; do cmp -s "$w/d/$f" "$here/data/$f" || { echo "FAIL data/$f differs from a fresh build (run make build)"; fail=1; }; done
+    grep -q 'missing sources: none' "$w/b.out" || { echo "FAIL a source is missing: $(cat "$w/b.out")"; fail=1; }
+    honest "$w/d" || fail=1
+    if [ "$mode" = --reader ]; then
+      for a in awk mawk gawk; do command -v $a >/dev/null 2>&1 || continue
+        TG1RD_AWK=$a sh "$here/tools/tg1rd" "$w/d" > "$w/r.$a" || { echo "FAIL the second reader ($a)"; grep FAULT "$w/r.$a" | head -3; fail=1; }
+      done
+      bc=$(sed -n 's/.*; \([0-9]*\) complete;.*/\1/p' "$w/b.out"); rc=$(sed -n 's/.*; \([0-9]*\) complete;.*/\1/p' "$w/r.awk")
+      [ -n "$bc" ] && [ "$bc" = "$rc" ] || { echo "FAIL builder says $bc complete, reader $rc"; fail=1; }
+      for a in mawk gawk; do [ -f "$w/r.$a" ] && { cmp -s "$w/r.awk" "$w/r.$a" || { echo "FAIL awk and $a read it differently"; fail=1; }; }; done
+      [ $fail = 0 ] && echo "taxgnomes: the second reader agrees: $(cat "$w/r.awk")"
+    else
+      [ $fail = 0 ] && echo "taxgnomes: $(cat "$w/b.out")"
+    fi ;;
+  --cold)
+    mkdir -p "$w/nodrafts"; build "$w/c" "$w/nodrafts" > "$w/c.out" || { echo "FAIL a build with no drafts"; exit 1; }
+    grep -q ' 0 drafted,' "$w/c.out" || { echo "FAIL a build with no drafts still claims drafts: $(cat "$w/c.out")"; fail=1; }
+    [ -s "$w/c/drafts.txt" ] && { echo "FAIL drafts.txt is not empty without drafts"; fail=1; }
+    sh "$here/tools/tg1rd" "$w/c" > /dev/null || { echo "FAIL the second reader on the cold build"; fail=1; }
+    [ $fail = 0 ] && echo "taxgnomes --cold: $(cat "$w/c.out")" ;;
+  --offline)
+    p="$here/build/hello-taxgnomes.html"; [ -f "$p" ] || { echo "FAIL no page built"; exit 1; }
+    if grep -E -q '<(script|link|img|iframe)[^>]+(src|href)="?(https?:)?//' "$p" || grep -E -q '(fetch|XMLHttpRequest|WebSocket|@import)\(' "$p"; then echo "FAIL the page reaches for the network"; fail=1; fi
+    [ $fail = 0 ] && echo "taxgnomes --offline: the page loads nothing from outside and asks nothing of the network" ;;
+  --egad)
+    rs="$here/../egad/jit/resolve.py"; [ -f "$rs" ] || { echo "taxgnomes --egad: NOT CHECKED (no ../egad)"; exit 0; }
+    mkdir -p "$w/forest"; cp "$here/egad/read-category.json" "$w/forest/"
+    printf '{"viewer":"nora","constraints":{"reduced_motion":false,"screen_reader":false},"prefer":{"read":["north","baseline"]}}\n' > "$w/nora.json"
+    printf '{"viewer":"eli","constraints":{"reduced_motion":true,"screen_reader":false},"prefer":{"read":["east","west"]}}\n' > "$w/eli.json"
+    python3 "$rs" "$w/forest" "$w/nora.json" | grep -q -- '-> north' || { echo "FAIL a viewer who prefers north did not get north"; fail=1; }
+    python3 "$rs" "$w/forest" "$w/eli.json" | grep -q -- '-> west' || { echo "FAIL a reduced-motion viewer who prefers east was not moved to west"; fail=1; }
+    [ $fail = 0 ] && echo "taxgnomes --egad: egadjit's resolver gives north to nora, and west (not east) to eli, who asked for reduced motion" ;;
+  --prove-red)
+    r=0
+    build "$w/d" > /dev/null
+    plant nosource 'NR == 1 { $3 = "" } { print }'
+    plant draftless '!done && $2 == "E" { $3 = "draft:ghost-model"; done = 1 } { print }'
+    plant westshouts '!done && $2 == "W" { $4 = $4 "!"; done = 1 } { print }'
+    plant swapped '{ k[NR] = $1; d[NR] = $2; s[NR] = $3; t[NR] = $4; if ($2 == "N") n[$1] = $4; if ($2 == "S") so[$1] = $4 }
+      END { for (i = 1; i <= NR; i++) { x = t[i]; if (d[i] == "N") x = so[k[i]]; else if (d[i] == "S") x = n[k[i]]; print k[i], d[i], s[i], x } }'
+    sed 's/"sources": \[base\[0\]\]}}/"sources": []}}/' "$here/tools/tg1bd.py" > "$w/stray-builder.py"
+    cmp -s "$here/tools/tg1bd.py" "$w/stray-builder.py" && { echo "prove-red: the stray builder could not be planted"; r=1; }
+    build "$w/sb" "" "$w/stray-builder.py" > /dev/null 2>&1
+    [ -f "$w/sb/readings.json" ] || { echo "prove-red: the stray builder did not run, so it proves nothing"; r=1; }
+    if honest "$w/sb" > /dev/null; then echo "prove-red: a builder that drops a source was NOT caught"; r=1; else echo "prove-red: a builder that drops a source was caught"; fi
+    [ $r = 0 ] && echo "PROVE-RED OK" || echo "PROVE-RED FAILED"; exit $r ;;
+  *) echo "usage: taxgnomes-tests.sh [--reader|--prove-red|--cold|--offline|--egad]" >&2; exit 2 ;;
+esac
+exit $fail
+#+end_src
+
+#+begin_src python :tangle tools/tg1ck.py
+#!/usr/bin/env python3
+"""tg1ck -- TAXGNOMES 1 CHECK: every word with a meaning has five readings, each with text and at
+least one source; the complete count matches the build's own.
+
+usage: tg1ck.py DATA_DIR     exit 1 on a fault, with a line per fault
+Unfolded from hello-taxgnomes.org; edit that, not this.
+Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
+Mentat (for Corwin; claude-opus-5-5)
+"""
+import json
+import sys
+
+d = json.load(open(sys.argv[1] + "/readings.json", encoding="utf-8"))
+bad = 0
+for w, r in d["words"].items():
+    if r.get("none"):
+        continue
+    R = r["readings"]
+    if sorted(R) != ["E", "N", "S", "W", "baseline"]:
+        print("FAIL %s: readings %s" % (w, sorted(R)))
+        bad += 1
+    for k, v in R.items():
+        if not v["sources"] or not v["text"].strip():
+            print("FAIL %s %s: empty text or no source" % (w, k))
+            bad += 1
+n = sum(1 for r in d["words"].values() if not r.get("none"))
+if n != d["meta"]["counts"]["complete"]:
+    print("FAIL complete count %d vs meta %d" % (n, d["meta"]["counts"]["complete"]))
+    bad += 1
+sys.exit(1 if bad else 0)
+#+end_src

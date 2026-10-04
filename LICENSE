@@ -1,0 +1,14 @@
+kid-glove: licence
+
+The code (skill/kid-glove/scripts/*, tests/*, unfold.awk, Makefile) is free software: you can
+redistribute it and/or modify it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at your option) any later
+version.  See COPYING.
+
+The prose (kid-glove.org outside its code blocks, skill/kid-glove/SKILL.md, the kit table, README.org)
+is licensed under the Creative Commons Attribution-ShareAlike 4.0 International licence:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Bryant Frankford's work, quoted or used here, shares this licence.
+
+Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors.
