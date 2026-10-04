@@ -1,0 +1,12 @@
+ACCORD	gemma4-12b
+ADD	gemma4-12b
+AGAINST	gemma4-12b
+AGENT	gemma4-12b
+ALIGN	gemma4-12b
+ALPHA	gemma4-12b
+APPEND	gemma4-12b
+ARCHIVE	gemma4-12b
+ARRAY	gemma4-12b
+ASSET	gemma4-12b
+ATOM	gemma4-12b
+CAPABILITY	gemma4-12b

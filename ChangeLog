@@ -1,3 +1,13 @@
+2026-10-04  Claude (Cowork, after the crash: the first drafts in)  for Corwin  <corwin@bru.st>
+
+	* drafts/2026-10-04-gemma4-12b-E.json: new.  12 east sentences by gemma4:12b through Llama
+	Bridge, taken in by tg1dr (12 of 12 kept).
+	* data/, build/hello-taxgnomes.html: rebuilt: 12 drafted, 69 pooled, 180 templated.
+	* .house/h/drafts-2026-10-04/: the prompts (r2/b00..b15), the answers, and jobs.tsv (every
+	job, its id and how it ended: four 48-word batches and b01 hit the bridge's 600 s).
+	* .house/h/RESTART-2026-10-04-east-drafts.md: new.  The rest, parked for an Avalon restart.
+	* .house/h/SWING, NOTES: cycle 2, pass 1 (0 issues, 1 warning).
+
 2026-10-04  Claude (Cowork, hello-taxgnomes)  for Corwin  <corwin@bru.st>
 
 	* hello-taxgnomes.org: new.  The builder (tg1bd), its honesty check (tg1ck), the second

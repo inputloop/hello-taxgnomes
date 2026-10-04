@@ -6,42 +6,42 @@ ACCENT	W	wordnet-3.1:07146219	ACCENT (noun): distinctive manner of oral expressi
 ACCORD	baseline	wordnet-3.1:13994512	Accord: harmony of people's opinions or actions or characters.
 ACCORD	N	wordnet-3.1:13994512,scowl,pool:gcide-0.53	An accord is a harmony of people's opinions or actions or characters. For example: That which groweth of its own accord of thy harvest thou shalt not reap.
 ACCORD	S	gcide-0.53,wordnet-3.1:13994512,table:g	ACCORD: Agreement or concurrence of opinion, will, or action. Unpacked: harmony of people's opinions or actions or characters; in the GROWTH table it stands in row A under FAMILY, beside ATOM, APPEND, ALPHA.
-ACCORD	E	template:E2,wordnet-3.1:13994512	Oh, accord! Harmony of people's opinions or actions or characters, of all things.
+ACCORD	E	draft:gemma4-12b	Is there a general accord among the council members before we finalize this historic agreement today?
 ACCORD	W	wordnet-3.1:13994512	ACCORD (noun): harmony of people's opinions or actions or characters.
 ADD	baseline	wordnet-3.1:14079762	Add: a condition (mostly in boys) characterized by behavioral and learning disorders.
 ADD	N	wordnet-3.1:14079762,scowl	An add is a condition (mostly in boys) characterized by behavioral and learning disorders.
 ADD	S	wordnet-3.1:14079762,table:t	ADD: a condition (mostly in boys) characterized by behavioral and learning disorders. Unpacked: In the TAG table it stands in row A under COMMAND, beside ASSET, ARRAY, ARCHIVE.
-ADD	E	template:E1,wordnet-3.1:14079762	Listen: add. A condition (mostly in boys) characterized by behavioral and learning disorders -- and that is not nothing.
+ADD	E	draft:gemma4-12b	*Sigh.* He was diagnosed with ADD last year, but his progress in the classroom is truly heartening.
 ADD	W	gcide-0.53,wordnet-3.1:14079762	ADD (noun): a condition (mostly in boys) characterized by behavioral and learning disorders. Synonyms: To Add, Join, Annex, Unite.
 AGAINST	baseline	gcide-0.53	Against: Abreast.
 AGAINST	N	gcide-0.53,scowl,pool:gcide-0.53	Against means abreast. For example: Jacob saw the angels of God come against him.
 AGAINST	S	gcide-0.53,table:r	AGAINST: Abreast. Unpacked: In the RECEIPT table it stands in row A under AGAINST, beside AGENT, ARGS, AETHERNET.
-AGAINST	E	template:E3,gcide-0.53	Against? Yes, against: Abreast, and it hums quietly.
+AGAINST	E	draft:gemma4-12b	Keep your ranks against one another as we march toward the valley to maintain our formation.
 AGAINST	W	gcide-0.53	AGAINST (prep.): Abreast.
 AGENT	baseline	wordnet-3.1:09213796	Agent: an active and efficient cause.
 AGENT	N	wordnet-3.1:09213796,scowl,pool:wordnet-3.1:09213796	An agent is an active and efficient cause. For example: their research uncovered new disease agents.
 AGENT	S	wordnet-3.1:09213796,table:r	AGENT: an active and efficient cause. Unpacked: In the RECEIPT table it stands in row A under ISOTOPE, beside ARGS, AGAINST, AETHERNET.
-AGENT	E	template:E2,wordnet-3.1:09213796	Oh, agent! An active and efficient cause, of all things.
+AGENT	E	draft:gemma4-12b	Oh, look at how this new catalyst acts as a powerful agent for the chemical reaction!
 AGENT	W	wordnet-3.1:09213796	AGENT (noun): an active and efficient cause.
 ALIGN	baseline	wordnet-3.1:00465234	Align: place in a line or arrange so as to be parallel or straight.
 ALIGN	N	wordnet-3.1:00465234,scowl,pool:wordnet-3.1:00465234	To align means to place in a line or arrange so as to be parallel or straight. For example: align the car with the curb.
 ALIGN	S	gcide-0.53,wordnet-3.1:00465234,table:o	ALIGN: To adjust or form to a line. Unpacked: place in a line or arrange so as to be parallel or straight; in the OPTIMIZER table it stands in row A under HOVER, beside ARM, ASSY, ACCENT.
-ALIGN	E	template:E4,wordnet-3.1:00465234	Say it slowly, align... Place in a line or arrange so as to be parallel or straight.
+ALIGN	E	draft:gemma4-12b	Please align the chairs perfectly straight along the wall before the guests arrive for the banquet.
 ALIGN	W	wordnet-3.1:00465234	ALIGN (verb): place in a line or arrange so as to be parallel or straight.
 ALPHA	baseline	wordnet-3.1:06847188	Alpha: the 1st letter of the Greek alphabet.
 ALPHA	N	wordnet-3.1:06847188,scowl	An alpha is the 1st letter of the Greek alphabet.
 ALPHA	S	gcide-0.53,wordnet-3.1:06847188,table:g	ALPHA: The first letter in the Greek alphabet, answering to A, and hence used to denote the beginning. Unpacked: the 1st letter of the Greek alphabet; in the GROWTH table it stands in row A under TEMPERATURE, beside ATOM, ACCORD, APPEND.
-ALPHA	E	template:E2,wordnet-3.1:06847188	Oh, alpha! The 1st letter of the Greek alphabet, of all things.
+ALPHA	E	draft:gemma4-12b	Could you please explain the difference between the letter alpha and the rest of the Greek alphabet?
 ALPHA	W	wordnet-3.1:06847188	ALPHA (noun): the 1st letter of the Greek alphabet.
 APPEND	baseline	wordnet-3.1:01331387	Append: add to the very end.
 APPEND	N	wordnet-3.1:01331387,scowl,pool:wordnet-3.1:01331387	To append means to add to the very end. For example: He appended a glossary to his novel where he used an invented language.
 APPEND	S	gcide-0.53,wordnet-3.1:01331387,table:g	APPEND: To hang or attach to, as by a string, so that the thing is suspended. Unpacked: add to the very end; in the GROWTH table it stands in row A under APPEND, beside ATOM, ACCORD, ALPHA.
-APPEND	E	template:E3,wordnet-3.1:01331387	Append? Yes, append: add to the very end, and it hums quietly.
+APPEND	E	draft:gemma4-12b	I need you to append a final signature to the very end of this legal contract immediately.
 APPEND	W	wordnet-3.1:01331387	APPEND (verb): add to the very end.
 ARCHIVE	baseline	wordnet-3.1:02738091	Archive: a depository containing historical records and documents.
 ARCHIVE	N	wordnet-3.1:02738091,scowl,pool:gcide-0.53	An archive is a depository containing historical records and documents. For example: Some rotten archive, rummaged out of some seldom explored press.
 ARCHIVE	S	gcide-0.53,wordnet-3.1:02738091,table:t	ARCHIVE: The place in which public records or historic documents are kept. Unpacked: a depository containing historical records and documents; in the TAG table it stands in row A under TAG, beside ASSET, ARRAY, ADD.
-ARCHIVE	E	template:E1,wordnet-3.1:02738091	Listen: archive. A depository containing historical records and documents -- and that is not nothing.
+ARCHIVE	E	draft:gemma4-12b	*Sigh.* I spent all day digging through the dusty archive for that one missing letter from 1912.
 ARCHIVE	W	gcide-0.53,wordnet-3.1:02738091	ARCHIVE (noun): a depository containing historical records and documents. Synonyms: Registers, records.
 ARM	baseline	wordnet-3.1:05571403	Arm: a human limb.
 ARM	N	wordnet-3.1:05571403,scowl,pool:gcide-0.53	An arm is a human limb. For example: Arm your prize; / I know you will not lose him.
@@ -51,22 +51,22 @@ ARM	W	wordnet-3.1:05571403	ARM (noun): a human limb.
 ARRAY	baseline	wordnet-3.1:07955622	Array: an orderly arrangement.
 ARRAY	N	wordnet-3.1:07955622,scowl,pool:wordnet-3.1:07955622	An array is an orderly arrangement. For example: an array of troops in battle order.
 ARRAY	S	wordnet-3.1:07955622,table:t	ARRAY: an orderly arrangement. Unpacked: In the TAG table it stands in row A under GROUP, beside ASSET, ADD, ARCHIVE.
-ARRAY	E	template:E3,wordnet-3.1:07955622	Array? Yes, array: an orderly arrangement, and it hums quietly.
+ARRAY	E	draft:gemma4-12b	Behold the magnificent array of exotic fruits laid out beautifully on the table for the feast!
 ARRAY	W	gcide-0.53,wordnet-3.1:07955622	ARRAY (noun): an orderly arrangement. Synonyms: To draw up, arrange, dispose.
 ASSET	baseline	wordnet-3.1:05161764	Asset: a useful or valuable quality.
 ASSET	N	wordnet-3.1:05161764,scowl	An asset is a useful or valuable quality.
 ASSET	S	gcide-0.53,wordnet-3.1:05161764,table:t	ASSET: Any article or separable part of one's assets. Unpacked: a useful or valuable quality; in the TAG table it stands in row A under SCALAR, beside ARRAY, ADD, ARCHIVE.
-ASSET	E	template:E1,wordnet-3.1:05161764	Listen: asset. A useful or valuable quality -- and that is not nothing.
+ASSET	E	draft:gemma4-12b	Your ability to stay calm under pressure is a tremendous asset that will serve you well here.
 ASSET	W	wordnet-3.1:05161764	ASSET (noun): a useful or valuable quality.
 ATOM	baseline	wordnet-3.1:14643403	Atom: (physics and chemistry) the smallest component of an element having the chemical properties of the element.
 ATOM	N	wordnet-3.1:14643403,scowl,pool:gcide-0.53	An atom is a (physics and chemistry) the smallest component of an element having the chemical properties of the element. For example: There was not an atom of water.
 ATOM	S	gcide-0.53,wordnet-3.1:14643403,table:g	ATOM: An ultimate indivisible particle of matter. Unpacked: (physics and chemistry) the smallest component of an element having the chemical properties of the element; in the GROWTH table it stands in row A under ATOM, beside ACCORD, APPEND, ALPHA.
-ATOM	E	template:E2,wordnet-3.1:14643403	Oh, atom! (physics and chemistry) the smallest component of an element having the chemical properties of the element, of all things.
+ATOM	E	draft:gemma4-12b	Every single atom in this sample represents the fundamental building block of the substance we are testing.
 ATOM	W	wordnet-3.1:14643403	ATOM (noun): (physics and chemistry) the smallest component of an element having the chemical properties of the element.
 CAPABILITY	baseline	wordnet-3.1:05209765	Capability: the quality of being capable -- physically or intellectually or legally.
 CAPABILITY	N	wordnet-3.1:05209765,scowl,pool:gcide-0.53	A capability is the quality of being capable -- physically or intellectually or legally. For example: A capability to take a thousand views of a subject.
 CAPABILITY	S	gcide-0.53,wordnet-3.1:05209765,table:t	CAPABILITY: The quality of being capable. Unpacked: the quality of being capable -- physically or intellectually or legally; in the TAG table it stands in row C under GROUP, beside COMPILE, COMMAND, COLLECTION.
-CAPABILITY	E	template:E1,wordnet-3.1:05209765	Listen: capability. The quality of being capable -- physically or intellectually or legally -- and that is not nothing.
+CAPABILITY	E	draft:gemma4-12b	Does he truly possess the mental capability required to manage such a complex and high-stakes project?
 CAPABILITY	W	wordnet-3.1:05209765	CAPABILITY (noun): the quality of being capable -- physically or intellectually or legally.
 CAPSULE	baseline	wordnet-3.1:02961191	Capsule: a small container.
 CAPSULE	N	wordnet-3.1:02961191,scowl	A capsule is a small container.

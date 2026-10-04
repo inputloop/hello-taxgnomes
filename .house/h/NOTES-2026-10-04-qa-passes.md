@@ -25,3 +25,11 @@ from its scratch folder, crashed, and so was "caught" for the wrong reason.  The
 every build at the game explicitly and refuse a stray that did not run.  (Build-loop rule 8: the
 plan says the check was fixed, not the work.)
 Warning: still 192 templated east readings.
+
+## Cycle 2, pass 1 (issues 0, warnings 1) -- after the crash, 2026-10-04 evening
+The crashed session's four background drafts never landed and their job ids were lost.  Re-sent
+from a new session: four 48-word batches at once all hit Llama Bridge's 600 s per call (they
+queued on one GPU); then 12-word batches one at a time: b00 landed (12 of 12 kept, about 9 min),
+b01 hit 600 s.  Whole plan ran: build honest, second reader agrees, cold, offline, egad, prove-red.
+Not run this pass: the page's 9 inline tests (only the data changed; owed at the next pass).
+Warning: 180 east readings still templated.  Parked for an Avalon restart: RESTART-2026-10-04-east-drafts.md.

@@ -1,0 +1,8 @@
+batch	job	model	started	state
+00	10b64a0e5aca	gemma4:12b	2026-10-04T21:25Z	failed: bridge timeout (600 s; four sent at once queued on one GPU)
+01	9769f0e6efd2	gemma4:12b	2026-10-04T21:25Z	failed: bridge timeout (600 s; four sent at once queued on one GPU)
+02	107877b3a9d7	gemma4:12b	2026-10-04T21:25Z	failed: bridge timeout (600 s; four sent at once queued on one GPU)
+03	5cf415cc9406	gemma4:12b	2026-10-04T21:25Z	failed: bridge timeout (600 s; four sent at once queued on one GPU)
+# poll: llama-bridge delegate_result(job_id). Ingest: python3 tools/tg1dr.py ingest gemma4:12b answer.json
+r2/b00	a4d7914cc133	gemma4:12b	2026-10-04T21:35:28Z	done 21:44Z, 12 kept
+r2/b01	9d50956db7db	gemma4:12b	2026-10-04T21:45:08Z	running

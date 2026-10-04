@@ -5,13 +5,13 @@ design: DESIGN-2026-10-04-hello-taxgnomes.md
 qaplan: QAPLAN-2026-10-04-hello-taxgnomes.md
 qaplan-sha: e0b0959e87644f845bb19207324dff30b7b642ba60fcb89b1760c64efe2bf328
 qa-max: 3
-cycle: 1
-swing: 3
-corrections: 3
+cycle: 2
+swing: 1
+corrections: 1
 opportunity-used: no
 qa-redesign-indicator: NO
 redesigns: 0
-last-issues: 1
+last-issues: 0
 last-warnings: 1
 final: not-taken
 baseline: -
@@ -20,3 +20,5 @@ state: QA
 # 2026-10-04T19:42Z  QA pass 1 of 3 in cycle 1: 5 issue(s), 1 warning(s)
 # 2026-10-04T19:43Z  QA pass 2 of 3 in cycle 1: 2 issue(s), 1 warning(s)
 # 2026-10-04T19:44Z  QA pass 3 of 3 in cycle 1: 1 issue(s), 1 warning(s)
+# 2026-10-04T21:58Z  cycle 2 started after 3 passes with a correction
+# 2026-10-04T21:58Z  QA pass 1 of 3 in cycle 2: 0 issue(s), 1 warning(s)

@@ -1,9 +1,9 @@
 {
 "meta": {
 "counts": {
-"E-draft": 0,
+"E-draft": 12,
 "E-pool": 69,
-"E-template": 192,
+"E-template": 180,
 "complete": 261,
 "none": 11
 },
@@ -740,10 +740,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:13994512"
+"draft:gemma4-12b"
 ],
-"text": "Oh, accord! Harmony of people's opinions or actions or characters, of all things."
+"text": "Is there a general accord among the council members before we finalize this historic agreement today?"
 },
 "N": {
 "sources": [
@@ -789,10 +788,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:14079762"
+"draft:gemma4-12b"
 ],
-"text": "Listen: add. A condition (mostly in boys) characterized by behavioral and learning disorders -- and that is not nothing."
+"text": "*Sigh.* He was diagnosed with ADD last year, but his progress in the classroom is truly heartening."
 },
 "N": {
 "sources": [
@@ -849,10 +847,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"gcide-0.53"
+"draft:gemma4-12b"
 ],
-"text": "Against? Yes, against: Abreast, and it hums quietly."
+"text": "Keep your ranks against one another as we march toward the valley to maintain our formation."
 },
 "N": {
 "sources": [
@@ -897,10 +894,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:09213796"
+"draft:gemma4-12b"
 ],
-"text": "Oh, agent! An active and efficient cause, of all things."
+"text": "Oh, look at how this new catalyst acts as a powerful agent for the chemical reaction!"
 },
 "N": {
 "sources": [
@@ -945,10 +941,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:00465234"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, align... Place in a line or arrange so as to be parallel or straight."
+"text": "Please align the chairs perfectly straight along the wall before the guests arrive for the banquet."
 },
 "N": {
 "sources": [
@@ -994,10 +989,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:06847188"
+"draft:gemma4-12b"
 ],
-"text": "Oh, alpha! The 1st letter of the Greek alphabet, of all things."
+"text": "Could you please explain the difference between the letter alpha and the rest of the Greek alphabet?"
 },
 "N": {
 "sources": [
@@ -1042,10 +1036,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:01331387"
+"draft:gemma4-12b"
 ],
-"text": "Append? Yes, append: add to the very end, and it hums quietly."
+"text": "I need you to append a final signature to the very end of this legal contract immediately."
 },
 "N": {
 "sources": [
@@ -1091,10 +1084,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:02738091"
+"draft:gemma4-12b"
 ],
-"text": "Listen: archive. A depository containing historical records and documents -- and that is not nothing."
+"text": "*Sigh.* I spent all day digging through the dusty archive for that one missing letter from 1912."
 },
 "N": {
 "sources": [
@@ -1201,10 +1193,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:07955622"
+"draft:gemma4-12b"
 ],
-"text": "Array? Yes, array: an orderly arrangement, and it hums quietly."
+"text": "Behold the magnificent array of exotic fruits laid out beautifully on the table for the feast!"
 },
 "N": {
 "sources": [
@@ -1250,10 +1241,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05161764"
+"draft:gemma4-12b"
 ],
-"text": "Listen: asset. A useful or valuable quality -- and that is not nothing."
+"text": "Your ability to stay calm under pressure is a tremendous asset that will serve you well here."
 },
 "N": {
 "sources": [
@@ -1310,10 +1300,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:14643403"
+"draft:gemma4-12b"
 ],
-"text": "Oh, atom! (physics and chemistry) the smallest component of an element having the chemical properties of the element, of all things."
+"text": "Every single atom in this sample represents the fundamental building block of the substance we are testing."
 },
 "N": {
 "sources": [
@@ -1359,10 +1348,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05209765"
+"draft:gemma4-12b"
 ],
-"text": "Listen: capability. The quality of being capable -- physically or intellectually or legally -- and that is not nothing."
+"text": "Does he truly possess the mental capability required to manage such a complex and high-stakes project?"
 },
 "N": {
 "sources": [
