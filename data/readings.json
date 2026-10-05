@@ -1,9 +1,9 @@
 {
 "meta": {
 "counts": {
-"E-draft": 12,
+"E-draft": 192,
 "E-pool": 69,
-"E-template": 180,
+"E-template": 0,
 "complete": 261,
 "none": 11
 },
@@ -1396,10 +1396,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:02961191"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, capsule... A small container."
+"text": "Look at how this tiny silver capsule gleams in the sunlight, holding the secret medicine for his heavy cough."
 },
 "N": {
 "sources": [
@@ -1444,10 +1443,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:02965981"
+"draft:gemma4-12b"
 ],
-"text": "Card? Yes, card: one of a set of small pieces of stiff paper marked in various ways and used for playing games or for telling fortunes, and it hums quietly."
+"text": "Do you truly believe that a single card pulled from the deck can predict the entire course of your life?"
 },
 "N": {
 "sources": [
@@ -1540,10 +1538,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:02995166"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, cell... Any small compartment."
+"text": "Oh, to be free from this tiny cell where the only sound is my own heavy breathing in the dark."
 },
 "N": {
 "sources": [
@@ -1637,10 +1634,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:02490124"
+"draft:gemma4-12b"
 ],
-"text": "Oh, chambered! Having compartmental chambers, of all things."
+"text": "Be careful, for the chambered heart of this ancient machine can burst if you turn the crank too quickly."
 },
 "N": {
 "sources": [
@@ -1686,10 +1682,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:00976848"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, charge... An impetuous rush toward someone or something."
+"text": "Stop right there, for a sudden charge from the wild stallion could knock you off your feet in an instant."
 },
 "N": {
 "sources": [
@@ -1735,10 +1730,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:08014145"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, class... A collection of things sharing a common attribute."
+"text": "Place these items into the class of recyclables to ensure that the plastics do not contaminate the paper waste."
 },
 "N": {
 "sources": [
@@ -1881,10 +1875,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:07182782"
+"draft:gemma4-12b"
 ],
-"text": "Listen: command. An authoritative direction or instruction to do something -- and that is not nothing."
+"text": "I demand that you stand down immediately and follow every single command given by the captain of this ship."
 },
 "N": {
 "sources": [
@@ -1929,10 +1922,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:02309962"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, compile... Get or gather together."
+"text": "Oh, how exhausting it was to compile every single scrap of evidence needed to prove his shocking lies."
 },
 "N": {
 "sources": [
@@ -1977,10 +1969,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"gcide-0.53"
+"draft:gemma4-12b"
 ],
-"text": "Listen: compossible. Able to exist with another thing -- and that is not nothing."
+"text": "Is it truly compossible for a man of his morals to hold such a position of immense, corrupt power?"
 },
 "N": {
 "sources": [
@@ -2073,10 +2064,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:02715990"
+"draft:gemma4-12b"
 ],
-"text": "Listen: covalent. Of or relating to or characterized by covalence -- and that is not nothing."
+"text": "Look at how those covalent bonds form a perfect, sturdy bridge between the atoms in this shimmering crystal!"
 },
 "N": {
 "sources": [
@@ -2133,10 +2123,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:01112179"
+"draft:gemma4-12b"
 ],
-"text": "Deal? Yes, deal: a particular instance of buying or selling, and it hums quietly."
+"text": "Listen, because this particular deal for the old farmhouse is the only way we can save our home."
 },
 "N": {
 "sources": [
@@ -2182,10 +2171,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:13477888"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, decay... The process of gradually becoming inferior."
+"text": "It is such a tragedy to watch the slow decay of our once-grand estate as the paint peels away."
 },
 "N": {
 "sources": [
@@ -2230,10 +2218,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:03172332"
+"draft:gemma4-12b"
 ],
-"text": "Listen: deck. Any of various platforms built into a vessel -- and that is not nothing."
+"text": "Ah, the salt spray hits my face as I stand on the deck, watching the waves swallow the horizon."
 },
 "N": {
 "sources": [
@@ -2278,10 +2265,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:00068217"
+"draft:gemma4-12b"
 ],
-"text": "Oh, default! Loss due to not showing up, of all things."
+"text": "Because the opponent did not arrive for the match, the referee ruled a default and handed us the win."
 },
 "N": {
 "sources": [
@@ -2376,10 +2362,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:02896253"
+"draft:gemma4-12b"
 ],
-"text": "Oh, diatomic! Of or relating to a molecule made up of two atoms, of all things."
+"text": "Look how the diatomic oxygen molecules dance in the display, twin atoms bonded in a beautiful, perfect chemical embrace!"
 },
 "N": {
 "sources": [
@@ -2424,10 +2409,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:11467030"
+"draft:gemma4-12b"
 ],
-"text": "Listen: diffraction. When light passes sharp edges or goes through narrow slits the rays are deflected and produce fringes of light and dark bands -- and that is not nothing."
+"text": "Can you see how the diffraction creates those shimmering patterns of light and shadow across the laboratory wall?"
 },
 "N": {
 "sources": [
@@ -2520,10 +2504,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05952149"
+"draft:gemma4-12b"
 ],
-"text": "Listen: doctrine. A belief (or system of beliefs) accepted as authoritative by some group or school -- and that is not nothing."
+"text": "They cling to their ancient doctrine like a shield, refusing to see the world as it actually exists now."
 },
 "N": {
 "sources": [
@@ -2617,10 +2600,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:14537641"
+"draft:gemma4-12b"
 ],
-"text": "Domain? Yes, domain: a particular environment or walk of life, and it hums quietly."
+"text": "The kitchen is her domain, where every spice and sauté pan serves her culinary passion with perfect, effortless grace."
 },
 "N": {
 "sources": [
@@ -2714,10 +2696,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00133576"
+"draft:gemma4-12b"
 ],
-"text": "Listen: double. A base hit on which the batter stops safely at second base -- and that is not nothing."
+"text": "Run to second base, kid, you've got a double if you can make it before the throw hits!"
 },
 "N": {
 "sources": [
@@ -2762,10 +2743,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:03238608"
+"draft:gemma4-12b"
 ],
-"text": "Oh, drawer! A boxlike container in a piece of furniture, of all things."
+"text": "*Sigh.* I know my old keys are buried somewhere in that cluttered kitchen drawer, but I just can't find them."
 },
 "N": {
 "sources": [
@@ -2906,10 +2886,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:06602727"
+"draft:gemma4-12b"
 ],
-"text": "Oh, edition! The form in which a text (especially a printed book) is published, of all things."
+"text": "Look at the gold foil on this first edition; it is the most beautiful thing I have ever held!"
 },
 "N": {
 "sources": [
@@ -2954,10 +2933,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:09294810"
+"draft:gemma4-12b"
 ],
-"text": "Listen: electron. An elementary particle with negative charge -- and that is not nothing."
+"text": "Does the movement of every single electron in this circuit truly dictate the flow of our entire digital world?"
 },
 "N": {
 "sources": [
@@ -3049,10 +3027,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00105087"
+"draft:gemma4-12b"
 ],
-"text": "Listen: emit. Expel (gases or odors) -- and that is not nothing."
+"text": "Be careful near the furnace, as it might emit a toxic gas if the ventilation system fails once again."
 },
 "N": {
 "sources": [
@@ -3097,10 +3074,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:00001740"
+"draft:gemma4-12b"
 ],
-"text": "Entity? Yes, entity: that which is perceived or known or inferred to have its own distinct existence (living or nonliving), and it hums quietly."
+"text": "Is the forest a single living entity, or is it merely a collection of trees standing together in silence?"
 },
 "N": {
 "sources": [
@@ -3146,10 +3122,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06515715"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, entry... An item inserted in a written record."
+"text": "I sighed as I finished the final entry in my journal, finally releasing the day's heavy burden."
 },
 "N": {
 "sources": [
@@ -3195,10 +3170,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:13957629"
+"draft:gemma4-12b"
 ],
-"text": "Oh, environment! The totality of surrounding conditions, of all things."
+"text": "Warning: You must respect the local environment or the harsh wilderness will quickly turn against your survival efforts."
 },
 "N": {
 "sources": [
@@ -3243,10 +3217,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:05929717"
+"draft:gemma4-12b"
 ],
-"text": "Oh, essence! The choicest or most essential or most vital part of some idea or experience, of all things."
+"text": "Oh, I simply adore the pure essence of these lilies, which captures the very heart of spring’s awakening!"
 },
 "N": {
 "sources": [
@@ -3292,10 +3265,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06526612"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, etymology... A history of a word."
+"text": "\"I find that studying the etymology of ancient words reveals so much about our shared cultural history.\""
 },
 "N": {
 "sources": [
@@ -3340,10 +3312,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:00683348"
+"draft:gemma4-12b"
 ],
-"text": "Evaluate? Yes, evaluate: evaluate or estimate the nature, quality, ability, extent, or significance, and it hums quietly."
+"text": "Can you honestly evaluate the success of our new initiative before we commit even more resources to it?"
 },
 "N": {
 "sources": [
@@ -3388,10 +3359,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:00029677"
+"draft:gemma4-12b"
 ],
-"text": "Oh, event! Something that happens at a given place and time, of all things."
+"text": "I sighed, knowing that such a tragic event was never meant to happen in our peaceful, quiet village."
 },
 "N": {
 "sources": [
@@ -3438,10 +3408,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05832256"
+"draft:gemma4-12b"
 ],
-"text": "Listen: evidence. Your basis for belief or disbelief -- and that is not nothing."
+"text": "Listen closely: without any real evidence to support his claims, you are walking blindly into a very dangerous trap."
 },
 "N": {
 "sources": [
@@ -3537,10 +3506,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:04687095"
+"draft:gemma4-12b"
 ],
-"text": "Expression? Yes, expression: the feelings expressed on a person's face, and it hums quietly."
+"text": "I couldn't help but smile at the delighted expression on his face when he saw the sunrise over the mountains."
 },
 "N": {
 "sources": [
@@ -3586,10 +3554,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:10696008"
+"draft:gemma4-12b"
 ],
-"text": "Oh, extra! A minor actor in crowd scenes, of all things."
+"text": "Sigh... I was only an extra for a crowd scene, and my face was barely visible in any of the shots."
 },
 "N": {
 "sources": [
@@ -3886,10 +3853,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:13601926"
+"draft:gemma4-12b"
 ],
-"text": "Oh, fill! A quantity sufficient to satisfy, of all things."
+"text": "Will one more fill of this hot soup be enough to satisfy the hunger of our weary, traveling companions?"
 },
 "N": {
 "sources": [
@@ -3995,10 +3961,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:05201846"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, force... A powerful effect or influence."
+"text": "Be careful, for the force of their propaganda can sway even the most determined hearts toward a dangerous path."
 },
 "N": {
 "sources": [
@@ -4044,10 +4009,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:06649331"
+"draft:gemma4-12b"
 ],
-"text": "Listen: format. The organization of information according to preset specifications (usually for computer processing) -- and that is not nothing."
+"text": "Oh, I suppose I must re-enter all this data because the file format is incompatible with the main server."
 },
 "N": {
 "sources": [
@@ -4093,10 +4057,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:06744551"
+"draft:gemma4-12b"
 ],
-"text": "Oh, formula! A group of symbols that make a mathematical statement, of all things."
+"text": "Sigh, another complex formula on the chalkboard seems to defy my logic and leave me utterly bewildered tonight."
 },
 "N": {
 "sources": [
@@ -4141,10 +4104,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:05898856"
+"draft:gemma4-12b"
 ],
-"text": "Oh, framework! A hypothetical description of a complex entity or process, of all things."
+"text": "Be careful, because this theoretical framework might crumble if you apply it to a real-world scenario without checking facts."
 },
 "N": {
 "sources": [
@@ -4190,10 +4152,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:07964544"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, free... People who are free."
+"text": "Oh, look at those free people dancing in the square, their faces radiant with the pure joy of true liberty."
 },
 "N": {
 "sources": [
@@ -4238,10 +4199,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:13806028"
+"draft:gemma4-12b"
 ],
-"text": "Listen: function. (mathematics) a mathematical relation such that each element of a given set (the domain of the function) is associated with an element of another set (the range of the function) -- and that is not nothing."
+"text": "Can you explain how this specific function maps every input to a unique output within our complex algebraic system?"
 },
 "N": {
 "sources": [
@@ -4287,10 +4247,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:07388202"
+"draft:gemma4-12b"
 ],
-"text": "Oh, fusion! An occurrence that involves the production of a union, of all things."
+"text": "The fusion of our two separate companies will create a powerhouse capable of dominating the entire regional market."
 },
 "N": {
 "sources": [
@@ -4336,10 +4295,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:02732963"
+"draft:gemma4-12b"
 ],
-"text": "Gadget? Yes, gadget: a device or control that is very useful for a particular job, and it hums quietly."
+"text": "Sigh, I finally found that clever little gadget that simplifies my morning routine just perfectly every single day."
 },
 "N": {
 "sources": [
@@ -4383,10 +4341,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:03414830"
+"draft:gemma4-12b"
 ],
-"text": "Oh, gadgetry! Appliances collectively, of all things."
+"text": "Ugh, I am tired of this cluttered house filled with endless gadgetry that we never actually use."
 },
 "N": {
 "sources": [
@@ -4574,10 +4531,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:03433387"
+"draft:gemma4-12b"
 ],
-"text": "Oh, gateway! An entrance that can be closed by a gate, of all things."
+"text": "Do you hear the hinges creaking as the gateway opens to the wild, untamed forest beyond the wall?"
 },
 "N": {
 "sources": [
@@ -4622,10 +4578,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06014015"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, geometry... The pure mathematics of points and lines and curves and surfaces."
+"text": "Look at how the frost creates perfect geometry upon the windowpane, tracing lines of ice in the freezing night."
 },
 "N": {
 "sources": [
@@ -4718,10 +4673,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:13881709"
+"draft:gemma4-12b"
 ],
-"text": "Listen: gradient. A graded change in the magnitude of some physical quantity or dimension -- and that is not nothing."
+"text": "Stay back, for the sharp heat gradient across the metal plate could cause severe burns to your bare skin."
 },
 "N": {
 "sources": [
@@ -4765,10 +4719,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:07012937"
+"draft:gemma4-12b"
 ],
-"text": "Listen: graph. A visual representation of the relations between certain quantities, represented as points, plotted with reference to a set of axes -- and that is not nothing."
+"text": "Look at the graph and notice how our profits surged the moment we launched the new marketing campaign."
 },
 "N": {
 "sources": [
@@ -4813,10 +4766,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:11484542"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, gravity... (physics) the force of attraction between all masses in the universe."
+"text": "Even in the void of the cosmos, gravity acts as the silent tether holding the planets in their orbits."
 },
 "N": {
 "sources": [
@@ -4862,10 +4814,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05940298"
+"draft:gemma4-12b"
 ],
-"text": "Listen: grid. A pattern of regularly spaced horizontal and vertical lines -- and that is not nothing."
+"text": "Does the urban grid provide enough space for the sprawling trees to find a place to take root?"
 },
 "N": {
 "sources": [
@@ -4910,10 +4861,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:09357302"
+"draft:gemma4-12b"
 ],
-"text": "Listen: ground. The solid part of the earth's surface -- and that is not nothing."
+"text": "I just wanted to feel the solid ground beneath my feet instead of drifting in this endless, empty air."
 },
 "N": {
 "sources": [
@@ -4959,10 +4909,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00031563"
+"draft:gemma4-12b"
 ],
-"text": "Listen: group. Any number of entities (members) considered as a unit -- and that is not nothing."
+"text": "\"Listen closely, because this group must move together if we want to survive the journey through the dark woods.\""
 },
 "N": {
 "sources": [
@@ -5007,10 +4956,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:13510240"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, growth... (biology) the process of an individual organism growing organically."
+"text": "Look at the tiny sprout! Its rapid growth in just one week is a beautiful miracle of nature's secret power."
 },
 "N": {
 "sources": [
@@ -5056,10 +5004,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:10169591"
+"draft:gemma4-12b"
 ],
-"text": "Oh, guard! A person who keeps watch over something or someone, of all things."
+"text": "Do not step past that iron gate, for a silent guard watches every move you make in the shadows."
 },
 "N": {
 "sources": [
@@ -5104,10 +5051,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05572223"
+"draft:gemma4-12b"
 ],
-"text": "Listen: hand. The (prehensile) extremity of the superior limb -- and that is not nothing."
+"text": "\"Please, just reach out your hand and take this key before the heavy door locks us inside forever tonight.\""
 },
 "N": {
 "sources": [
@@ -5249,10 +5195,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06355341"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, header... A line of text serving to indicate what the passage below it is about."
+"text": "Could you please double-check if the header correctly identifies the primary subject of this technical manual?"
 },
 "N": {
 "sources": [
@@ -5298,10 +5243,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:14664099"
+"draft:gemma4-12b"
 ],
-"text": "Oh, helium! A very light colorless element that is one of the six inert gasses, of all things."
+"text": "I am going to the store now to buy a large tank of helium for the party balloons."
 },
 "N": {
 "sources": [
@@ -5346,10 +5290,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:01210099"
+"draft:gemma4-12b"
 ],
-"text": "Listen: help. The activity of contributing to the fulfillment of a need or furtherance of an effort or purpose -- and that is not nothing."
+"text": "Sigh, I just wish I had some help moving these heavy boxes into the new apartment today."
 },
 "N": {
 "sources": [
@@ -5395,10 +5338,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05856483"
+"draft:gemma4-12b"
 ],
-"text": "Listen: heuristic. A commonsense rule (or set of rules) intended to increase the probability of solving some problem -- and that is not nothing."
+"text": "Oh, I am absolutely beaming with joy because this simple heuristic made solving the complex coding bug so easy!"
 },
 "N": {
 "sources": [
@@ -5442,10 +5384,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:14783454"
+"draft:gemma4-12b"
 ],
-"text": "Listen: hide. The dressed skin of an animal (especially a large animal) -- and that is not nothing."
+"text": "Warning: handle that thick cattle hide with extreme caution, as the edges are sharp and could cause injury."
 },
 "N": {
 "sources": [
@@ -5490,10 +5431,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:07178639"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, hint... An indirect suggestion."
+"text": "Did you notice the subtle hint I left for you about where the secret key was hidden?"
 },
 "N": {
 "sources": [
@@ -5682,10 +5622,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:02711906"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, hover... Be undecided about something."
+"text": "I just hover over the send button, terrified of what his reply might actually say."
 },
 "N": {
 "sources": [
@@ -5729,10 +5668,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:10212458"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, hunk... A well-built sexually attractive man."
+"text": "Oh, goodness, look at that hunk by the pool, his muscles rippling with every single move he makes!"
 },
 "N": {
 "sources": [
@@ -5777,10 +5715,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:14934899"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, hydride... Any binary compound formed by the union of hydrogen and other elements."
+"text": "Watch out, the hydride is unstable if you expose it to too much heat in this container."
 },
 "N": {
 "sources": [
@@ -5825,10 +5762,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:14664612"
+"draft:gemma4-12b"
 ],
-"text": "Oh, hydrogen! A nonmetallic univalent element that is normally a colorless and odorless highly flammable diatomic gas, of all things."
+"text": "Careful with that cylinder, because a tiny leak of hydrogen can ignite the entire room in seconds."
 },
 "N": {
 "sources": [
@@ -5873,10 +5809,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:07284621"
+"draft:gemma4-12b"
 ],
-"text": "Listen: icon. (computer science) a graphic symbol (usually a simple picture) that denotes a program or a command or a data file or a concept in a graphical user interface -- and that is not nothing."
+"text": "Wait, why did that icon disappear from my desktop after I tried to save the progress?"
 },
 "N": {
 "sources": [
@@ -5970,10 +5905,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:13873264"
+"draft:gemma4-12b"
 ],
-"text": "Index? Yes, index: a numerical scale used to compare variables with one another or with some reference number, and it hums quietly."
+"text": "Could you check the index to see how our growth compares to the national average this year?"
 },
 "N": {
 "sources": [
@@ -6019,10 +5953,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06646883"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, info... A message received and understood."
+"text": "I have received the info clearly, so we can proceed with the construction project immediately."
 },
 "N": {
 "sources": [
@@ -6066,10 +5999,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:00955021"
+"draft:gemma4-12b"
 ],
-"text": "Oh, inner! Located inward, of all things."
+"text": "He closed his eyes and sighed, retreating into his inner world to escape the chaos of the busy street."
 },
 "N": {
 "sources": [
@@ -6114,10 +6046,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:07279488"
+"draft:gemma4-12b"
 ],
-"text": "Listen: input. Signal going into an electronic system -- and that is not nothing."
+"text": "Be warned that any incorrect input into the terminal could cause a permanent system failure during the update."
 },
 "N": {
 "sources": [
@@ -6161,10 +6092,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:08605849"
+"draft:gemma4-12b"
 ],
-"text": "Inside? Yes, inside: the region that is inside of something, and it hums quietly."
+"text": "Oh, what a joy to find a hidden compartment inside the drawer containing the lost, ancient gold coins!"
 },
 "N": {
 "sources": [
@@ -6208,10 +6138,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:01572394"
+"draft:gemma4-12b"
 ],
-"text": "Listen: install. Set up for use -- and that is not nothing."
+"text": "You really need to install the newest drivers before you try to run the heavy graphics software on this laptop."
 },
 "N": {
 "sources": [
@@ -6257,10 +6186,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00063710"
+"draft:gemma4-12b"
 ],
-"text": "Listen: instead. In place of, or as an alternative -- and that is not nothing."
+"text": "I think I will just stay in bed instead of facing the cold, gray reality of another long workday."
 },
 "N": {
 "sources": [
@@ -6306,10 +6234,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:03579967"
+"draft:gemma4-12b"
 ],
-"text": "Listen: instrument. A device that requires skill for proper use -- and that is not nothing."
+"text": "Handle that delicate surgical instrument with extreme care, or you will surely cause irreparable damage to the patient."
 },
 "N": {
 "sources": [
@@ -6356,10 +6283,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:10230873"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, intern... An advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term)."
+"text": "Sigh, another long night shift for the exhausted medical intern who has barely slept in forty-eight hours."
 },
 "N": {
 "sources": [
@@ -6403,10 +6329,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:06990270"
+"draft:gemma4-12b"
 ],
-"text": "Oh, ionic! The dialect of Ancient Greek spoken and written in Attica and Athens and Ionia, of all things."
+"text": "To truly understand the philosophy of Plato, one must first master the nuances of the Ionic dialect of Greece."
 },
 "N": {
 "sources": [
@@ -6498,10 +6423,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:14643836"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, isotope... One of two or more atoms with the same atomic number but with different numbers of neutrons."
+"text": "Oh, the sheer beauty of how a single isotope can trace the history of the entire universe's evolution!"
 },
 "N": {
 "sources": [
@@ -6545,10 +6469,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06494090"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, item... A distinct part that can be specified separately in a group of things that could be enumerated on a list."
+"text": "Could you please confirm if every single item on this long shipping manifest is packed inside the crate?"
 },
 "N": {
 "sources": [
@@ -6593,10 +6516,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"gcide-0.53"
+"draft:gemma4-12b"
 ],
-"text": "Oh, itself! The neuter reflexive pronoun of It, of all things."
+"text": "Sigh, the house itself seemed to groan under the weight of years of accumulated dust and lonely memories."
 },
 "N": {
 "sources": [
@@ -6641,10 +6563,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:07217239"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, label... A brief description given for purposes of identification."
+"text": "Be careful, for every label on these hazardous chemicals must be read before you open the lid."
 },
 "N": {
 "sources": [
@@ -6736,10 +6657,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:03645903"
+"draft:gemma4-12b"
 ],
-"text": "Oh, lane! A narrow way or road, of all things."
+"text": "Ah, the narrow lane was so quiet, winding through the old stone houses like a forgotten secret."
 },
 "N": {
 "sources": [
@@ -6783,10 +6703,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:05845595"
+"draft:gemma4-12b"
 ],
-"text": "Layout? Yes, layout: a plan or design of something that is laid out, and it hums quietly."
+"text": "I believe the layout of the new gallery will perfectly guide visitors toward the centerpiece of the collection."
 },
 "N": {
 "sources": [
@@ -6830,10 +6749,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:15164090"
+"draft:gemma4-12b"
 ],
-"text": "Leave? Yes, leave: the period of time during which you are absent from work or duty, and it hums quietly."
+"text": "I am overjoyed that my leave was approved so I can finally explore the hidden temples of Cambodia."
 },
 "N": {
 "sources": [
@@ -6879,10 +6797,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:13425421"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, ledger... A record in which commercial accounts are recorded."
+"text": "Did you manage to balance every single entry in the heavy ledger before we closed the shop for the night?"
 },
 "N": {
 "sources": [
@@ -6975,10 +6892,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:03661810"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, lens... A transparent optical device used to converge or diverge transmitted light and to form images."
+"text": "Watch out, because a smudge on the lens can distort the entire image of the beautiful landscape ahead."
 },
 "N": {
 "sources": [
@@ -7071,10 +6987,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:03666235"
+"draft:gemma4-12b"
 ],
-"text": "Listen: library. A room where books are kept -- and that is not nothing."
+"text": "Oh, the sheer joy of wandering through the hushed halls of the library, discovering old secrets hidden in paper."
 },
 "N": {
 "sources": [
@@ -7120,10 +7035,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06561652"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, license... A legal document giving official permission to do something."
+"text": "Be careful, because without a valid license, you could face heavy fines or even face immediate arrest by the authorities."
 },
 "N": {
 "sources": [
@@ -7170,10 +7084,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:01420302"
+"draft:gemma4-12b"
 ],
-"text": "Oh, linear! Designating or involving an equation whose terms are of the first degree, of all things."
+"text": "\"I'm telling you, the problem simplifies to a linear equation, making the calculation much faster for the final exam.\""
 },
 "N": {
 "sources": [
@@ -7266,10 +7179,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:14964524"
+"draft:gemma4-12b"
 ],
-"text": "Liquid? Yes, liquid: a substance that is liquid at room temperature and pressure, and it hums quietly."
+"text": "*Sighs*... I wish this thick liquid would just flow smoothly through the pipes instead of clogging up the entire system."
 },
 "N": {
 "sources": [
@@ -7313,10 +7225,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:14667971"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, lithium... A soft silver-white univalent element of the alkali metal group."
+"text": "Oh, look how the lithium glimmers under the lab light like a tiny piece of fallen stars!"
 },
 "N": {
 "sources": [
@@ -7408,10 +7319,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:06513909"
+"draft:gemma4-12b"
 ],
-"text": "Listen: manifest. A customs document listing the contents put on a ship or plane -- and that is not nothing."
+"text": "\"Please hand over the shipping manifest so we can verify every single container before the cargo plane departs for Tokyo.\""
 },
 "N": {
 "sources": [
@@ -7456,10 +7366,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:03727288"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, marker... Some conspicuous object used to distinguish or mark something."
+"text": "Watch out, because that red marker on the fence indicates the exact spot where the old mine begins."
 },
 "N": {
 "sources": [
@@ -7505,10 +7414,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:05031420"
+"draft:gemma4-12b"
 ],
-"text": "Oh, mass! The property of a body that causes it to have weight in a gravitational field, of all things."
+"text": "Sigh, I can barely lift this hunk of iron; its immense mass makes my tired muscles ache with every move."
 },
 "N": {
 "sources": [
@@ -7554,10 +7462,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:08284561"
+"draft:gemma4-12b"
 ],
-"text": "Matrix? Yes, matrix: (mathematics) a rectangular array of quantities or expressions set out by rows and columns, and it hums quietly."
+"text": "If you plug those coefficients into the matrix correctly, the entire system of equations will collapse into a single value."
 },
 "N": {
 "sources": [
@@ -7650,10 +7557,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:00175261"
+"draft:gemma4-12b"
 ],
-"text": "Oh, measure! Any maneuver made as part of progress toward a goal, of all things."
+"text": "Oh, what a brilliant measure to take; this strategic move puts us perfectly on the path to final victory!"
 },
 "N": {
 "sources": [
@@ -7699,10 +7605,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:10326901"
+"draft:gemma4-12b"
 ],
-"text": "Listen: member. One of the persons who compose a social group (especially individuals who have joined and participate in a group organization) -- and that is not nothing."
+"text": "Do you honestly believe that every member of this exclusive club understands the hidden rules they are expected to follow?"
 },
 "N": {
 "sources": [
@@ -7747,10 +7652,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:13676507"
+"draft:gemma4-12b"
 ],
-"text": "Oh, mesh! The number of openings per linear inch of a screen, of all things."
+"text": "Be careful, for the wide mesh of this screen allows even the smallest gnats to fly inside our home."
 },
 "N": {
 "sources": [
@@ -7796,10 +7700,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:03766206"
+"draft:gemma4-12b"
 ],
-"text": "Microscope? Yes, microscope: magnifier of the image of small objects, and it hums quietly."
+"text": "Oh, look how the tiny cells dance and shimmer under the lens of the microscope, revealing a secret world!"
 },
 "N": {
 "sources": [
@@ -7845,10 +7748,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:01452957"
+"draft:gemma4-12b"
 ],
-"text": "Missing? Yes, missing: not able to be found, and it hums quietly."
+"text": "I have searched every corner of this house, yet your keys remain stubbornly missing from my reach."
 },
 "N": {
 "sources": [
@@ -7942,10 +7844,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05315272"
+"draft:gemma4-12b"
 ],
-"text": "Listen: molar. Grinding tooth with a broad crown -- and that is not nothing."
+"text": "Be careful with that hard candy, or you might crack a molar and find yourself in a lot of pain."
 },
 "N": {
 "sources": [
@@ -7989,10 +7890,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:14706294"
+"draft:gemma4-12b"
 ],
-"text": "Listen: molecule. (physics and chemistry) the simplest structural unit of an element or compound -- and that is not nothing."
+"text": "To understand the foundation of matter, we must first examine the smallest molecule that makes up this liquid water."
 },
 "N": {
 "sources": [
@@ -8037,10 +7937,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00166763"
+"draft:gemma4-12b"
 ],
-"text": "Listen: move. The act of deciding to do something -- and that is not nothing."
+"text": "Do you think it is finally time for that bold move to leave everything behind and start over?"
 },
 "N": {
 "sources": [
@@ -8086,10 +7985,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:09386867"
+"draft:gemma4-12b"
 ],
-"text": "Oh, must! A necessary or essential thing, of all things."
+"text": "Locking the door is a must if we want to stay safe from the prowling wolves tonight."
 },
 "N": {
 "sources": [
@@ -8134,10 +8032,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:01458319"
+"draft:gemma4-12b"
 ],
-"text": "Oh, muted! In a softened tone, of all things."
+"text": "She spoke in a muted tone, a long sigh escaping her lips as she watched the embers fade."
 },
 "N": {
 "sources": [
@@ -8279,10 +8176,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:00763758"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, negotiate... Discuss the terms of an arrangement."
+"text": "\"Listen, we must negotiate the terms of the merger before we sign anything tonight,\" the lawyer whispered firmly."
 },
 "N": {
 "sources": [
@@ -8375,10 +8271,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:10374841"
+"draft:gemma4-12b"
 ],
-"text": "Oh, neutral! One who does not side with any party in a war or dispute, of all things."
+"text": "\"Watch out, because a neutral observer sees every single lie told by both sides of this bloody, bitter war.\""
 },
 "N": {
 "sources": [
@@ -8422,10 +8317,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:09392431"
+"draft:gemma4-12b"
 ],
-"text": "Neutron? Yes, neutron: an elementary particle with 0 charge and mass about equal to a proton, and it hums quietly."
+"text": "\"Look at how the tiny neutron dances through the particle beam with such perfect, balanced grace!\" she exclaimed joyfully."
 },
 "N": {
 "sources": [
@@ -8563,10 +8457,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:10291374"
+"draft:gemma4-12b"
 ],
-"text": "Noble? Yes, noble: a titled peer of the realm, and it hums quietly."
+"text": "\"Can a noble truly understand the struggle of a commoner living in these dusty, forgotten streets of the old city?\""
 },
 "N": {
 "sources": [
@@ -8611,10 +8504,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:13934060"
+"draft:gemma4-12b"
 ],
-"text": "Listen: node. A connecting point at which several lines come together -- and that is not nothing."
+"text": "\"Make sure you find every node where these power lines converge, or the whole city might lose its light tonight.\""
 },
 "N": {
 "sources": [
@@ -8659,10 +8551,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:15160386"
+"draft:gemma4-12b"
 ],
-"text": "Oh, nonce! The present occasion, of all things."
+"text": "I suppose I will lend you my favorite pen just for the nonce, but do not lose it."
 },
 "N": {
 "sources": [
@@ -8708,10 +8599,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:06516453"
+"draft:gemma4-12b"
 ],
-"text": "Oh, note! A brief written record, of all things."
+"text": "Be careful, for this small note contains a secret that could ruin everything if it falls into the wrong hands."
 },
 "N": {
 "sources": [
@@ -8756,10 +8646,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:06516453"
+"draft:gemma4-12b"
 ],
-"text": "Notes? Yes, notes: a brief written record, and it hums quietly."
+"text": "Oh, look at all these beautiful notes I took while watching the sunrise over the quiet, golden mountains!"
 },
 "N": {
 "sources": [
@@ -8804,10 +8693,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00875364"
+"draft:gemma4-12b"
 ],
-"text": "Listen: notify. Inform (somebody) of something -- and that is not nothing."
+"text": "Please notify the authorities immediately if you see any suspicious activity around the old pier late tonight."
 },
 "N": {
 "sources": [
@@ -8852,10 +8740,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:05442503"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, nucleus... A part of the cell containing DNA and RNA and responsible for growth and reproduction."
+"text": "Can you explain how the nucleus manages to coordinate the entire complex dance of life within a single tiny cell?"
 },
 "N": {
 "sources": [
@@ -8900,10 +8787,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:13762308"
+"draft:gemma4-12b"
 ],
-"text": "Oh, null! A quantity of no importance, of all things."
+"text": "It is all null now, a mere trifle in the grand scheme of the passing years we have left behind."
 },
 "N": {
 "sources": [
@@ -8947,10 +8833,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:00942245"
+"draft:gemma4-12b"
 ],
-"text": "Oh, obfuscate! Make obscure or unclear, of all things."
+"text": "Don't try to obfuscate the truth from me, for lies have a way of catching up eventually."
 },
 "N": {
 "sources": [
@@ -8994,10 +8879,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:00002684"
+"draft:gemma4-12b"
 ],
-"text": "Oh, object! A tangible and visible entity, of all things."
+"text": "Look at that tiny, polished object gleaming under the sun, a perfect treasure found in the sand!"
 },
 "N": {
 "sources": [
@@ -9042,10 +8926,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:02237863"
+"draft:gemma4-12b"
 ],
-"text": "Listen: offload. Transfer to a peripheral device, of computer data -- and that is not nothing."
+"text": "Could you please offload the heavy files to the external drive before we lose the power connection?"
 },
 "N": {
 "sources": [
@@ -9196,10 +9079,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:14032291"
+"draft:gemma4-12b"
 ],
-"text": "Operation? Yes, operation: the state of being in effect or being operative, and it hums quietly."
+"text": "*Sighs* I honestly didn't think the new protocol would be in full operation until much later this month."
 },
 "N": {
 "sources": [
@@ -9257,10 +9139,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:02990830"
+"draft:gemma4-12b"
 ],
-"text": "Orbital? Yes, orbital: of or relating to an orbit, and it hums quietly."
+"text": "Is it true that the orbital path of that satellite will eventually bring it closer to our home?"
 },
 "N": {
 "sources": [
@@ -9306,10 +9187,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:07183274"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, order... (often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed."
+"text": "You must follow every order given by the captain if you ever want to see your family again."
 },
 "N": {
 "sources": [
@@ -9355,10 +9235,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:14883989"
+"draft:gemma4-12b"
 ],
-"text": "Oh, organic! A fertilizer that is derived from animal or vegetable matter, of all things."
+"text": "Look at how these roses have flourished since we switched to that rich organic fertilizer from the nearby farm!"
 },
 "N": {
 "sources": [
@@ -9451,10 +9330,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:10404091"
+"draft:gemma4-12b"
 ],
-"text": "Listen: orphan. A child who has lost both parents -- and that is not nothing."
+"text": "*Sigh.* He lived as a lonely orphan for years before he finally found a home that felt like his own."
 },
 "N": {
 "sources": [
@@ -9546,10 +9424,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:05772362"
+"draft:gemma4-12b"
 ],
-"text": "Overlap? Yes, overlap: a representation of common ground between theories or phenomena, and it hums quietly."
+"text": "Can you show me where the overlap between these two sociological theories actually manifests in our current data?"
 },
 "N": {
 "sources": [
@@ -9594,10 +9471,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:10408623"
+"draft:gemma4-12b"
 ],
-"text": "Listen: owner. (law) someone who owns (is legal possessor of) a business -- and that is not nothing."
+"text": "You must speak with the legal owner of the firm before you attempt to sign any binding corporate contracts."
 },
 "N": {
 "sources": [
@@ -9642,10 +9518,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:08024575"
+"draft:gemma4-12b"
 ],
-"text": "Listen: package. A collection of things wrapped or boxed together -- and that is not nothing."
+"text": "I finally received the package this morning and I am eager to see what is inside for my birthday."
 },
 "N": {
 "sources": [
@@ -9739,10 +9614,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:03887755"
+"draft:gemma4-12b"
 ],
-"text": "Listen: panel. Sheet that forms a distinct (usually flat and rectangular) section or component of something -- and that is not nothing."
+"text": "Be careful, because if that exterior panel comes loose, the entire structure might collapse during the high winds."
 },
 "N": {
 "sources": [
@@ -9787,10 +9661,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00128106"
+"draft:gemma4-12b"
 ],
-"text": "Listen: pass. (baseball) an advance to first base by a batter who receives four balls -- and that is not nothing."
+"text": "Wait, if he gets one more ball, he will earn a pass to first base and start his run."
 },
 "N": {
 "sources": [
@@ -9883,10 +9756,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:15315573"
+"draft:gemma4-12b"
 ],
-"text": "Oh, phase! Any distinct time period in a sequence of events, of all things."
+"text": "I sighed, realizing this lonely phase of my life was only a temporary chapter in a much longer, unfolding story."
 },
 "N": {
 "sources": [
@@ -9932,10 +9804,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:09414116"
+"draft:gemma4-12b"
 ],
-"text": "Listen: photon. A quantum of electromagnetic radiation -- and that is not nothing."
+"text": "Oh, how beautiful it is to imagine a single photon dancing through the dark void like a tiny spark."
 },
 "N": {
 "sources": [
@@ -9979,10 +9850,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:03946989"
+"draft:gemma4-12b"
 ],
-"text": "Oh, pin! A piece of jewelry that is pinned onto the wearer's garment, of all things."
+"text": "She adjusted the delicate gold pin on her silk lapel, smiling at how it caught the flickering candlelight."
 },
 "N": {
 "sources": [
@@ -10074,10 +9944,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:10456474"
+"draft:gemma4-12b"
 ],
-"text": "Oh, pivot! The person in a rank around whom the others wheel and maneuver, of all things."
+"text": "You must realize that he is the pivot of this entire department, and everyone else simply follows his lead."
 },
 "N": {
 "sources": [
@@ -10122,10 +9991,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:05410770"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, plasma... The colorless watery fluid of the blood and lymph that contains no cells, but in which the blood cells (erythrocytes, leukocytes, and thrombocytes) are suspended."
+"text": "I sighed as I watched the plasma flow through the transparent tube, carrying the vital components of life itself."
 },
 "N": {
 "sources": [
@@ -10170,10 +10038,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:09420771"
+"draft:gemma4-12b"
 ],
-"text": "Positron? Yes, positron: an elementary particle with positive charge, and it hums quietly."
+"text": "Look at the screen, the positron dances with such grace in the vacuum chamber of the high-energy collider!"
 },
 "N": {
 "sources": [
@@ -10217,10 +10084,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:00411260"
+"draft:gemma4-12b"
 ],
-"text": "Oh, practice! A customary way of operation or behavior, of all things."
+"text": "I suppose it is just our family practice to gather every Sunday, even when the house feels so terribly empty."
 },
 "N": {
 "sources": [
@@ -10267,10 +10133,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:05907175"
+"draft:gemma4-12b"
 ],
-"text": "Listen: program. A series of steps to be carried out or goals to be accomplished -- and that is not nothing."
+"text": "You must follow the program exactly, or the entire sequence of chemical reactions will fail before the morning."
 },
 "N": {
 "sources": [
@@ -10314,10 +10179,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:00797381"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, project... Any piece of work that is undertaken or attempted."
+"text": "Do you think our ambitious project to restore the old lighthouse will actually be finished before the winter frost?"
 },
 "N": {
 "sources": [
@@ -10411,10 +10275,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:14645624"
+"draft:gemma4-12b"
 ],
-"text": "Radical? Yes, radical: (chemistry) two or more atoms bound together as a single unit and forming part of a molecule, and it hums quietly."
+"text": "Please remember that a radical remains highly reactive until it finds another atom to bond with in the mixture."
 },
 "N": {
 "sources": [
@@ -10459,10 +10322,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:05109363"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, radius... The length of a line segment between the center and circumference of a circle or sphere."
+"text": "Oh, how perfectly the radius extends from the center, defining the very boundary of this shimmering, golden ring!"
 },
 "N": {
 "sources": [
@@ -10507,10 +10369,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:05132642"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, range... An area in which something acts or operates or has power or control: \"the range of a supersonic jet."
+"text": "Please stand back, as the lethal range of this pulse is far greater than any of you can actually perceive."
 },
 "N": {
 "sources": [
@@ -10556,10 +10417,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00099264"
+"draft:gemma4-12b"
 ],
-"text": "Listen: rather. On the contrary -- and that is not nothing."
+"text": "You might think I am angry; rather, I am just disappointed by the way you handled this delicate situation."
 },
 "N": {
 "sources": [
@@ -10604,10 +10464,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:04064958"
+"draft:gemma4-12b"
 ],
-"text": "Oh, reactor! An electrical device used to introduce reactance into a circuit, of all things."
+"text": "The humming reactor is finally stabilizing the circuit's reactance, and I can finally breathe a heavy sigh of relief."
 },
 "N": {
 "sources": [
@@ -10748,10 +10607,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:06519032"
+"draft:gemma4-12b"
 ],
-"text": "Oh, registry! An official written record of names or events or transactions, of all things."
+"text": "Do you think my name still appears in the official registry of property owners, or has the system been updated?"
 },
 "N": {
 "sources": [
@@ -10796,10 +10654,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00319393"
+"draft:gemma4-12b"
 ],
-"text": "Listen: relay. The act of passing something along from one person or group to another -- and that is not nothing."
+"text": "Could you please relay the message to the kitchen that we are ready to begin the feast immediately?"
 },
 "N": {
 "sources": [
@@ -10844,10 +10701,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:04080320"
+"draft:gemma4-12b"
 ],
-"text": "Oh, release! Merchandise issued for sale or public showing (especially a record or film), of all things."
+"text": "I am so thrilled for the upcoming release of the album, which has been the highlight of my entire year."
 },
 "N": {
 "sources": [
@@ -10893,10 +10749,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:05097462"
+"draft:gemma4-12b"
 ],
-"text": "Remove? Yes, remove: degree of figurative distance or separation, and it hums quietly."
+"text": "I just need a little more remove between my current reality and those haunting, distant memories of home."
 },
 "N": {
 "sources": [
@@ -10990,10 +10845,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:04988907"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, ring... A characteristic sound."
+"text": "Hear that beautiful, silver ring as the crystal glass strikes against the edge of the porcelain cup!"
 },
 "N": {
 "sources": [
@@ -11038,10 +10892,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:10560429"
+"draft:gemma4-12b"
 ],
-"text": "Listen: router. A worker who routes shipments for distribution and delivery -- and that is not nothing."
+"text": "The router at the local hub is responsible for coordinating every single package heading toward the city center."
 },
 "N": {
 "sources": [
@@ -11086,10 +10939,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:01028424"
+"draft:gemma4-12b"
 ],
-"text": "Listen: routine. An unvarying or habitual method or procedure -- and that is not nothing."
+"text": "Careful, because deviating from your established routine even once can cause your entire schedule to collapse completely."
 },
 "N": {
 "sources": [
@@ -11183,10 +11035,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:05872935"
+"draft:gemma4-12b"
 ],
-"text": "Oh, scalar! A variable quantity that cannot be resolved into components, of all things."
+"text": "Could we treat the total mass as a scalar quantity since it doesn't require a directional vector here?"
 },
 "N": {
 "sources": [
@@ -11279,10 +11130,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:04167433"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, seam... Joint consisting of a line formed by joining two pieces."
+"text": "I sighed at the messy seam where the fabric joined, realizing my sewing skills were truly lacking today."
 },
 "N": {
 "sources": [
@@ -11327,10 +11177,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:08665191"
+"draft:gemma4-12b"
 ],
-"text": "Seat? Yes, seat: a space reserved for sitting (as in a theater or on a train or airplane), and it hums quietly."
+"text": "I can't believe I missed my reserved seat on the train because I was staring at the scenery."
 },
 "N": {
 "sources": [
@@ -11376,10 +11225,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:00676526"
+"draft:gemma4-12b"
 ],
-"text": "Select? Yes, select: pick out, select, or choose from a number of alternatives, and it hums quietly."
+"text": "Please select the primary color you wish to use for the masterpiece before the paint begins to dry."
 },
 "N": {
 "sources": [
@@ -11423,10 +11271,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:04178269"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, semaphore... An apparatus for visual signaling with lights or mechanically moving arms."
+"text": "Watch the lighthouse semaphore closely, for a single flash might mean the storm is moving faster than expected."
 },
 "N": {
 "sources": [
@@ -11518,10 +11365,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:04197507"
+"draft:gemma4-12b"
 ],
-"text": "Oh, shell! Ammunition consisting of a cylindrical metal casing containing an explosive charge and a projectile, of all things."
+"text": "Do not approach the perimeter where the heavy shell struck the bunker, as the ground remains dangerously unstable."
 },
 "N": {
 "sources": [
@@ -11615,10 +11461,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:11440945"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, spectrum... An ordered array of the components of an emission or wave."
+"text": "Look at how the prism catches the light, revealing a breathtaking spectrum of colors across the dusty floor."
 },
 "N": {
 "sources": [
@@ -11662,10 +11507,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:00438869"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, split... Extending the legs at right angles to the trunk (one in front and the other in back)."
+"text": "Could you show me the correct way to split your legs during this advanced yoga pose to find balance?"
 },
 "N": {
 "sources": [
@@ -11709,10 +11553,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:04290516"
+"draft:gemma4-12b"
 ],
-"text": "Oh, spoke! Support consisting of a radial member of a wheel joining the hub to the rim, of all things."
+"text": "Watch out, the broken spoke on your bicycle wheel could cause a nasty fall if you're riding too fast."
 },
 "N": {
 "sources": [
@@ -11756,10 +11599,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:00175261"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, step... Any maneuver made as part of progress toward a goal."
+"text": "You've taken a massive step toward your dream today, and I couldn't be prouder of your hard work."
 },
 "N": {
 "sources": [
@@ -11804,10 +11646,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:00566339"
+"draft:gemma4-12b"
 ],
-"text": "Listen: stroke. (sports) the act of swinging or striking at a ball with a club or racket or bat or cue or hand -- and that is not nothing."
+"text": "What a magnificent stroke that was, watching the ball fly perfectly into the corner of the net!"
 },
 "N": {
 "sources": [
@@ -11852,10 +11693,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:13584585"
+"draft:gemma4-12b"
 ],
-"text": "Superposition? Yes, superposition: (geology) the deposition of one geological stratum on another, and it hums quietly."
+"text": "The geologist sighed, noting how the superposition of mud over gravel indicated a shift in the ancient river's path."
 },
 "N": {
 "sources": [
@@ -11960,10 +11800,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:07287841"
+"draft:gemma4-12b"
 ],
-"text": "Tag? Yes, tag: a label written or printed on paper, cardboard, or plastic that is attached to something to indicate its owner, nature, price, and it hums quietly."
+"text": "Stop and look at that tag, for it warns us that the contents inside are strictly prohibited to outsiders."
 },
 "N": {
 "sources": [
@@ -12009,10 +11848,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:07276776"
+"draft:gemma4-12b"
 ],
-"text": "Listen: target. A reference point to shoot at -- and that is not nothing."
+"text": "Wait, hold your breath and lock your eyes on the target before you pull the trigger, my friend."
 },
 "N": {
 "sources": [
@@ -12057,10 +11895,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:08395087"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, taxonomy... A classification of organisms into groups based on similarities of structure or origin."
+"text": "I have spent years cataloging the complex taxonomy of local flora to ensure every rare species is properly recorded."
 },
 "N": {
 "sources": [
@@ -12152,10 +11989,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:05947694"
+"draft:gemma4-12b"
 ],
-"text": "Oh, template! A model or standard for making comparisons, of all things."
+"text": "Look at how beautifully this design aligns with the template we spent all week perfecting for the client!"
 },
 "N": {
 "sources": [
@@ -12343,10 +12179,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06357363"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, title... A heading that names a statute or legislative bill."
+"text": "Will this specific title be sufficient to clearly identify the statute's primary objectives in the upcoming legislative session?"
 },
 "N": {
 "sources": [
@@ -12393,10 +12228,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:03460432"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, tombstone... A stone that is used to mark a grave."
+"text": "Sigh, the name on the tombstone is slowly fading, nearly erasing the memory of a man who gave everything."
 },
 "N": {
 "sources": [
@@ -12489,10 +12323,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:00201907"
+"draft:gemma4-12b"
 ],
-"text": "Oh, transition! The act of passing from one state or place to the next, of all things."
+"text": "The transition from the old city to the new one must be handled with extreme caution to avoid any riots."
 },
 "N": {
 "sources": [
@@ -12550,10 +12383,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:05084517"
+"draft:gemma4-12b"
 ],
-"text": "Oh, true! Proper alignment, of all things."
+"text": "He checked the frame to ensure the wood was perfectly true before nailing the final beam into the structure."
 },
 "N": {
 "sources": [
@@ -12598,10 +12430,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:10752624"
+"draft:gemma4-12b"
 ],
-"text": "Oh, tumbler! A gymnast who performs rolls and somersaults and twists, of all things."
+"text": "Oh, look at her go, that tumbler spinning through the air with such grace and perfect, fluid motion!"
 },
 "N": {
 "sources": [
@@ -12704,10 +12535,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:04563183"
+"draft:gemma4-12b"
 ],
-"text": "Oh, watch! A small portable timepiece, of all things."
+"text": "*Sighs* My old watch stopped ticking just as the sun began to set over the silent, empty hills."
 },
 "N": {
 "sources": [
@@ -12753,10 +12583,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:07366790"
+"draft:gemma4-12b"
 ],
-"text": "Oh, wave! One of a series of ridges that moves across the surface of a liquid (especially across a large body of water), of all things."
+"text": "Stay back from the shore, for every massive wave carries a hidden power capable of pulling you under."
 },
 "N": {
 "sources": [
@@ -12800,10 +12629,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E3",
-"wordnet-3.1:05093476"
+"draft:gemma4-12b"
 ],
-"text": "Wavelength? Yes, wavelength: the distance (measured in the direction of propagation) between two points in the same phase in consecutive cycles of a wave, and it hums quietly."
+"text": "If we adjust the equipment, we can finally isolate the exact wavelength required to penetrate the dense atmosphere."
 },
 "N": {
 "sources": [
@@ -12847,10 +12675,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:06370600"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, website... A computer connected to the internet that maintains a series of web pages on the World Wide Web."
+"text": "Can you believe how much information they have managed to cram into a single, cluttered, and confusing website?"
 },
 "N": {
 "sources": [
@@ -12894,10 +12721,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:05034009"
+"draft:gemma4-12b"
 ],
-"text": "Oh, weight! The vertical force exerted by a mass as a result of gravity, of all things."
+"text": "The sheer weight of this stone block is far more than I originally anticipated today."
 },
 "N": {
 "sources": [
@@ -12944,10 +12770,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:07414756"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, whistle... The sound made by something moving rapidly or by steam coming out of a small aperture."
+"text": "Can you hear the high-pitched whistle of the steam escaping from the rusted pipe in the basement?"
 },
 "N": {
 "sources": [
@@ -13039,10 +12864,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E1",
-"wordnet-3.1:04601545"
+"draft:gemma4-12b"
 ],
-"text": "Listen: wire. Ligament made of metal and used to fasten things or make cages or fences -- and that is not nothing."
+"text": "Sigh, I suppose I'll have to spend all afternoon tightening every single strand of wire across the pasture."
 },
 "N": {
 "sources": [
@@ -13135,10 +12959,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:09655706"
+"draft:gemma4-12b"
 ],
-"text": "Oh, worker! A person who works at a specific occupation, of all things."
+"text": "Hey, you there, the weary worker in the orange vest needs to clear those bricks before the sun sets."
 },
 "N": {
 "sources": [
@@ -13184,10 +13007,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E4",
-"wordnet-3.1:09489410"
+"draft:gemma4-12b"
 ],
-"text": "Say it slowly, world... Everything that exists anywhere."
+"text": "Oh, what a marvelous, vibrant world we inhabit, filled with infinite colors and hidden secrets!"
 },
 "N": {
 "sources": [
@@ -13233,10 +13055,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:09504166"
+"draft:gemma4-12b"
 ],
-"text": "Oh, wormhole! Hole made by a burrowing worm, of all things."
+"text": "Be careful where you step, for that damp wormhole in the soil hides a deep, muddy trap for your boots."
 },
 "N": {
 "sources": [
@@ -13281,10 +13102,9 @@
 "readings": {
 "E": {
 "sources": [
-"template:E2",
-"wordnet-3.1:04612804"
+"draft:gemma4-12b"
 ],
-"text": "Oh, wrap! Cloak that is folded or wrapped around a person, of all things."
+"text": "I'll just pull my heavy wool wrap closer around my shoulders to ward off this biting, winter chill."
 },
 "N": {
 "sources": [

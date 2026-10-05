@@ -127,6 +127,8 @@ def drafts():
         model = m.group(2)
         for w, items in json.loads(read(f)).items():
             for it in items:
+                if it.get("retired"):
+                    continue
                 out.setdefault(w.upper(), []).append(("draft:" + model, it["text"]))
     return out
 

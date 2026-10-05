@@ -75,6 +75,17 @@ case $mode in
     build "$w/sb" "" "$w/stray-builder.py" > /dev/null 2>&1
     [ -f "$w/sb/readings.json" ] || { echo "prove-red: the stray builder did not run, so it proves nothing"; r=1; }
     if honest "$w/sb" > /dev/null; then echo "prove-red: a builder that drops a source was NOT caught"; r=1; else echo "prove-red: a builder that drops a source was caught"; fi
+    cp -R "$here/drafts" "$w/rd"; f=$(ls "$w/rd"/*-E.json 2>/dev/null | head -1)
+    rw=$(python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); print(next(w for w in sorted(d) if any(not x.get("retired") for x in d[w])))' "$f" 2>/dev/null)
+    b=$(basename "$f" -E.json); env TG_DRAFTS="$w/rd" python3 "$here/tools/tg1dr.py" retire "${b#??????????-}" "$(echo "$b" | cut -c1-10)" "$rw" planted > /dev/null \
+      || { echo "prove-red: a retirement could not be planted"; r=1; }
+    sed 's/^                if it.get("retired"):$/                if False:/' "$here/tools/tg1bd.py" > "$w/deaf-builder.py"
+    cmp -s "$here/tools/tg1bd.py" "$w/deaf-builder.py" && { echo "prove-red: the deaf builder could not be planted"; r=1; }
+    build "$w/rg" "$w/rd" > /dev/null 2>&1
+    env TG_DRAFTS="$w/rd" python3 "$here/tools/tg1ck.py" "$w/rg" > /dev/null || { echo "prove-red: the real builder showed a retired draft"; r=1; }
+    build "$w/rs" "$w/rd" "$w/deaf-builder.py" > /dev/null 2>&1
+    [ -f "$w/rs/readings.json" ] || { echo "prove-red: the deaf builder did not run, so it proves nothing"; r=1; }
+    if env TG_DRAFTS="$w/rd" python3 "$here/tools/tg1ck.py" "$w/rs" > /dev/null; then echo "prove-red: a builder that shows a retired draft was NOT caught"; r=1; else echo "prove-red: a builder that shows a retired draft was caught"; fi
     [ $r = 0 ] && echo "PROVE-RED OK" || echo "PROVE-RED FAILED"; exit $r ;;
   *) echo "usage: taxgnomes-tests.sh [--reader|--prove-red|--cold|--offline|--egad]" >&2; exit 2 ;;
 esac

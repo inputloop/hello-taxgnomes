@@ -1,0 +1,8 @@
+For each word below, write ONE short sentence (12 to 22 words) that uses the word itself, spelled in full, in the sense given. Give it voice and mood: a question, someone speaking, a sigh, delight, a warning. No definitions; show the word in a moment of life. Answer as one JSON object mapping each WORD (as given, upper case) to its sentence. JSON only.
+
+LABEL: a brief description given for purposes of identification.
+LANE: a narrow way or road.
+LAYOUT: a plan or design of something that is laid out.
+LEAVE: the period of time during which you are absent from work or duty.
+LEDGER: a record in which commercial accounts are recorded.
+LENS: a transparent optical device used to converge or diverge transmitted light and to form images.

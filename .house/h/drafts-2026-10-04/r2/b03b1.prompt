@@ -1,0 +1,5 @@
+For each word below, write ONE short sentence (12 to 22 words) that uses the word itself, spelled in full, in the sense given. Give it voice and mood: a question, someone speaking, a sigh, delight, a warning. No definitions; show the word in a moment of life. Answer as one JSON object mapping each WORD (as given, upper case) to its sentence. JSON only.
+
+EVIDENCE: your basis for belief or disbelief.
+EXPRESSION: the feelings expressed on a person's face.
+EXTRA: a minor actor in crowd scenes.

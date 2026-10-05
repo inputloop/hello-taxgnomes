@@ -1,0 +1,8 @@
+For each word below, write ONE short sentence (12 to 22 words) that uses the word itself, spelled in full, in the sense given. Give it voice and mood: a question, someone speaking, a sigh, delight, a warning. No definitions; show the word in a moment of life. Answer as one JSON object mapping each WORD (as given, upper case) to its sentence. JSON only.
+
+ENTRY: an item inserted in a written record.
+ENVIRONMENT: the totality of surrounding conditions.
+ESSENCE: the choicest or most essential or most vital part of some idea or experience.
+ETYMOLOGY: a history of a word.
+EVALUATE: evaluate or estimate the nature, quality, ability, extent, or significance.
+EVENT: something that happens at a given place and time.

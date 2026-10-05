@@ -1,0 +1,8 @@
+For each word below, write ONE short sentence (12 to 22 words) that uses the word itself, spelled in full, in the sense given. Give it voice and mood: a question, someone speaking, a sigh, delight, a warning. No definitions; show the word in a moment of life. Answer as one JSON object mapping each WORD (as given, upper case) to its sentence. JSON only.
+
+LIBRARY: a room where books are kept.
+LICENSE: a legal document giving official permission to do something.
+LINEAR: designating or involving an equation whose terms are of the first degree.
+LIQUID: a substance that is liquid at room temperature and pressure.
+LITHIUM: a soft silver-white univalent element of the alkali metal group.
+MANIFEST: a customs document listing the contents put on a ship or plane.

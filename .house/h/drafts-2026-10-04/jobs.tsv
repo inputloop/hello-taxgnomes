@@ -5,4 +5,48 @@ batch	job	model	started	state
 03	5cf415cc9406	gemma4:12b	2026-10-04T21:25Z	failed: bridge timeout (600 s; four sent at once queued on one GPU)
 # poll: llama-bridge delegate_result(job_id). Ingest: python3 tools/tg1dr.py ingest gemma4:12b answer.json
 r2/b00	a4d7914cc133	gemma4:12b	2026-10-04T21:35:28Z	done 21:44Z, 12 kept
-r2/b01	9d50956db7db	gemma4:12b	2026-10-04T21:45:08Z	running
+r2/b01	9d50956db7db	gemma4:12b	2026-10-04T21:45:08Z	lost: Avalon restart before it finished (bridge at 22:5xZ: cannot reach Ollama, timed out); re-sent below
+# 2026-10-04T23:15:46Z after the restart: 12-word batches measured over the 600 s cap (b01 >10 min before; ~1-2 tok/s now), so each is sent as halves r2/bNNa, r2/bNNb (6 words)
+r2/b01a	772404462cf3	gemma4:12b	2026-10-04T23:15:46Z	failed 23:26:5xZ: bridge timeout (600 s) at 6 words, nothing else on the GPU; split in two
+r2/b01a1	70ecff0690ef	gemma4:12b	2026-10-04T23:26:16Z	failed ~23:37Z: bridge timeout (600 s) at 3 words, thinking on; bridge path paused for the clean-VRAM retest (PROBE file)
+# 2026-10-05T00:09:23Z clean-card retest (PROBE file): the slowness was the default 262,144 context plus leftovers. From here jobs go to gemma4:12b-8k (FROM gemma4:12b + num_ctx 8192; same weights, thinking on, the bridge's own request), 6 words each; ingested under gemma4:12b
+r2/b01a	8d34f3aba87e	gemma4:12b-8k	2026-10-05T00:09:23Z	done by 00:12Z (well under 3 min), 6 kept
+r2/b01b	b10e61d32d67	gemma4:12b-8k	2026-10-05T00:11:04Z	done, 6 kept (2026-10-05T00:12:17Z)
+r2/b02a	15daeef17cdb	gemma4:12b-8k	2026-10-05T00:12:24Z	done, 6 kept (2026-10-05T00:13:46Z)
+r2/b02b	881ef6a704b4	gemma4:12b-8k	2026-10-05T00:13:53Z	done, 6 kept (2026-10-05T00:15:15Z)
+r2/b03a	d9623c81bfa4	gemma4:12b-8k	2026-10-05T00:15:23Z	done, 6 kept (2026-10-05T00:16:32Z)
+r2/b03b	98c1b01a92ce	gemma4:12b-8k	2026-10-05T00:16:39Z	failed: empty output from the bridge after about 100 s (2026-10-05T00:18:27Z)
+# b03b retried in the browser pane, same request, streamed: done_reason length, 8016 tokens all thinking (it counted every sentence word by word), empty answer. Thinking overran num_ctx 8192. Rule kept: split, never skip.
+r2/b03b1	97026b00aed4	gemma4:12b-8k	2026-10-05T00:20:05Z	done, 3 kept (2026-10-05T00:21:35Z)
+r2/b03b2	5ce8bfab1494	gemma4:12b-8k	2026-10-05T00:21:42Z	done, 3 kept (2026-10-05T00:22:49Z)
+r2/b04a	e823ec694687	gemma4:12b-8k	2026-10-05T00:22:56Z	done, 6 kept (2026-10-05T00:24:19Z)
+r2/b04b	e79098d234b0	gemma4:12b-8k	2026-10-05T00:24:26Z	done, 6 kept (2026-10-05T00:25:50Z)
+r2/b05a	cd61071d4c54	gemma4:12b-8k	2026-10-05T00:25:57Z	done, 6 kept (2026-10-05T00:27:12Z)
+r2/b05b	972759e402b4	gemma4:12b-8k	2026-10-05T00:27:19Z	done, 6 kept (2026-10-05T00:28:27Z)
+r2/b06a	51cc7270e639	gemma4:12b-8k	2026-10-05T00:28:34Z	done, 6 kept (2026-10-05T00:29:53Z)
+r2/b06b	754e8a6b1403	gemma4:12b-8k	2026-10-05T00:29:59Z	done, 6 kept (2026-10-05T00:31:13Z)
+r2/b07a	9d68b6875966	gemma4:12b-8k	2026-10-05T00:31:20Z	done, 6 kept (2026-10-05T00:32:28Z)
+r2/b07b	9660ef4c7aa5	gemma4:12b-8k	2026-10-05T00:32:35Z	done, 6 kept (2026-10-05T00:33:47Z)
+r2/b08a	fb4ea355ab8d	gemma4:12b-8k	2026-10-05T00:33:54Z	done, 6 kept (2026-10-05T00:35:05Z)
+r2/b08b	9edd3fadc94d	gemma4:12b-8k	2026-10-05T00:35:12Z	done, 6 kept (2026-10-05T00:36:25Z)
+r2/b09a	2566459b22f4	gemma4:12b-8k	2026-10-05T00:36:32Z	done, 6 kept (2026-10-05T00:37:40Z)
+r2/b09b	fefd34882340	gemma4:12b-8k	2026-10-05T00:37:46Z	done, 6 kept (2026-10-05T00:39:01Z)
+r2/b10a	40255e621145	gemma4:12b-8k	2026-10-05T00:39:07Z	done, 6 kept (2026-10-05T00:40:20Z)
+r2/b10b	9291f9a66d82	gemma4:12b-8k	2026-10-05T00:40:27Z	done, 6 kept (2026-10-05T00:41:40Z)
+r2/b11a	89bac886509b	gemma4:12b-8k	2026-10-05T00:41:47Z	done, 6 kept (2026-10-05T00:42:56Z)
+r2/b11b	3768959f4393	gemma4:12b-8k	2026-10-05T00:43:03Z	done, 6 kept (headwords came back in capitals, kept as drafted) (2026-10-05T00:44:20Z)
+r2/b12a	0b3b90e2efc0	gemma4:12b-8k	2026-10-05T00:44:27Z	done, 6 kept (2026-10-05T00:45:40Z)
+r2/b12b	ed13ef1aeb93	gemma4:12b-8k	2026-10-05T00:45:48Z	done, 6 kept (2026-10-05T00:47:01Z)
+r2/b13a	314614e5502a	gemma4:12b-8k	2026-10-05T00:47:07Z	done, 6 kept (2026-10-05T00:48:21Z)
+r2/b13b	8474db90e6db	gemma4:12b-8k	2026-10-05T00:48:28Z	done, 6 kept (2026-10-05T00:49:41Z)
+r2/b14a	28794c6d5373	gemma4:12b-8k	2026-10-05T00:49:48Z	done, 6 kept (headwords in capitals, kept as drafted) (2026-10-05T00:51:03Z)
+r2/b14b	896a14f3578b	gemma4:12b-8k	2026-10-05T00:51:09Z	done, 6 kept (2026-10-05T00:52:23Z)
+r2/b15a	d3c4207d14a8	gemma4:12b-8k	2026-10-05T00:52:31Z	done, 6 kept (2026-10-05T00:53:44Z)
+r2/b15b	587cf234376b	gemma4:12b-8k	2026-10-05T00:53:53Z	done, 6 kept (2026-10-05T00:55:03Z)
+# 2026-10-05T01:02:57Z re-drafts for 14 retired drafts (reasons in the drafts file): r3/c1..c3, the r2 header plus one line asking for lower case
+r3/c1	8e898f14e9ff	gemma4:12b-8k	2026-10-05T01:03:07Z	done, 5 kept (2026-10-05T01:04:20Z)
+r3/c2	93f58170eb17	gemma4:12b-8k	2026-10-05T01:04:27Z	failed: empty output (guess: thinking overran 8k as b03b did; not streamed to confirm), split into c2a and c2b (2026-10-05T01:06:14Z)
+r3/c2a	5da9e7d5c27a	gemma4:12b-8k	2026-10-05T01:06:22Z	answered, not ingested: whole sentences in lower case (kept as answers/c2a-rejected.json); prompt line reworded and resent (2026-10-05T01:07:33Z)
+r3/c2a	8a222a3035b7	gemma4:12b-8k	2026-10-05T01:07:43Z	done, 3 kept (2026-10-05T01:08:50Z)
+r3/c2b	c6f4ecdf8c07	gemma4:12b-8k	2026-10-05T01:08:57Z	done, 2 kept (2026-10-05T01:09:54Z)
+r3/c3	fc2ebf8767f2	gemma4:12b-8k	2026-10-05T01:10:01Z	done, 4 kept (2026-10-05T01:11:10Z)

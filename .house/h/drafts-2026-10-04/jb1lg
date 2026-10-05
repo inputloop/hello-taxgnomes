@@ -1,0 +1,21 @@
+#!/bin/sh
+# jb1lg -- JOBS 1 LOG: keep jobs.tsv current, one line per bridge job.
+#   jb1lg start TAG JOB MODEL        append "TAG JOB MODEL now running"
+#   jb1lg end   TAG JOB STATE...     set that running line's state (e.g. "done, 6 kept")
+# Run from drafts-2026-10-04/.  POSIX sh + awk; edit freely.
+set -eu
+f=jobs.tsv
+now=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+case ${1:-} in
+start) [ $# -eq 4 ] || { echo "usage: jb1lg start TAG JOB MODEL" >&2; exit 2; }
+       printf '%s\t%s\t%s\t%s\trunning\n' "$2" "$3" "$4" "$now" >> "$f" ;;
+end)   [ $# -ge 4 ] || { echo "usage: jb1lg end TAG JOB STATE..." >&2; exit 2; }
+       tag=$2 job=$3; shift 3
+       tmp=$f.tmp.$$
+       awk -F'\t' -v OFS='\t' -v t="$tag" -v j="$job" -v s="$* ($now)" '
+         $1==t && $2==j && $5=="running" { $5=s; n++ } { print } END { if (n!=1) exit 3 }' "$f" > "$tmp" \
+         || { rm -f "$tmp"; echo "jb1lg: no single running line for $tag $job" >&2; exit 3; }
+       cat "$tmp" > "$f"; rm -f "$tmp" ;;
+*)     echo "usage: jb1lg start|end ..." >&2; exit 2 ;;
+esac
+tail -1 "$f" | cut -c1-160

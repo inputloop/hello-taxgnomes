@@ -1,0 +1,8 @@
+For each word below, write ONE short sentence (12 to 22 words) that uses the word itself, spelled in full, in the sense given. Give it voice and mood: a question, someone speaking, a sigh, delight, a warning. No definitions; show the word in a moment of life. Answer as one JSON object mapping each WORD (as given, upper case) to its sentence. JSON only.
+
+POSITRON: an elementary particle with positive charge.
+PRACTICE: a customary way of operation or behavior.
+PROGRAM: a series of steps to be carried out or goals to be accomplished.
+PROJECT: any piece of work that is undertaken or attempted.
+RADICAL: (chemistry) two or more atoms bound together as a single unit and forming part of a molecule.
+RADIUS: the length of a line segment between the center and circumference of a circle or sphere.

@@ -3,8 +3,11 @@
 
 usage: tg1dr.py ingest MODEL ANSWER.json [DATE]   writes drafts/DATE-MODEL-E.json (merging, never
                                                   dropping); prints what was kept and why not
+       tg1dr.py retire MODEL DATE WORD REASON...  marks WORD's drafts in that file retired, with the
+                                                  reason: kept on record, never shown
 ANSWER.json is the model's {"WORD": "sentence", ...}.  A sentence is kept only if it uses the word
-(or its stem) and runs 25 words or fewer.  The model is not called here.
+(or its stem) and runs 25 words or fewer; one that writes its word in capitals is kept with a note.
+TG_DRAFTS (drafts/) names the folder.  The model is not called here.
 Unfolded from hello-taxgnomes.org; edit that, not this.
 Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
 Mentat (for Corwin; claude-opus-5-5)
@@ -16,9 +19,45 @@ import re
 import sys
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DRAFTS = os.environ.get("TG_DRAFTS", os.path.join(HERE, "drafts"))
+
+
+def drafts_file(model, date):
+    return os.path.join(DRAFTS, "%s-%s-E.json" % (date, model.replace(":", "-")))
+
+
+def save(out_path, have):
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as fh:
+        json.dump(have, fh, ensure_ascii=False, indent=1, sort_keys=True)
+        fh.write("\n")
+
+
+def retire(model, date, word, reason):
+    out_path = drafts_file(model, date)
+    if not os.path.exists(out_path):
+        sys.stderr.write("tg1dr: no drafts file %s\n" % out_path)
+        return 1
+    have = json.load(open(out_path, encoding="utf-8"))
+    n = 0
+    for x in have.get(word, []):
+        if not x.get("retired"):
+            x["retired"] = reason
+            n += 1
+    if not n:
+        sys.stderr.write("tg1dr: %s has no draft to retire in %s\n" % (word, os.path.basename(out_path)))
+        return 1
+    save(out_path, have)
+    print("tg1dr: retired %d draft(s) of %s in %s: %s" % (n, word, os.path.basename(out_path), reason))
+    return 0
 
 
 def main(argv):
+    if len(argv) >= 5 and argv[0] == "retire":
+        if not re.match(r"^[A-Za-z0-9._:-]+$", argv[1]) or not re.match(r"^\d{4}-\d\d-\d\d$", argv[2]):
+            sys.stderr.write("tg1dr: retire MODEL DATE WORD REASON...\n")
+            return 2
+        return retire(argv[1], argv[2], argv[3].upper(), " ".join(argv[4:]))
     if len(argv) < 3 or argv[0] != "ingest":
         sys.stderr.write(__doc__)
         return 2
@@ -28,7 +67,7 @@ def main(argv):
         sys.stderr.write("tg1dr: a model name is letters, digits and ._:- only\n")
         return 2
     ans = json.load(open(path, encoding="utf-8"))
-    out_path = os.path.join(HERE, "drafts", "%s-%s-E.json" % (date, model.replace(":", "-")))
+    out_path = drafts_file(model, date)
     have = json.load(open(out_path, encoding="utf-8")) if os.path.exists(out_path) else {}
     kept = 0
     for w, s in sorted(ans.items()):
@@ -43,12 +82,11 @@ def main(argv):
             continue
         if any(x["text"] == s for x in have.get(w, [])):
             continue
+        if re.search(r"\b%s\b" % re.escape(w), s):
+            print("note %s: the sentence writes the word in capitals (retire it if that is wrong)" % w)
         have.setdefault(w, []).append({"text": s})
         kept += 1
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    with open(out_path, "w", encoding="utf-8") as fh:
-        json.dump(have, fh, ensure_ascii=False, indent=1, sort_keys=True)
-        fh.write("\n")
+    save(out_path, have)
     print("tg1dr: kept %d sentence(s) in %s" % (kept, os.path.relpath(out_path, HERE)))
     return 0
 

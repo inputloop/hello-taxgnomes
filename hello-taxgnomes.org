@@ -26,7 +26,7 @@ where the slider starts, and egadjit's own resolver can choose for a room of vie
 |---------------------------+-------------------------------------------------------------------|
 | =tools/tg1bd.py=          | the builder: tables, three dictionary sources, drafts, into readings |
 | =tools/tg1rd=             | the second reader (sh and awk): every direction's rule, checked apart from the builder |
-| =tools/tg1dr.py=          | takes in sentences the local model drafted, with their provenance |
+| =tools/tg1dr.py=          | takes in the model's drafts, with provenance; retires a bad one      |
 | =tools/tg1pg.py=          | writes the page from the template and the readings                |
 | =page/template.html=      | the page, with its inline tests                                   |
 | =egad/read-category.json= | an egadjit category: where the slider starts, for whoever is looking |
@@ -172,6 +172,8 @@ def drafts():
         model = m.group(2)
         for w, items in json.loads(read(f)).items():
             for it in items:
+                if it.get("retired"):
+                    continue
                 out.setdefault(w.upper(), []).append(("draft:" + model, it["text"]))
     return out
 
@@ -377,14 +379,23 @@ word.  Its answer, a JSON object of word to sentence, is taken in here: kept onl
 word and runs 25 words or fewer, and filed with the model's name and the date, so the page can say
 the model wrote it.
 
+A draft that turns out wrong (the word in capitals, its gloss recited, a slip of sense) is retired,
+not deleted: =tg1dr.py retire MODEL DATE WORD REASON= marks it with the reason, the builder passes
+over it to the word's next draft (or the pool, or a template), and the check refuses a build that
+shows one.  The record keeps every sentence the model gave, and why a retired one is not shown.
+Taking in an answer also notes, without dropping it, a sentence that writes its word in capitals.
+
 #+begin_src python :tangle tools/tg1dr.py
 #!/usr/bin/env python3
 """tg1dr -- TAXGNOMES 1 DRAFTS: take in sentences the local model drafted for the east direction.
 
 usage: tg1dr.py ingest MODEL ANSWER.json [DATE]   writes drafts/DATE-MODEL-E.json (merging, never
                                                   dropping); prints what was kept and why not
+       tg1dr.py retire MODEL DATE WORD REASON...  marks WORD's drafts in that file retired, with the
+                                                  reason: kept on record, never shown
 ANSWER.json is the model's {"WORD": "sentence", ...}.  A sentence is kept only if it uses the word
-(or its stem) and runs 25 words or fewer.  The model is not called here.
+(or its stem) and runs 25 words or fewer; one that writes its word in capitals is kept with a note.
+TG_DRAFTS (drafts/) names the folder.  The model is not called here.
 Unfolded from hello-taxgnomes.org; edit that, not this.
 Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
 Mentat (for Corwin; claude-opus-5-5)
@@ -396,9 +407,45 @@ import re
 import sys
 
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DRAFTS = os.environ.get("TG_DRAFTS", os.path.join(HERE, "drafts"))
+
+
+def drafts_file(model, date):
+    return os.path.join(DRAFTS, "%s-%s-E.json" % (date, model.replace(":", "-")))
+
+
+def save(out_path, have):
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as fh:
+        json.dump(have, fh, ensure_ascii=False, indent=1, sort_keys=True)
+        fh.write("\n")
+
+
+def retire(model, date, word, reason):
+    out_path = drafts_file(model, date)
+    if not os.path.exists(out_path):
+        sys.stderr.write("tg1dr: no drafts file %s\n" % out_path)
+        return 1
+    have = json.load(open(out_path, encoding="utf-8"))
+    n = 0
+    for x in have.get(word, []):
+        if not x.get("retired"):
+            x["retired"] = reason
+            n += 1
+    if not n:
+        sys.stderr.write("tg1dr: %s has no draft to retire in %s\n" % (word, os.path.basename(out_path)))
+        return 1
+    save(out_path, have)
+    print("tg1dr: retired %d draft(s) of %s in %s: %s" % (n, word, os.path.basename(out_path), reason))
+    return 0
 
 
 def main(argv):
+    if len(argv) >= 5 and argv[0] == "retire":
+        if not re.match(r"^[A-Za-z0-9._:-]+$", argv[1]) or not re.match(r"^\d{4}-\d\d-\d\d$", argv[2]):
+            sys.stderr.write("tg1dr: retire MODEL DATE WORD REASON...\n")
+            return 2
+        return retire(argv[1], argv[2], argv[3].upper(), " ".join(argv[4:]))
     if len(argv) < 3 or argv[0] != "ingest":
         sys.stderr.write(__doc__)
         return 2
@@ -408,7 +455,7 @@ def main(argv):
         sys.stderr.write("tg1dr: a model name is letters, digits and ._:- only\n")
         return 2
     ans = json.load(open(path, encoding="utf-8"))
-    out_path = os.path.join(HERE, "drafts", "%s-%s-E.json" % (date, model.replace(":", "-")))
+    out_path = drafts_file(model, date)
     have = json.load(open(out_path, encoding="utf-8")) if os.path.exists(out_path) else {}
     kept = 0
     for w, s in sorted(ans.items()):
@@ -423,12 +470,11 @@ def main(argv):
             continue
         if any(x["text"] == s for x in have.get(w, [])):
             continue
+        if re.search(r"\b%s\b" % re.escape(w), s):
+            print("note %s: the sentence writes the word in capitals (retire it if that is wrong)" % w)
         have.setdefault(w, []).append({"text": s})
         kept += 1
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    with open(out_path, "w", encoding="utf-8") as fh:
-        json.dump(have, fh, ensure_ascii=False, indent=1, sort_keys=True)
-        fh.write("\n")
+    save(out_path, have)
     print("tg1dr: kept %d sentence(s) in %s" % (kept, os.path.relpath(out_path, HERE)))
     return 0
 
@@ -781,6 +827,17 @@ case $mode in
     build "$w/sb" "" "$w/stray-builder.py" > /dev/null 2>&1
     [ -f "$w/sb/readings.json" ] || { echo "prove-red: the stray builder did not run, so it proves nothing"; r=1; }
     if honest "$w/sb" > /dev/null; then echo "prove-red: a builder that drops a source was NOT caught"; r=1; else echo "prove-red: a builder that drops a source was caught"; fi
+    cp -R "$here/drafts" "$w/rd"; f=$(ls "$w/rd"/*-E.json 2>/dev/null | head -1)
+    rw=$(python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); print(next(w for w in sorted(d) if any(not x.get("retired") for x in d[w])))' "$f" 2>/dev/null)
+    b=$(basename "$f" -E.json); env TG_DRAFTS="$w/rd" python3 "$here/tools/tg1dr.py" retire "${b#??????????-}" "$(echo "$b" | cut -c1-10)" "$rw" planted > /dev/null \
+      || { echo "prove-red: a retirement could not be planted"; r=1; }
+    sed 's/^                if it.get("retired"):$/                if False:/' "$here/tools/tg1bd.py" > "$w/deaf-builder.py"
+    cmp -s "$here/tools/tg1bd.py" "$w/deaf-builder.py" && { echo "prove-red: the deaf builder could not be planted"; r=1; }
+    build "$w/rg" "$w/rd" > /dev/null 2>&1
+    env TG_DRAFTS="$w/rd" python3 "$here/tools/tg1ck.py" "$w/rg" > /dev/null || { echo "prove-red: the real builder showed a retired draft"; r=1; }
+    build "$w/rs" "$w/rd" "$w/deaf-builder.py" > /dev/null 2>&1
+    [ -f "$w/rs/readings.json" ] || { echo "prove-red: the deaf builder did not run, so it proves nothing"; r=1; }
+    if env TG_DRAFTS="$w/rd" python3 "$here/tools/tg1ck.py" "$w/rs" > /dev/null; then echo "prove-red: a builder that shows a retired draft was NOT caught"; r=1; else echo "prove-red: a builder that shows a retired draft was caught"; fi
     [ $r = 0 ] && echo "PROVE-RED OK" || echo "PROVE-RED FAILED"; exit $r ;;
   *) echo "usage: taxgnomes-tests.sh [--reader|--prove-red|--cold|--offline|--egad]" >&2; exit 2 ;;
 esac
@@ -790,16 +847,20 @@ exit $fail
 #+begin_src python :tangle tools/tg1ck.py
 #!/usr/bin/env python3
 """tg1ck -- TAXGNOMES 1 CHECK: every word with a meaning has five readings, each with text and at
-least one source; the complete count matches the build's own.
+least one source; the complete count matches the build's own; no east reading shows a draft that
+was retired (TG_DRAFTS, default drafts/).
 
 usage: tg1ck.py DATA_DIR     exit 1 on a fault, with a line per fault
 Unfolded from hello-taxgnomes.org; edit that, not this.
 Copyright 2026 Corwin Brust <corwin@bru.st> and Contributors; GPL-3.0-or-later.
 Mentat (for Corwin; claude-opus-5-5)
 """
+import glob
 import json
+import os
 import sys
 
+DRAFTS = os.environ.get("TG_DRAFTS", os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "drafts"))
 d = json.load(open(sys.argv[1] + "/readings.json", encoding="utf-8"))
 bad = 0
 for w, r in d["words"].items():
@@ -817,5 +878,14 @@ n = sum(1 for r in d["words"].values() if not r.get("none"))
 if n != d["meta"]["counts"]["complete"]:
     print("FAIL complete count %d vs meta %d" % (n, d["meta"]["counts"]["complete"]))
     bad += 1
+retired = set()
+for f in glob.glob(os.path.join(DRAFTS, "*-E.json")):
+    for w, items in json.load(open(f, encoding="utf-8")).items():
+        retired.update((w.upper(), it["text"]) for it in items if it.get("retired"))
+for w, r in d["words"].items():
+    e = r.get("readings", {}).get("E")
+    if e and (w.upper(), e["text"]) in retired:
+        print("FAIL %s E: shows a draft that was retired" % w)
+        bad += 1
 sys.exit(1 if bad else 0)
 #+end_src

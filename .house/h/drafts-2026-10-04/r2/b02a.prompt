@@ -1,0 +1,8 @@
+For each word below, write ONE short sentence (12 to 22 words) that uses the word itself, spelled in full, in the sense given. Give it voice and mood: a question, someone speaking, a sigh, delight, a warning. No definitions; show the word in a moment of life. Answer as one JSON object mapping each WORD (as given, upper case) to its sentence. JSON only.
+
+DECK: any of various platforms built into a vessel.
+DEFAULT: loss due to not showing up.
+DIATOMIC: of or relating to a molecule made up of two atoms.
+DIFFRACTION: when light passes sharp edges or goes through narrow slits the rays are deflected and produce fringes of light and dark bands.
+DOCTRINE: a belief (or system of beliefs) accepted as authoritative by some group or school.
+DOMAIN: a particular environment or walk of life.

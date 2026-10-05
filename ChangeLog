@@ -1,3 +1,23 @@
+2026-10-05  Claude (Cowork, after the Avalon restart: all 192 in)  for Corwin  <corwin@bru.st>
+
+	* drafts/2026-10-04-gemma4-12b-E.json: the other 180 east sentences, by gemma4:12b through
+	Llama Bridge as `gemma4:12b-8k' (the same weights with an 8k context; the default 262,144
+	context had made every call slow, see .house/h/PROBE-2026-10-04-ollama-speed.md).  14 drafts
+	retired with their reasons (11 headwords in capitals, a recited gloss, a stray quotation mark,
+	a noun drafted as a verb) and redrafted; nothing dropped.
+	* hello-taxgnomes.org (tg1dr): `retire MODEL DATE WORD REASON'; TG_DRAFTS honoured; a note when
+	a sentence writes its word in capitals.
+	(tg1bd): a retired draft is passed over.
+	(tg1ck): a build that shows a retired draft fails.
+	(taxgnomes-tests.sh --prove-red): a planted retirement and a builder deaf to it, caught.
+	* tools/, tests/: unfolded from the recipe.
+	* data/, build/hello-taxgnomes.html: rebuilt: 192 drafted, 69 pooled, 0 templated.
+	* .house/h/drafts-2026-10-04/: halves r2/bNNa, r2/bNNb and redrafts r3/; every answer; jobs.tsv
+	(every job and how it ended); jb1lg (keeps jobs.tsv current).
+	* .house/h/PROBE-2026-10-04-ollama-speed.md: new.  Why the drafts were slow: thinking (30x the
+	tokens) and the 262,144 context (6.5x slower on a clean card), measured; a gemma4:e2b baseline.
+	* .house/h/SWING, NOTES: cycle 2, passes 2 and 3; closed on a clean pass 3 of 3.
+
 2026-10-04  Claude (Cowork, after the crash: the first drafts in)  for Corwin  <corwin@bru.st>
 
 	* drafts/2026-10-04-gemma4-12b-E.json: new.  12 east sentences by gemma4:12b through Llama

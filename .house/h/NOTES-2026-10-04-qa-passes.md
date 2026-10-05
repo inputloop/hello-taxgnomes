@@ -33,3 +33,21 @@ queued on one GPU); then 12-word batches one at a time: b00 landed (12 of 12 kep
 b01 hit 600 s.  Whole plan ran: build honest, second reader agrees, cold, offline, egad, prove-red.
 Not run this pass: the page's 9 inline tests (only the data changed; owed at the next pass).
 Warning: 180 east readings still templated.  Parked for an Avalon restart: RESTART-2026-10-04-east-drafts.md.
+
+## Cycle 2, pass 2 (issues 0, warnings 1) -- after the Avalon restart, 2026-10-05 ~00:58Z
+All 192 east readings drafted by gemma4:12b through the bridge (`gemma4:12b-8k`, the same weights with
+an 8k context; why: PROBE-2026-10-04-ollama-speed.md).  Whole plan ran: unfold (awk on Avalon; the
+Emacs half in the cloud sandbox, Emacs 29.3, on a staged copy, since Avalon's shell has no Emacs),
+build honest (192 drafted, 0 templated), second reader agrees, cold, offline, egad, prove-red, and the
+page's 9 inline tests (headless).
+Warning: 14 drafts slipped past every check: 11 wrote the headword in capitals (b11b, b14a), LITHIUM
+recited its gloss, MUTED carried a stray quotation mark, COMMAND was drafted as the verb.
+
+## Cycle 2, pass 3 (issues 0, warnings 0) -- 2026-10-05 ~01:15Z
+Fix, in the recipe: `tg1dr.py retire MODEL DATE WORD REASON` keeps a bad draft on record with its
+reason; the builder passes over a retired draft; tg1ck refuses a build that shows one; prove-red
+plants a retirement and a builder deaf to it (caught; the real builder is not).  Taking in an answer
+now notes a headword written in capitals.  The 14 were retired and redrafted (r3/c1..c3, the r2 prompt
+plus one line on case; the first wording overcorrected to all-lower-case and was not taken in).
+Whole plan ran clean: unfold (awk and Emacs agree, 9 files; prove-red), build honest, second reader
+agrees, cold, offline, egad, prove-red (six plants), and 9 of 9 inline tests.
